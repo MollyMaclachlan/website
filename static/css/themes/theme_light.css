@@ -1,0 +1,31 @@
+/* MAIN COLOURATION*/
+html, button { color: black; background-color: white; }
+h2:after {
+    content: ' ';
+    display: block;
+    border: 1px solid black;
+    width: inherit;
+}
+footer { color: #333333; }
+button { border-color: black; }
+
+/* HEADER ELEMENTS */
+#logo {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+@media(max-width:500px) {
+    #logo { visibility: hidden; }
+}
+
+/* NAVIGATION */
+.selected { border-color: #7d6800; }
+
+/* MISCELLANEOUS */
+p a:hover { color: #444444; }
+.footer-links a:hover { color: #666666; }
+.preview-image { border-color: black; }
+.light-favicon {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
