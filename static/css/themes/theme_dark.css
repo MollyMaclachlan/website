@@ -18,7 +18,7 @@ footer { color: #999999; }
 .selected { border-color: gold; }
 
 /* MISCELLANEOUS */
-p a:hover { color: #AAAAAA; }
+p a:hover, li a:hover { color: #AAAAAA; }
 .footer-links a:hover { color: #CCCCCC; }
 .preview-image { border-color: white; }
 .dark-favicon {
