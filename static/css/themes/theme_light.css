@@ -14,9 +14,6 @@ button { border-color: black; }
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
-@media(max-width:500px) {
-    #logo { visibility: hidden; }
-}
 
 /* NAVIGATION */
 .selected { border-color: #7d6800; }
