@@ -21,7 +21,7 @@ footer { color: #999999; }
 p a:hover, li a:hover { color: #AAAAAA; }
 .footer-links a:hover { color: #CCCCCC; }
 .preview-image { border-color: white; }
-.dark-favicon {
+.dark-image {
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
