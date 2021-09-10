@@ -22,7 +22,7 @@ button { border-color: black; }
 .selected { border-color: #7d6800; }
 
 /* MISCELLANEOUS */
-p a:hover { color: #444444; }
+p a:hover, li a:hover { color: #444444; }
 .footer-links a:hover { color: #666666; }
 .preview-image { border-color: black; }
 .light-favicon {
