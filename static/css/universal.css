@@ -58,11 +58,11 @@ footer.absolute {
     position: absolute;
     bottom: 0;
     left: 18%;
-    width: 64%;
+    width: 63.85%;
 }
 footer.relative {
     position: relative;
-    width: 100%;
+    width: 99%;
 }
 .footer-contents {
     display: flex;
@@ -90,10 +90,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
-p a { font-weight: bold; }
-p a:hover, .footer-links a { text-decoration: underline; }
+p a, li a { font-weight: bold; }
+p a:hover, li a:hover, .footer-links a { text-decoration: underline; }
 
 /* MISCELLANEOUS */
+ul {
+    margin-top: -1%; margin-bottom: 0%;
+}
 .left { float: left; }
 .right { float: right; }
 .text-centred { text-align: center; }
