@@ -2,7 +2,6 @@
 
 <html lang="en">
     <head>
-
         <!--Meta elements-->
         <meta charset="utf-8">
         <title>Murdo Maclachlan | Endeavours</title>
@@ -11,141 +10,158 @@
         <link rel="icon" type="image/png" href="../static/img/icon.png">
         <script src="../scripts/js/themes.js"></script>
     </head>
-        <header>
-            <nav>
-                <!--Navigation buttons-->
-                <div id="nav-container">
-                    <button class="nav-button" type="button" onclick="window.location.href='home.html'">Home</button><br>
-                    <button class="nav-button" type="button" onclick="window.location.href='accounts.html'">Accounts</button><br>
-                    <button class="nav-button selected" type="button" onclick="window.location.href='endeavours.html'">Endeavours</button><br>
-                    <button class="nav-button" type="button" onclick="window.location.href='blog.html'">Blog</button>
-                </div>
-
-                <!--Logo and theme button-->
-                <img id="logo" class="light-image" src="../static/img/logo.png" onclick="window.location.href='home.html'">
-                <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
-                    <img id="theme-image" class="dark-image" src="../static/img/sun.png" alt="A sun icon.">
-                </button>
-            </nav>
-        </header>
     <body>
-        <div class="text-row">
-            <div class="text-column">
-                <h2><a id="#transcribing" href="#transcribing">Transcribing</a></h2>
-                <p>
-                    <a class="inline-image-right preview-image" href="https://grafeas.org/">
+        <div id="header-container">
+            <header>
+                <nav>
+                    <!--Navigation buttons-->
+                    <div id="nav-container">
+                        <button class="nav-button" type="button" onclick="window.location.href='home.html'">Home</button><br>
+                        <button class="nav-button" type="button" onclick="window.location.href='accounts.html'">Accounts</button><br>
+                        <button class="nav-button selected" type="button" onclick="window.location.href='endeavours.html'">Endeavours</button><br>
+                        <button class="nav-button" type="button" onclick="window.location.href='blog.html'">Blog</button>
+                    </div>
+
+                    <!--Logo and theme button-->
+                    <img
+                        id="logo"
+                        class="light-image"
+                        src="../static/img/logo.png"
+                        onclick="window.location.href='home.html'"
+                    >
+                    <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
                         <img
-                            class="inline-image-right dark-image"
-                            style="margin: 0; height: 150px; width: auto;"
-                            src="https://grafeas.org/static/images/logo.svg"
-                            title="The logo of the Grafeas Group."
-                            alt="The Grafeas Group logo; two uppercase letter G's, diagonally mirrored and joined in the middle, overlayed over a line art feather."
+                            id="theme-image"
+                            class="dark-image"
+                            src="../static/img/sun.png"
+                            alt="A sun icon."
                         >
-                    </a>
-                    Transcribing? What's that? Transcribing is accessibility, is what it is! This is something
-                    I spend a good portion of my time doing, and I've made good friends doing it as well, so
-                    it's very close to my heart. But what is it really? It's not your normal transcribing initiative,
-                    such as a large library organising an effort to transcribe old documents; no, it's something
-                    quite a lot smaller.
-                    <br><br>
-                    I'd like to introduce you to the <a href="https://grafeas.org/">Grafeas Group</a>, a small non-profit
-                    organisation that runs <a href="https://www.reddit.com/r/TranscribersOfReddit">r/TranscribersOfReddit</a>,
-                    an accessibility initiative to transcribe audio, image and video posts on Reddit for the benefit of
-                    people who would not normally have access to them. This lack of access can be due to visual or hearing
-                    impairents, slow internet, inconsistency of rendering across Reddit's various official and third-party
-                    clients, and more. To help these people, the posts are transcribed into the comments, where they can be
-                    accessed either by simply reading, or where necessary, by assisstive technology such as screen readers.
-                    <br><br>
-                    I've been transcribing with the Grafeas Group for over a year as of July 2021, and I've even used a few
-                    transcriptions myself in the past when the contrast between the text and the background of images didn't
-                    suit my colour vision (I have <a href="https://en.wikipedia.org/wiki/Color_blindness#Protanomaly">protanomaly</a>).
-                    <br><br>
-                    The two things I love most about transcribing with the Grafeas Group are; first of all, the friends I've
-                    made, as they're genuinely some of the best and nicest people I know; and secondly, the kind comments I
-                    receive on transcriptions. It's a wonderful thing to know you've actually helped someone, so whenever
-                    anyone thanks me or says my transcription helped them enjoy the post, it puts a smile on my face. I also
-                    enjoy moderating the subreddit, which I've done since February 2021. Applying for that post was one of the
-                    best decisions I've ever made; it introduced me to more wonderful people and allowed me to help out even more.
-                    <br><br>
-                    I could talk for hours about transcribing and the Grafeas Group, but it's probably already sounding like
-                    an advert. Biased as I may be, I do genuinely believe they're one of the best communities on the internet!
-                    At over 8,000 transcriptions, I have no intention of stopping soon.
-                </p>
+                    </button>
+                </nav>
+            </header>
+        </div>
+        <div id="body-container">
+            <div class="text-row">
+                <div class="text-column">
+                    <h2><a id="#transcribing" href="#transcribing">Transcribing</a></h2>
+                    <p>
+                        <a class="inline-image-right preview-image" href="https://grafeas.org/">
+                            <img
+                                class="inline-image-right dark-image"
+                                style="margin: 0; height: 150px; width: auto;"
+                                src="https://grafeas.org/static/images/logo.svg"
+                                title="The logo of the Grafeas Group."
+                                alt="The Grafeas Group logo; two uppercase letter G's, diagonally mirrored and joined in the middle, overlayed over a line art feather."
+                            >
+                        </a>
+                        Transcribing? What's that? Transcribing is accessibility, is what it is! This is something
+                        I spend a good portion of my time doing, and I've made good friends doing it as well, so
+                        it's very close to my heart. But what is it really? It's not your normal transcribing initiative,
+                        such as a large library organising an effort to transcribe old documents; no, it's something
+                        quite a lot smaller.
+                        <br><br>
+                        I'd like to introduce you to the <a href="https://grafeas.org/">Grafeas Group</a>, a small non-profit
+                        organisation that runs <a href="https://www.reddit.com/r/TranscribersOfReddit">r/TranscribersOfReddit</a>,
+                        an accessibility initiative to transcribe audio, image and video posts on Reddit for the benefit of
+                        people who would not normally have access to them. This lack of access can be due to visual or hearing
+                        impairents, slow internet, inconsistency of rendering across Reddit's various official and third-party
+                        clients, and more. To help these people, the posts are transcribed into the comments, where they can be
+                        accessed either by simply reading, or where necessary, by assisstive technology such as screen readers.
+                        <br><br>
+                        I've been transcribing with the Grafeas Group for over a year as of July 2021, and I've even used a few
+                        transcriptions myself in the past when the contrast between the text and the background of images didn't
+                        suit my colour vision (I have <a href="https://en.wikipedia.org/wiki/Color_blindness#Protanomaly">protanomaly</a>).
+                        <br><br>
+                        The two things I love most about transcribing with the Grafeas Group are; first of all, the friends I've
+                        made, as they're genuinely some of the best and nicest people I know; and secondly, the kind comments I
+                        receive on transcriptions. It's a wonderful thing to know you've actually helped someone, so whenever
+                        anyone thanks me or says my transcription helped them enjoy the post, it puts a smile on my face. I also
+                        enjoy moderating the subreddit, which I've done since February 2021. Applying for that post was one of the
+                        best decisions I've ever made; it introduced me to more wonderful people and allowed me to help out even more.
+                        <br><br>
+                        I could talk for hours about transcribing and the Grafeas Group, but it's probably already sounding like
+                        an advert. Biased as I may be, I do genuinely believe they're one of the best communities on the internet!
+                        At over 8,000 transcriptions, I have no intention of stopping soon.
+                    </p>
+                </div>
+            </div>
+            <div class="text-row">
+                <div class="text-column">
+                    <h2><a id="#writing" href="#writing">Writing</a></h2>
+                    <p>
+                        Writing: my greatest passion in life, and hopefully one day my career. I first became somewhat
+                        interested in writing during my first year of secondary school, at age 11. Already a lover of reading,
+                        I began writing blurbs for non-existant books instead of paying attention to my classes. After
+                        some time, this developed into wanting to make these books existant, and after I began properly
+                        writing for the first time in fourth year, with some advice and and encouragement from my truly
+                        wonderful English teacher, I threw myself fully into the hobby, with the full intention of it
+                        becoming a career.
+                        <br><br>
+                        Over time I've written more first chapters than you might think, and I believe beginnings have
+                        become for me the easiest part of a story. I have many stories with a rough plan, and one that I've
+                        written through several full drafts of. The hardest part for me these days is deciding what to write
+                        first. The novel I've fully drafted, a high-fantasy novel tentatively titled <i>A Daemon's Influence</i>,
+                        is not currently my main focus. That may be surprising, considering it's the only thing I've written
+                        to completion thus far, but I've discovered it will take a lot more careful planning to make as good
+                        as it can be, and so in the mean time I decided to work on something shorter.
+                        <br><br>
+                        After realising that <i>A Daemon's Influence</i> was not going to be the first prose work I published,
+                        I moved on to thinking about other ideas. I've written several chapters of a gothic low-fantasy novel
+                        entitled <i>A Lady in Black</i>, and have the majority of my plans for the low-fantasy steampunk stories,
+                        <i>The Faces of Undertown</i> and <i>The Iron City</i> written out, but in August 2021 an idea occurred
+                        to me that I didn't want to let slip away. And thus, the apocalyptic far-future science fiction novella
+                        <i>Infinity's Omega</i> was born.
+                        <br><br>
+                        <i>Infinity's Omega</i> is the first science fiction prose I've ever written, as well as the first novella.
+                        I'm in the late stages of the first draft currently, and I've found that the shorter story format allowed
+                        for much tighter writing and an easier time plotting out a full plan before even setting the firt word
+                        to paper. In terms of George R.R. Martin's metaphor of the Two Types of Writer, I suppose this makes
+                        me a full architect just this once, where normally I'm an archtitectural gardener.
+                        <br><br>
+                        I hoped to finish the first draft of <i>Infinity's Omega</i> before returning to university for my
+                        second year, but I've since seen this won't be possible. That's partially my fault for spontaneously
+                        deciding to write a website, but hey! I wanted to. I'll still be finishing the draft soon anyway, and
+                        that's what really matters.
+                        <br><br>
+                        Outside of prose, I also write poetry. All of my best, and some of my worst, works are available at my
+                        <a href="https://allpoetry.com/Murdo_Maclachlan">AllPoetry</a> account. I opened this account not expecting
+                        to do much with it, as I wasn't great at poetry at the time. However, the website quickly took a special
+                        place for me. It's one of my favourite websites, honestly, and it makes me sad how little time I get to
+                        write for it these days, because the feedback of other writers there really helped me improve my craft.
+                        Since my humble beginnings on the site, I've had 12 front page picks, a number which I'm not sure is
+                        particularly impressive, but it makes me happy.
+                        <br><br>
+                        What makes me happiest about AllPoetry, however, is that in February 2020, I officially became a published
+                        poet, with my haiku <i>Bitter Cold Teeth</i> making it into one of the website's anthologies,
+                        <a href="https://www.amazon.co.uk/Dreaming-Ink-Various/dp/B084Z3WWFH"><i>Dreaming of Ink</i></a>. I love
+                        haiku, a type of Japanese poem that I first came across on AllPoetry, and I'm still very proud of that one.
+                        Another poem to note on my account is <i>Sea of Night</i>, which, thanks to a very kind Redditor, is currently
+                        on an SSD that
+                        <a href="https://www.reddit.com/r/space/comments/l52iym/you_can_send_something_to_the_moon_for_free_im/">
+                            will travel to the moon</a>.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="text-row">
-            <div class="text-column">
-                <h2><a id="#writing" href="#writing">Writing</a></h2>
-                <p>
-                    Writing: my greatest passion in life, and hopefully one day my career. I first became somewhat
-                    interested in writing during my first year of secondary school, at age 11. Already a lover of reading,
-                    I began writing blurbs for non-existant books instead of paying attention to my classes. After
-                    some time, this developed into wanting to make these books existant, and after I began properly
-                    writing for the first time in fourth year, with some advice and and encouragement from my truly
-                    wonderful English teacher, I threw myself fully into the hobby, with the full intention of it
-                    becoming a career.
-                    <br><br>
-                    Over time I've written more first chapters than you might think, and I believe beginnings have
-                    become for me the easiest part of a story. I have many stories with a rough plan, and one that I've
-                    written through several full drafts of. The hardest part for me these days is deciding what to write
-                    first. The novel I've fully drafted, a high-fantasy novel tentatively titled <i>A Daemon's Influence</i>,
-                    is not currently my main focus. That may be surprising, considering it's the only thing I've written
-                    to completion thus far, but I've discovered it will take a lot more careful planning to make as good
-                    as it can be, and so in the mean time I decided to work on something shorter.
-                    <br><br>
-                    After realising that <i>A Daemon's Influence</i> was not going to be the first prose work I published,
-                    I moved on to thinking about other ideas. I've written several chapters of a gothic low-fantasy novel
-                    entitled <i>A Lady in Black</i>, and have the majority of my plans for the low-fantasy steampunk stories,
-                    <i>The Faces of Undertown</i> and <i>The Iron City</i> written out, but in August 2021 an idea occurred
-                    to me that I didn't want to let slip away. And thus, the apocalyptic far-future science fiction novella
-                    <i>Infinity's Omega</i> was born.
-                    <br><br>
-                    <i>Infinity's Omega</i> is the first science fiction prose I've ever written, as well as the first novella.
-                    I'm in the late stages of the first draft currently, and I've found that the shorter story format allowed
-                    for much tighter writing and an easier time plotting out a full plan before even setting the firt word
-                    to paper. In terms of George R.R. Martin's metaphor of the Two Types of Writer, I suppose this makes
-                    me a full architect just this once, where normally I'm an archtitectural gardener.
-                    <br><br>
-                    I hoped to finish the first draft of <i>Infinity's Omega</i> before returning to university for my
-                    second year, but I've since seen this won't be possible. That's partially my fault for spontaneously
-                    deciding to write a website, but hey! I wanted to. I'll still be finishing the draft soon anyway, and
-                    that's what really matters.
-                    <br><br>
-                    Outside of prose, I also write poetry. All of my best, and some of my worst, works are available at my
-                    <a href="https://allpoetry.com/Murdo_Maclachlan">AllPoetry</a> account. I opened this account not expecting
-                    to do much with it, as I wasn't great at poetry at the time. However, the website quickly took a special
-                    place for me. It's one of my favourite websites, honestly, and it makes me sad how little time I get to
-                    write for it these days, because the feedback of other writers there really helped me improve my craft.
-                    Since my humble beginnings on the site, I've had 12 front page picks, a number which I'm not sure is
-                    particularly impressive, but it makes me happy.
-                    <br><br>
-                    What makes me happiest about AllPoetry, however, is that in February 2020, I officially became a published
-                    poet, with my haiku <i>Bitter Cold Teeth</i> making it into one of the website's anthologies,
-                    <a href="https://www.amazon.co.uk/Dreaming-Ink-Various/dp/B084Z3WWFH"><i>Dreaming of Ink</i></a>. I love
-                    haiku, a type of Japanese poem that I first came across on AllPoetry, and I'm still very proud of that one.
-                    Another poem to note on my account is <i>Sea of Night</i>, which, thanks to a very kind Redditor, is currently
-                    on an SSD that
-                    <a href="https://www.reddit.com/r/space/comments/l52iym/you_can_send_something_to_the_moon_for_free_im/">
-                        will travel to the moon</a>.
-                </p>
-            </div>
+        <div id="footer-container">
+            <footer>
+                <section class="footer-contents">
+                    <p id="footer-left">
+                        This website uses cookies to remember the selected theme.
+                        <br>
+                        Cookies last 24 hours and are only set after changing theme.
+                    </p>
+                    <p id="footer-right">
+                        Murdo Maclachlan, © 2021-present
+                        <br>
+                        Detailed licensing available at source.
+                    </p>
+                </section>
+                <section class="footer-links">
+                    <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> |
+                    <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
+                </section>
+            </footer>
         </div>
     </body>
-        <footer class="relative">
-            <section class="footer-contents">
-                <p id="footer-left">
-                    This website uses cookies to remember the selected theme.
-                    <br>
-                    Cookies last 24 hours and are only set after changing theme.
-                </p>
-                <p id="footer-right">
-                    Murdo Maclachlan, © 2021-present
-                    <br>
-                    Detailed licensing available at source.
-                </p>
-            </section>
-            <section class="footer-links">
-                <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> | <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
-            </section>
-        </footer>
 </html>
