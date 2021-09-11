@@ -2,94 +2,111 @@
 
 <html lang="en">
     <head>
-
         <!--Meta elements-->
         <meta charset="utf-8">
         <title>Murdo Maclachlan | Home</title>
         <link id="structure" rel="stylesheet" href="../static/css/universal.css">
         <link id="theme" rel="stylesheet" href="../static/css/themes/theme_dark.css">
+        <link class="additional" rel="stylesheet" href="../static/css/empty.css">
         <link rel="icon" type="image/png" href="../static/img/icon.png">
         <script src="../scripts/js/themes.js"></script>
     </head>
-        <header>
-            <nav>
-                <!--Navigation buttons-->
-                <div id="nav-container">
-                    <button class="nav-button selected" type="button" onclick="window.location.href='home.html'">Home</button><br>
-                    <button class="nav-button" type="button" onclick="window.location.href='accounts.html'">Accounts</button><br>
-                    <button class="nav-button" type="button" onclick="window.location.href='endeavours.html'">Endeavours</button><br>
-                    <button class="nav-button" type="button" onclick="window.location.href='blog.html'">Blog</button>
-                </div>
+    <body class="empty">
+        <div id="header-container">
+            <header>
+                <nav>
+                    <!--Navigation buttons-->
+                    <div id="nav-container">
+                        <button class="nav-button selected" type="button" onclick="window.location.href='home.html'">Home</button><br>
+                        <button class="nav-button" type="button" onclick="window.location.href='accounts.html'">Accounts</button><br>
+                        <button class="nav-button" type="button" onclick="window.location.href='endeavours.html'">Endeavours</button><br>
+                        <button class="nav-button" type="button" onclick="window.location.href='blog.html'">Blog</button>
+                    </div>
 
-                <!--Logo and theme button-->
-                <img id="logo" class="light-image" src="../static/img/logo.png" onclick="window.location.href='home.html'">
-                <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
-                    <img id="theme-image" class="dark-image" src="../static/img/sun.png" alt="A sun icon.">
-                </button>
-            </nav>
-        </header>
-    <body>
-        <div class="text-row">
-            <div class="text-column left-column">
-                <h2><a id="#welcome" href="#welcome">Welcome</a></h2>
-                <p>
-                    Welcome my website! Here you'll find information about me, links to and embeds of
-                    various things I'm doing across the internet, and whatever other things pop in to
-                    my mind that I want to include here.
-                    <br><br>
-                    Web design isn't my strong suit, so if this website looks or functions a bit wierd
-                    in places, don't judge me too harshly. You can always use the contact link in the
-                    footer to e-mail me about it, and I'll do my best to fix it.
-                    <br><br>
-                    Bear in mind, also, that this site is still a work in progress. Some sections have
-                    barely any content, others perhaps a tad too much. I'm working to iron out the cinks
-                    and add more sections. I have a gallery page planned, as well as perhaps some more
-                    in-depth details of some of my most active accounts.
-                    <br><br>
-                    I've also got some backend plans in the works, such as moving some of the currently
-                    externally-hosted images to by internally-hosted, and moving over the scripts from
-                    JavaScript to TypeScript - for which I'll first need to learn TypeScript, of course!
-                </p>
-            </div>
-            <div class="text-column">
-                <h2><a id="#about-me" href="#about-me">About Me</a></h2>
-                <p>
-                    I am Murdo Maclachlan. I'm an 18-year-old Scottish aspiring author and poet,
-                    currently studying for a Bachelor's degree in software engineering.
-                    <br><br>
-                    Despite my degree of choice, I intend to do everything I can to avoid working in
-                    computing. I have a great love of fantasy and science fiction and it's been my goal
-                    to write both professionally for over 7 years now. More detail on this matter can be
-                    found
-                    <a href="endeavours.html#writing">here</a>.
-                    <br><br>
-                    There's probably stuff that can be said about me, but I've never been great, or even
-                    remotely good, at talking about myself, so I'll leave it instead at the fact that
-                    I've been described as Scottish Chewbacca. This was the best unintentional compliment
-                    I've ever received and remains the crowning moment of my life thus far.
-                    <br><br>
-                    Oh, one more thing! I can't of course be spoken about without mention of my wonderful
-                    cat, Curl. I intend to add a gallery page to this site at some point, which will most
-                    likely almost entirely consist of pictures of him.
-                </p>
+                    <!--Logo and theme button-->
+                    <imgselected
+                        id="logo"
+                        class="light-image"
+                        src="../static/img/logo.png"
+                        onclick="window.location.href='home.html'"
+                    >
+                    <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
+                        <img
+                            id="theme-image"
+                            class="dark-image"
+                            src="../static/img/sun.png"
+                            alt="A sun icon."
+                        >
+                    </button>
+                </nav>
+            </header>
+        </div>
+        <div id="body-container">
+            <div class="text-row">
+                <div class="text-column left-column">
+                    <h2><a id="#welcome" href="#welcome">Welcome</a></h2>
+                    <p>
+                        Welcome my website! Here you'll find information about me, links to and embeds of
+                        various things I'm doing across the internet, and whatever other things pop in to
+                        my mind that I want to include here.
+                        <br><br>
+                        Web design isn't my strong suit, so if this website looks or functions a bit wierd
+                        in places, don't judge me too harshly. You can always use the contact link in the
+                        footer to e-mail me about it, and I'll do my best to fix it.
+                        <br><br>
+                        Bear in mind, also, that this site is still a work in progress. Some sections have
+                        barely any content, others perhaps a tad too much. I'm working to iron out the cinks
+                        and add more sections. I have a gallery page planned, as well as perhaps some more
+                        in-depth details of some of my most active accounts.
+                        <br><br>
+                        I've also got some backend plans in the works, such as moving some of the currently
+                        externally-hosted images to by internally-hosted, and moving over the scripts from
+                        JavaScript to TypeScript - for which I'll first need to learn TypeScript, of course!
+                    </p>
+                </div>
+                <div class="text-column">
+                    <h2><a id="#about-me" href="#about-me">About Me</a></h2>
+                    <p>
+                        I am Murdo Maclachlan. I'm an 18-year-old Scottish aspiring author and poet,
+                        currently studying for a Bachelor's degree in software engineering.
+                        <br><br>
+                        Despite my degree of choice, I intend to do everything I can to avoid working in
+                        computing. I have a great love of fantasy and science fiction and it's been my goal
+                        to write both professionally for over 7 years now. More detail on this matter can be
+                        found
+                        <a href="endeavours.html#writing">here</a>.
+                        <br><br>
+                        There's probably stuff that can be said about me, but I've never been great, or even
+                        remotely good, at talking about myself, so I'll leave it instead at the fact that
+                        I've been described as Scottish Chewbacca. This was the best unintentional compliment
+                        I've ever received and remains the crowning moment of my life thus far.
+                        <br><br>
+                        Oh, one more thing! I can't of course be spoken about without mention of my wonderful
+                        cat, Curl. I intend to add a gallery page to this site at some point, which will most
+                        likely almost entirely consist of pictures of him.
+                    </p>
+                </div>
             </div>
         </div>
+        <div id="footer-container">
+            <footer>
+                <section class="footer-contents">
+                    <p id="footer-left">
+                        This website uses cookies to remember the selected theme.
+                        <br>
+                        Cookies last 24 hours and are only set after changing the theme.
+                    </p>
+                    <p id="footer-right">
+                        Murdo Maclachlan, © 2021-present
+                        <br>
+                        Detailed licensing available at source.
+                    </p>
+                </section>
+                <section class="footer-links">
+                    <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> |
+                    <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
+                </section>
+            </footer>
+        </div>
     </body>
-        <footer class="absolute">
-            <section class="footer-contents">
-                <p id="footer-left">
-                    This website uses cookies to remember the selected theme.
-                    <br>
-                    Cookies last 24 hours and are only set after changing theme.
-                </p>
-                <p id="footer-right">
-                    Murdo Maclachlan, © 2021-present
-                    <br>
-                    Detailed licensing available at source.
-                </p>
-            </section>
-            <section class="footer-links">
-                <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> | <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
-            </section>
-        </footer>
 </html>
