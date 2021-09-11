@@ -1,14 +1,31 @@
 /* MAIN STRUCTURE */
-html {
-    margin-left: 18%; margin-right: 18%;
-    font-family: sans-serif;
-    font-size: 15px;
-    text-align: justify;
-}
+body, html { height: 100%; }
 body {
     height: 100%;
-    /*margin-bottom: 12px;*/
+    display: flex;
+    flex-flow: column;
+    max-width: 1230px;
+    margin: auto;
+    padding: 10px;
 }
+#body-container, #footer-container { max-width: 1230px; }
+footer { padding-bottom: 8px; }
+#body-container {
+    flex-grow: 1;
+    width: 100%;
+}
+.footer-contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -0.5%;
+}
+#footer-left, #footer-right { flex: 50%; }
+#footer-left { text-align: left; }
+#footer-right { text-align: right; }
 .text-column {
     display: flex;
     flex-direction: column;
@@ -37,11 +54,9 @@ header { margin-bottom: -50px; }
     #logo { visibility: hidden; }
 }
 #theme-button {
-    position: absolute;
-    top: 0px;
-    right: 18%;
+    float: right;
+    margin-top: -97px;
     width: 40px;
-    margin: 8px;
 }
 #theme-image {
     width: 40px;
@@ -52,30 +67,14 @@ header { margin-bottom: -50px; }
     margin-bottom: -5px;
 }
 
-/* FOOTER */
+/* FONTS */
+html {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
 footer { font-size: 12px; }
-footer.absolute {
-    position: absolute;
-    bottom: 0;
-    left: 18%;
-    width: 63.85%;
-}
-footer.relative {
-    position: relative;
-    width: 100%;
-}
-.footer-contents {
-    display: flex;
-    flex-wrap: wrap;
-}
-.footer-links {
-    text-align: center;
-    margin-bottom: 1.5%;
-    margin-top: -0.5%;
-}
-#footer-left, #footer-right { flex: 50%; }
-#footer-left { text-align: left; }
-#footer-right { text-align: right; }
+.large-heading { font-size: 24px; }
 
 /* NAVIGATION */
 nav { text-decoration: none; }
@@ -103,7 +102,6 @@ ul { margin-top: -1%; margin-bottom: 0%; }
     margin-right: auto;
     display: block;
 }
-.large-heading { font-size: 24px; }
 .preview-container p, .preview-container img { margin-top: -1%; }
 .preview-image { border: 2px ridge; }
 .external-favicon { height: 18px; }
