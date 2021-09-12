@@ -1,28 +1,46 @@
 "use strict";
 
+const DAY_SECONDS = 86400000
 var theme = fetchCookie("murdo_maclachlan_theme");
+var themeSheet = document.getElementById("theme");
 
 if (theme != null) {
-    document.getElementById("theme").href = parse('../static/css/themes/theme_%s.css', theme);
+    themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
 } else {  // when theme not set, default to dark
     ;
 }
 
 // Swap the theme (dark/light) based on the value currently held in "theme" variable
+// The default theme is dark, so a null value is treated the same as dark.
 function changeTheme() {
-    if (theme == "dark" || theme == null) {  // null indicates no cookie, thus the default dark theme will be in place
-        document.getElementById("theme").href = "../static/css/themes/theme_light.css";
+
+    // Toggle theme and update stylesheet link on the page
+    if (theme == "dark" || theme == null) {
         theme = "light";
     } else {
-        document.getElementById("theme").href = "../static/css/themes/theme_dark.css";
         theme = "dark";
     }
+    themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
+
+    // Set the cookie to expire in one day
     let expiryDate = new Date();
-    expiryDate.setTime(expiryDate.getTime() + 86400000);  // expires in 1 day
+    expiryDate.setTime(expiryDate.getTime() + DAY_SECONDS);
     setCookie("murdo_maclachlan_theme", theme, expiryDate);
 }
 
 // COOKIE HANDLING
+
+// Fetch a cookie and parse information
+function fetchCookie(name) {
+    let cookie = document.cookie.split(";");
+    for (var i = 0; i < cookie.length; i++) {
+        let cookieElements = cookie[i].split("=");
+        if (cookieElements[0] === encodeURIComponent(name)) {
+            return decodeURIComponent(cookieElements[1]);
+        }
+    }
+    return null;
+}
 
 // Set a cookie with a value and expiry date
 function setCookie(name, value, expiryDate) {
@@ -35,22 +53,10 @@ function setCookie(name, value, expiryDate) {
                       "SameSite=Strict;";          // Disallow cookie request from third party sites
 }
 
-// Fetch a cookie and parse information
-function fetchCookie(name) {
-    let cookie = document.cookie.split(";");  // get array of all cookies associated with the website
-    for (var i = 0; i < cookie.length; i++) {
-        let cookieElements = cookie[i].split("=");  // parse elements of each cookie into an array
-        if (cookieElements[0] === encodeURIComponent(name)) {
-            return decodeURIComponent(cookieElements[1]);  // if the cookie name matches the one being searched for, decode its value
-        }
-    }
-    return null;  // if no matching cookie is found, return null
-}
-
-
 // MISCELLANEOUS
 
-function parse(str) {
-    var args = [].slice.call(arguments, 1), i = 0;
-    return str.replace(/%s/g, () => args[i++]);
+// Parse an array of variables into a string
+function parse(str, targets) {
+    var i = 0;
+    return str.replace(/%v/g, () => targets[i++]);
 }
