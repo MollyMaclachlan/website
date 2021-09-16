@@ -2,44 +2,24 @@
 
 <html lang="en">
     <head>
-        <!--Meta elements-->
+        <!-- Meta elements -->
         <meta charset="utf-8">
+        <meta name="author" content="Murdo B. Maclachlan">
+        <meta
+          name="description"
+          content="The home page of Murdo Maclachlan."
+        >
         <title>Murdo Maclachlan | Home</title>
+
+        <!-- Styling -->
         <link id="structure" rel="stylesheet" href="../static/css/universal.css">
         <link id="theme" rel="stylesheet" href="../static/css/themes/theme_dark.css">
-        <link class="additional" rel="stylesheet" href="../static/css/empty.css">
+        <link rel="stylesheet" href="../static/css/extensions/empty.css">
         <link rel="icon" type="image/png" href="../static/img/favicons/main.png">
-        <script src="../scripts/js/themes.js"></script>
     </head>
     <body class="empty">
         <div id="header-container">
-            <header>
-                <nav>
-                    <!--Navigation buttons-->
-                    <div id="nav-container">
-                        <button class="nav-button selected" type="button" onclick="window.location.href='home.html'">Home</button><br>
-                        <button class="nav-button" type="button" onclick="window.location.href='accounts.html'">Accounts</button><br>
-                        <button class="nav-button" type="button" onclick="window.location.href='endeavours.html'">Endeavours</button><br>
-                        <button class="nav-button" type="button" onclick="window.location.href='blog.html'">Blog</button>
-                    </div>
-
-                    <!--Logo and theme button-->
-                    <img
-                        id="logo"
-                        class="light-image"
-                        src="../static/img/logo.png"
-                        onclick="window.location.href='home.html'"
-                    >
-                    <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
-                        <img
-                            id="theme-image"
-                            class="dark-image"
-                            src="../static/img/sun.png"
-                            alt="A sun icon."
-                        >
-                    </button>
-                </nav>
-            </header>
+            <!-- Header will be inserted here -->
         </div>
         <div id="body-container">
             <div class="text-row">
@@ -61,6 +41,7 @@
                         <br><br>
                         I've also got some backend plans in the works, such as improving the organisation
                         of the CSS folder.
+                        <br><br>
                     </p>
                 </div>
                 <div class="text-column">
@@ -88,24 +69,12 @@
             </div>
         </div>
         <div id="footer-container">
-            <footer>
-                <section class="footer-contents">
-                    <p id="footer-left">
-                        This website uses cookies to remember the selected theme.
-                        <br>
-                        Cookies last 24 hours and are only set after changing the theme.
-                    </p>
-                    <p id="footer-right">
-                        Murdo Maclachlan, © 2021-present
-                        <br>
-                        Detailed licensing available at source.
-                    </p>
-                </section>
-                <section class="footer-links">
-                    <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> |
-                    <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
-                </section>
-            </footer>
+            <!-- Footer will be inserted here -->
         </div>
     </body>
+
+    <!-- Scripts -->
+    <script src="../scripts/js/construct.js"></script>
+    <script src="../scripts/js/themes.js"></script>
+
 </html>
