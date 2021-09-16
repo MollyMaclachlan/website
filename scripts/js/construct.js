@@ -18,6 +18,7 @@ var snippets = {
             class="light-image"
             src="../static/img/logo.png"
             onclick="window.location.href='home.html'"
+            alt="Stylised italic text reading 'Murdo Maclachlan'."
         >
         <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
             <img
@@ -38,14 +39,15 @@ var snippets = {
                 Cookies last 24 hours and are only set after changing the theme.
             </p>
             <p id="footer-right">
-                Murdo Maclachlan, © 2021-present
+                <b>murdomaclachlan.github.io</b>
                 <br>
-                Detailed licensing available at source.
+                © 2021 Murdo Maclachlan
             </p>
         </section>
         <section class="footer-links">
             <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> |
-            <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
+            <a href="https://github.com/MurdoMaclachlan/website">Website Source</a> |
+            <a href="legal.html">Terms & Privacy</a>
         </section>
     </footer>`
 }
