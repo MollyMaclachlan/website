@@ -2,43 +2,23 @@
 
 <html lang="en">
     <head>
-        <!--Meta elements-->
+        <!-- Meta elements -->
         <meta charset="utf-8">
+        <meta name="author" content="Murdo B. Maclachlan">
+        <meta
+          name="description"
+          content="The home page of Murdo Maclachlan."
+        >
         <title>Murdo Maclachlan | Accounts</title>
+
+        <!-- Styling -->
         <link id="structure" rel="stylesheet" href="../static/css/universal.css">
         <link id="theme" rel="stylesheet" href="../static/css/themes/theme_dark.css">
-        <link rel="icon" type="image/png" href="../static/img/favicons/main.png">
-        <script src="../scripts/js/themes.js"></script>
+        <link id="favicon" rel="icon" type="image/png" href="../static/img/favicons/main.png">
     </head>
     <body>
         <div id="header-container">
-            <header>
-                <nav>
-                    <!--Navigation buttons-->
-                    <div id="nav-container">
-                        <button class="nav-button" type="button" onclick="window.location.href='home.html'">Home</button><br>
-                        <button class="nav-button selected" type="button" onclick="window.location.href='accounts.html'">Accounts</button><br>
-                        <button class="nav-button" type="button" onclick="window.location.href='endeavours.html'">Endeavours</button><br>
-                        <button class="nav-button" type="button" onclick="window.location.href='blog.html'">Blog</button>
-                    </div>
-
-                    <!--Logo and theme button-->
-                    <img
-                        id="logo"
-                        class="light-image"
-                        src="../static/img/logo.png"
-                        onclick="window.location.href='home.html'"
-                    >
-                    <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
-                        <img
-                            id="theme-image"
-                            class="dark-image"
-                            src="../static/img/sun.png"
-                            alt="A sun icon."
-                        >
-                    </button>
-                </nav>
-            </header>
+            <!-- Header will be inserted here -->
         </div>
         <div id="body-container">
             <div class="text-row">
@@ -59,22 +39,25 @@
 
             <div class="text-row">
                 <div class="text-column left-column">
-                    <h2>
-                        <a href="#allpoetry">
-                        <img
-                            class="external-favicon dark-image"
-                            src="../static/img/favicons/external/allpoetry.png"
-                            alt="The AllPoetry logo; a silhouette of a crow."
-                        >
-                        AllPoetry</a>
-                    </h2>
+                        <h2>
+                            <a href="#allpoetry" class="collapsable-header">
+                            <img
+                                class="external-favicon dark-image"
+                                src="../static/img/favicons/external/allpoetry.png"
+                                alt="The AllPoetry logo; a silhouette of a crow."
+                            >
+                            AllPoetry</a>
+                        </h2>
                     <p>
                         I'm on AllPoetry, a large poetry-sharing website, as
                         <a href="https://allpoetry.com/Murdo_Maclachlan">Murdo Maclachlan</a>.
+                        I joined the site on the 1st of October, 2018, and have been active
+                        intermittently ever since.
                         <br><br>
-                        This is one of my least active "officially" active accounts at the moment,
-                        as I'm focusing much more on prose writing than poetry. I still come back
-                        and write a poem every now and then though.
+                        This is one of my less active "officially" active accounts at the moment,
+                        as although I love poetry and this website with all my heart, I'm focusing
+                        much more on prose writing than poetry. I still come back and write a poem
+                        or two every now and then, though.
                     </p>
                 </div>
                 <div class="text-column left-column">
@@ -89,7 +72,7 @@
                         DeviantArt</a>
                     </h2>
                     <p>
-                        Another very inactive "active" account, I joined DeviantArt several years
+                        One of the most inactive of my "active" accounts, I joined DeviantArt several years
                         ago, as <a href="https://www.deviantart.com/mbmaclachlan">MBMaclachlan</a>,
                         but have only uploaded a few sketches, none of which are very good.
                         <br>
@@ -127,6 +110,10 @@
                         is <a href="https://discord.com/users/234960566278553600">Murdo#0949</a>,
                         but be warned that I don't generally accept friend requests from people
                         I haven't already got to know.
+                        <br><br>
+                        Discord is not the place to message me if you are looking to contact
+                        about something. For that, use the contact link in the footer of this
+                        website.
                     </p>
                 </div>
             </div>
@@ -417,24 +404,11 @@
             </div>
         </div>
         <div id="footer-container">
-            <footer>
-                <section class="footer-contents">
-                    <p id="footer-left">
-                        This website uses cookies to remember the selected theme.
-                        <br>
-                        Cookies last 24 hours and are only set after changing the theme.
-                    </p>
-                    <p id="footer-right">
-                        Murdo Maclachlan, © 2021-present
-                        <br>
-                        Detailed licensing available at source.
-                    </p>
-                </section>
-                <section class="footer-links">
-                    <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> |
-                    <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
-                </section>
-            </footer>
+            <!-- Footer will be inserted here -->
         </div>
     </body>
+
+    <!-- Scripts (secondary scripts inserted during constructor runtime) -->
+    <script id="constructor" src="../scripts/js/constructor.js"></script>
+
 </html>
