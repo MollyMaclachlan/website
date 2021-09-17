@@ -19,7 +19,7 @@ var footerSnippets = {
 if (currentDate.getMonth() == 3 && currentDate.getDate() == 6 ) {
     favicon.href = "../static/img/favicons/ace.png";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.ace);
-} else if (currentDate.getMonth() == 8 ) {
+} else if (currentDate.getMonth() == 5 ) {
     favicon.href = "../static/img/favicons/lgbt.png";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.pride);
 } else if (currentDate.getMonth() == 9 && currentDate.getDate() == 31 ) {
