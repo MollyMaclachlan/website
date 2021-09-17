@@ -1,4 +1,4 @@
-var snippets = {
+var structures = {
     "header":
     `<header>
 
@@ -34,9 +34,7 @@ var snippets = {
     `<footer>
         <section class="footer-contents">
             <p id="footer-left">
-                This website uses cookies to remember the selected theme.
-                <br>
-                Cookies last 24 hours and are only set after changing the theme.
+                <!-- There will be randomly inserted text here -->
             </p>
             <p id="footer-right">
                 <b>murdomaclachlan.github.io</b>
@@ -51,16 +49,24 @@ var snippets = {
         </section>
     </footer>`
 }
+var secondaryScripts =
+    `<script src="../scripts/js/themes.js"></script>
+    <script src="../scripts/js/favicons.js"></script>`;
 
 construct();
 
-// Constructs the universal elements of the page, inserting HTML snippets
-// and processing various other necessary functions
+// Constructs the universal elements of the page
 function construct() {
-    for ([name, content] of Object.entries(snippets)) {
-        insertSnippet('afterbegin', name + "-container", content)
+    // Insert header and footer
+    for ([name, content] of Object.entries(structures)) {
+        insertSnippet("beforeend", name + "-container", content)
     }
+
+    // Style nav buttons as needed
     processSelectedButton();
+
+    // Insert other universal scripts
+    insertSnippet("afterend", "constructor", secondaryScripts)
 }
 
 // Inserts an HTML snippet at a given position relative to a unique element
