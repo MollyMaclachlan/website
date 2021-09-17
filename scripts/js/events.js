@@ -17,12 +17,12 @@ var footerSnippets = {
 }
 
 if (currentDate.getMonth() == 3 && currentDate.getDate() == 6 ) {
-    favicon.href = "../static/img/favicons/ace.png";
+    favicon.href = "../static/img/favicons/events/ace.png";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.ace);
 } else if (currentDate.getMonth() == 5 ) {
-    favicon.href = "../static/img/favicons/lgbt.png";
+    favicon.href = "../static/img/favicons/events/lgbt.png";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.pride);
 } else if (currentDate.getMonth() == 9 && currentDate.getDate() == 31 ) {
-    favicon.href = "../static/img/favicons/halloween.png";
+    favicon.href = "../static/img/favicons/events/halloween.png";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.halloween);
 }
