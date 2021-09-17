@@ -14,7 +14,7 @@
         <!-- Styling -->
         <link id="structure" rel="stylesheet" href="../static/css/universal.css">
         <link id="theme" rel="stylesheet" href="../static/css/themes/theme_dark.css">
-        <link rel="icon" type="image/png" href="../static/img/favicons/main.png">
+        <link id="favicon" rel="icon" type="image/png" href="../static/img/favicons/main.png">
     </head>
     <body>
         <div id="header-container">
@@ -408,8 +408,7 @@
         </div>
     </body>
 
-    <!-- Scripts -->
-    <script src="../scripts/js/construct.js"></script>
-    <script src="../scripts/js/themes.js"></script>
+    <!-- Scripts (secondary scripts inserted during constructor runtime) -->
+    <script id="constructor" src="../scripts/js/constructor.js"></script>
 
 </html>
