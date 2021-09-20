@@ -49,9 +49,10 @@ var structures = {
         </section>
     </footer>`
 }
-var secondaryScripts =
-    `<script src="../scripts/js/themes.js"></script>
-    <script src="../scripts/js/events.js"></script>`;
+var secondaryScripts = [
+    "../scripts/js/themes.js",
+    "../scripts/js/events.js"
+];
 
 construct();
 
@@ -66,13 +67,23 @@ function construct() {
     processSelectedButton();
 
     // Insert other universal scripts
-    insertSnippet("afterend", "constructor", secondaryScripts)
+    for (let i = 0; i < secondaryScripts.length; i++) {
+        insertScript(secondaryScripts[i])
+    }
 }
 
 // Inserts an HTML snippet at a given position relative to a unique element
 function insertSnippet(position, id, snippet) {
     let element = document.getElementById(id);
     element.insertAdjacentHTML(position, snippet);
+}
+
+// Inserts a script tag at the given location
+function insertScript(source) {
+    let script = document.createElement('script');
+    let location = document.getElementById('scripts');
+    script.src = source;
+    location.appendChild(script);
 }
 
 // Marks one of the nav buttons as selected if the page is a primary one
