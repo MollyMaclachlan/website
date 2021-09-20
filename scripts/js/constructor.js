@@ -51,7 +51,7 @@ var structures = {
 }
 var secondaryScripts =
     `<script src="../scripts/js/themes.js"></script>
-    <script src="../scripts/js/favicons.js"></script>`;
+    <script src="../scripts/js/events.js"></script>`;
 
 construct();
 
