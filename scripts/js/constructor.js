@@ -34,7 +34,7 @@ var structures = {
     `<footer>
         <section class="footer-contents">
             <p id="footer-left">
-                <!-- There will be randomly inserted text here -->
+                <!-- There will be different text inserted here depending on the date -->
             </p>
             <p id="footer-right">
                 <b>murdomaclachlan.github.io</b>
@@ -44,8 +44,9 @@ var structures = {
         </section>
         <section class="footer-links">
             <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> |
-            <a href="https://github.com/MurdoMaclachlan/website">Website Source</a> |
-            <a href="legal.html">Terms & Privacy</a>
+            <a href="https://stats.uptimerobot.com/6MYLZHPP1V">Status</a> |
+            <a href="legal.html">Terms & Privacy</a> |
+            <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
         </section>
     </footer>`
 }
