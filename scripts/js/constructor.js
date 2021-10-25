@@ -17,7 +17,7 @@ var structures = {
             id="logo"
             class="light-image"
             src="../static/img/logo.png"
-            onclick="window.location.href='home.html'"
+            onclick="window.location.href='home'"
             alt="Stylised italic text reading 'Murdo Maclachlan'."
         >
         <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
