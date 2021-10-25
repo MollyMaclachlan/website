@@ -5,10 +5,10 @@ var structures = {
         <!-- Navigation buttons -->
         <nav>
             <div id="nav-container">
-                <button id="home-button" class="nav-button" type="button" onclick="window.location.href='home.html'">Home</button><br>
-                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='accounts.html'">Accounts</button><br>
-                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='endeavours.html'">Endeavours</button><br>
-                <button id="blog-button" class="nav-button" type="button" onclick="window.location.href='blog.html'">Blog</button>
+                <button id="home-button" class="nav-button" type="button" onclick="window.location.href='home'">Home</button><br>
+                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='accounts'">Accounts</button><br>
+                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='endeavours'">Endeavours</button><br>
+                <button id="blog-button" class="nav-button" type="button" onclick="window.location.href='blog'">Blog</button>
             </div>
         </nav>
 
@@ -43,9 +43,10 @@ var structures = {
             </p>
         </section>
         <section class="footer-links">
-            <a href="mailto:murdo@maclachlans.org.uk">Contact Me</a> |
+            <a href="mailto:murdomaclachlan@duck.com">Contact Me</a> |
+            <a href="https://ko-fi.com/murdomaclachlan">Donate</a> |
             <a href="https://stats.uptimerobot.com/6MYLZHPP1V">Status</a> |
-            <a href="legal.html">Terms & Privacy</a> |
+            <a href="legal">Terms & Privacy</a> |
             <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
         </section>
     </footer>`
@@ -61,15 +62,15 @@ construct();
 function construct() {
     // Insert header and footer
     for ([name, content] of Object.entries(structures)) {
-        insertSnippet("beforeend", name + "-container", content)
+        insertSnippet("beforeend", name + "-container", content);
     }
 
     // Style nav buttons as needed
     processSelectedButton();
 
     // Insert other universal scripts
-    for (let i = 0; i < secondaryScripts.length; i++) {
-        insertScript(secondaryScripts[i])
+    for (let i = secondaryScripts.length-1; i >= 0; i--) {
+        insertScript(secondaryScripts[i]);
     }
 }
 
