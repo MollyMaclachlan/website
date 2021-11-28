@@ -3,6 +3,7 @@
 const DAY_SECONDS = 86400000
 var theme = fetchCookie("murdo_maclachlan_theme");
 var themeSheet = document.getElementById("theme");
+var pronounsImg = document.getElementById("pronouns-img");
 
 if (theme != null) {
     themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
@@ -15,12 +16,15 @@ if (theme != null) {
 function changeTheme() {
 
     // Toggle theme and update stylesheet link on the page
-    if (theme == "dark" || theme == null) {
+    if (["dark", null].includes(theme)) {
         theme = "light";
     } else {
         theme = "dark";
     }
     themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
+    if (pronounsImg != null) {
+        pronounsImg.src = parse("../static/img/banners/pronouns_%v_theme.png", [theme]);
+    }
 
     // Set the cookie to expire in one day
     let expiryDate = new Date();
@@ -33,7 +37,7 @@ function changeTheme() {
 // Fetch a cookie and parse information
 function fetchCookie(name) {
     let cookie = document.cookie.split(";");
-    for (var i = 0; i < cookie.length; i++) {
+    for (var i = cookie.length-1; i >= 0; i--) {
         let cookieElements = cookie[i].split("=");
         if (cookieElements[0] === encodeURIComponent(name)) {
             return decodeURIComponent(cookieElements[1]);
