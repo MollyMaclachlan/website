@@ -27,6 +27,6 @@ if (currentDate.getMonth() == 3 && currentDate.getDate() == 6 ) {
 } else if (currentDate.getMonth() == 9 && currentDate.getDate() == 31 ) {
     favicon.href = "../static/img/favicons/events/halloween.png";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.halloween);
-} else if (currentDate.getMonth() == 11 && currentDate.getDate() == 24 ) {
+} else if (currentDate.getMonth() == 10 && currentDate.getDate() == 24 ) {
     footerText.insertAdjacentHTML('beforeend', footerSnippets.birthday);
 }
