@@ -8,7 +8,7 @@ var structures = {
                 <button id="home-button" class="nav-button" type="button" onclick="window.location.href='home'">Home</button><br>
                 <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='accounts'">Accounts</button><br>
                 <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='endeavours'">Endeavours</button><br>
-                <button id="blog-button" class="nav-button" type="button" onclick="window.location.href='blog'">Blog</button>
+                <button id="blog-button" class="nav-button" type="button" onclick="window.location.href='https://wordsmith.social/murdomaclachlan/'">Blog</button>
             </div>
         </nav>
 
