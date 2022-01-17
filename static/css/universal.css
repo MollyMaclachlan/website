@@ -44,19 +44,26 @@ footer { padding-bottom: 8px; }
 /* HEADER */
 header { margin-bottom: -50px; }
 #logo {
-    position: relative;
-    top: -100px;
-    left: 100px;
+    float: left;
+    margin-left: 105px;
+    margin-top: -105px;
     width: 400px;
     height: auto;
 }
-@media(max-width:785px) {
+@media(max-width:575px) {
     #logo { visibility: hidden; }
 }
 #theme-button {
     float: right;
     margin-top: -97px;
     width: 40px;
+    height: 40px;
+}
+#font-button {
+    float: right;
+    margin-top: -57px;
+    width: 40px;
+    height: 40px;
 }
 #theme-image {
     width: 40px;
@@ -64,17 +71,16 @@ header { margin-bottom: -50px; }
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -5px;
-    margin-bottom: -5px;
+    margin-bottom: -6px;
 }
-
-/* FONTS */
-html {
-    font-family: sans-serif;
-    font-size: 15px;
-    text-align: justify;
+#font-image {
+    width: 30px;
+    height: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -5px;
+    margin-bottom: -8px;
 }
-footer { font-size: 12px; }
-.large-heading { font-size: 24px; }
 
 /* NAVIGATION */
 nav { text-decoration: none; }
