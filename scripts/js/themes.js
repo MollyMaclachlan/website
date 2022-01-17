@@ -1,18 +1,17 @@
 "use strict";
 
 const DAY_SECONDS = 86400000
-var font = fetchCookie("murdo_maclachlan_font");
-var theme = fetchCookie("murdo_maclachlan_theme");
+
+var font = fetchCookie("font");
 var fontSheet = document.getElementById("font");
+var theme = fetchCookie("theme");
 var themeSheet = document.getElementById("theme");
 var pronounsImg = document.getElementById("pronouns-img");
 
-// Optimise this later
-if (font != null) {
-    fontSheet.href = parse("../static/css/themes/font_%v.css", [font]);
-}
-if (theme != null) {
-    themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
+for (var i of [["font", font, fontSheet], ["theme", theme, themeSheet]]) {
+    if (i[1] != null) {
+        i[2].href = parse("../static/css/themes/%v_%v.css", [i[0], i[1]]);
+    }
 }
 
 // Swap the theme (dark/light) based on the value currently held in "theme" variable
@@ -29,7 +28,7 @@ function changeTheme() {
         pronounsImg.src = parse("../static/img/banners/pronouns_%v_theme.png", [theme]);
     }
 
-    createCookie("murdo_maclachlan_theme", theme);
+    createCookie("theme", theme);
 }
 
 // Swap the theme (serif/sans) based on the value currently held in "font" variable
@@ -43,7 +42,7 @@ function changeFont() {
     }
     fontSheet.href = parse("../static/css/themes/font_%v.css", [font]);
 
-    createCookie("murdo_maclachlan_font", font);
+    createCookie("font", font);
 }
 
 // COOKIE HANDLING
@@ -58,9 +57,11 @@ function createCookie(name, value) {
 // Fetch a cookie and parse information
 function fetchCookie(name) {
     let cookie = document.cookie.split(";");
+    console.log(cookie);
     for (var i = cookie.length-1; i >= 0; i--) {
         let cookieElements = cookie[i].split("=");
-        if (cookieElements[0] === encodeURIComponent(name)) {
+        console.log(cookieElements)
+        if (cookieElements[0] === " " + name) {
             return decodeURIComponent(cookieElements[1]);
         }
     }
