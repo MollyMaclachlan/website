@@ -9,10 +9,10 @@ var pronounsImg = document.getElementById("pronouns-img");
 
 // Optimise this later
 if (font != null) {
-    fontSheet.href = parse("../static/css/themes/font_%v.css", font);
+    fontSheet.href = parse("../static/css/themes/font_%v.css", [font]);
 }
 if (theme != null) {
-    themeSheet.href = parse("../static/css/themes/theme_%v.css", theme);
+    themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
 }
 
 // Swap the theme (dark/light) based on the value currently held in "theme" variable
