@@ -1,20 +1,21 @@
 "use strict";
 
 const DAY_SECONDS = 86400000
+var font = fetchCookie("murdo_maclachlan_font");
 var theme = fetchCookie("murdo_maclachlan_theme");
+var fontSheet = document.getElementById("font");
 var themeSheet = document.getElementById("theme");
 var pronounsImg = document.getElementById("pronouns-img");
 
-if (theme != null) {
-    themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
-} else {  // when theme not set, default to dark
-    ;
+for (var i of [[font, fontSheet], [theme, themeSheet]]) {
+    if (i[0] != null) {
+        i[1].href = parse("../static/css/themes/theme_%v.css", [i[0]]);
+    }
 }
 
 // Swap the theme (dark/light) based on the value currently held in "theme" variable
 // The default theme is dark, so a null value is treated the same as dark.
 function changeTheme() {
-
     // Toggle theme and update stylesheet link on the page
     if (["dark", null].includes(theme)) {
         theme = "light";
@@ -26,13 +27,31 @@ function changeTheme() {
         pronounsImg.src = parse("../static/img/banners/pronouns_%v_theme.png", [theme]);
     }
 
-    // Set the cookie to expire in one day
-    let expiryDate = new Date();
-    expiryDate.setTime(expiryDate.getTime() + DAY_SECONDS);
-    setCookie("murdo_maclachlan_theme", theme, expiryDate);
+    createCookie("murdo_maclachlan_theme", theme);
+}
+
+// Swap the theme (serif/sans) based on the value currently held in "font" variable
+// The default font is serif, so a null value is treated the same as serif.
+function changeFont() {
+    // Toggle font and update stylesheet link on the page
+    if (["serif", null].includes(font)) {
+        font = "sans";
+    } else {
+        font = "serif";
+    }
+    fontSheet.href = parse("../static/css/themes/font_%v.css", [font]);
+
+    createCookie("murdo_maclachlan_font", font);
 }
 
 // COOKIE HANDLING
+
+function createCookie(name, value) {
+    // Set the cookie to expire in one day
+    let expiryDate = new Date();
+    expiryDate.setTime(expiryDate.getTime() + DAY_SECONDS);
+    setCookie(name, value, expiryDate);
+}
 
 // Fetch a cookie and parse information
 function fetchCookie(name) {
