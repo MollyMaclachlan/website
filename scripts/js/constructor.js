@@ -16,7 +16,7 @@ var structures = {
         <img
             id="logo"
             class="light-image"
-            src="../static/img/logo.png"
+            src="../static/img/logo.webp"
             onclick="window.location.href='home'"
             alt="Stylised italic text reading 'Murdo Maclachlan'."
         >
@@ -24,8 +24,16 @@ var structures = {
             <img
                 id="theme-image"
                 class="dark-image"
-                src="../static/img/sun.png"
+                src="../static/img/sun.webp"
                 alt="A sun icon."
+            >
+        </button>
+        <button id="font-button" title="Toggle font (uses cookies)" type="button" name="button" onclick="changeFont()">
+            <img
+                id="font-image"
+                class="dark-image"
+                src="../static/img/font.webp"
+                alt="A capital and a lower case letter A, side by side."
             >
         </button>
     </header>`,
@@ -39,7 +47,7 @@ var structures = {
             <p id="footer-right">
                 <b>murdomaclachlan.github.io</b>
                 <br>
-                © 2021 Murdo Maclachlan
+                © 2021 Murdo B. Maclachlan
             </p>
         </section>
         <section class="footer-links">
