@@ -7,10 +7,12 @@ var fontSheet = document.getElementById("font");
 var themeSheet = document.getElementById("theme");
 var pronounsImg = document.getElementById("pronouns-img");
 
-for (var i of [[font, fontSheet], [theme, themeSheet]]) {
-    if (i[0] != null) {
-        i[1].href = parse("../static/css/themes/theme_%v.css", [i[0]]);
-    }
+// Optimise this later
+if (font != null) {
+    fontSheet.href = parse("../static/css/themes/font_%v.css", font);
+}
+if (theme != null) {
+    themeSheet.href = parse("../static/css/themes/theme_%v.css", theme);
 }
 
 // Swap the theme (dark/light) based on the value currently held in "theme" variable
