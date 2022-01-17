@@ -1,0 +1,11 @@
+html {
+    font-family: 'LinuxLibertineORegular';
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    font-size: 21px;
+    text-align: justify;
+}
+footer { font-size: 15px; }
+.large-heading { font-size: 30px; }
