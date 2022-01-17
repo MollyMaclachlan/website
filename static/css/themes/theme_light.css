@@ -1,13 +1,13 @@
 /* MAIN COLOURATION*/
-html, button { color: black; background-color: white; }
+html, button { color: #000; background-color: #FFF; }
 h2:after {
     content: ' ';
     display: block;
-    border: 1px solid black;
+    border: 1px solid #000;
     width: inherit;
 }
-footer { color: #333333; }
-button { border-color: black; }
+footer { color: #333; }
+button { border-color: #000; }
 
 /* HEADER ELEMENTS */
 #logo {
@@ -19,9 +19,9 @@ button { border-color: black; }
 .selected { border-color: #7d6800; }
 
 /* MISCELLANEOUS */
-p a:hover, li a:hover { color: #444444; }
-.footer-links a:hover { color: #666666; }
-.preview-image { border-color: black; }
+p a:hover, li a:hover { color: #444; }
+.footer-links a:hover { color: #666; }
+.preview-image { border-color: #000; }
 .light-image {
     -webkit-filter: invert(100%);
     filter: invert(100%);
