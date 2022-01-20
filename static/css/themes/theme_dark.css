@@ -18,7 +18,12 @@ footer { color: #999; }
 .selected { border-color: gold; }
 
 /* MISCELLANEOUS */
-p a:hover, li a:hover { color: #AAA; }
+blockquote {
+    /* There must be a better way to do this */
+    background-image: linear-gradient(to right, #111, #111, #111, #111, #000);
+    border-color: #555;
+}
+p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #AAA; }
 .footer-links a:hover { color: #CCC; }
 .preview-image { border-color: #FFF; }
 .dark-image {
