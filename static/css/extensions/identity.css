@@ -1,8 +1,7 @@
 figcaption {
     width: 100%;
     text-align: center;
-    font-style: italic;
-    font-size: 12px;
+    font-size: 15px;
 }
 figcaption p { margin-top: 1; }
 a.caption-link { font-weight: bold !important; }
