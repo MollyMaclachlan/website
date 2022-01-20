@@ -19,7 +19,12 @@ button { border-color: #000; }
 .selected { border-color: #7d6800; }
 
 /* MISCELLANEOUS */
-p a:hover, li a:hover { color: #444; }
+blockquote {
+    /* There must be a better way to do this */
+    background-image: linear-gradient(to right, #EEE, #EEE, #EEE, #EEE, #FFF);
+    border-color: #BBB;
+}
+p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #444; }
 .footer-links a:hover { color: #666; }
 .preview-image { border-color: #000; }
 .light-image {
