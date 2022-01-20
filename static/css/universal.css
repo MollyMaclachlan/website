@@ -40,6 +40,14 @@ footer { padding-bottom: 8px; }
     width: 100%;
 }
 .text-column h2 { margin-bottom: -6px; }
+blockquote {
+    margin-top: -1px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    padding: 0.2em 10px;
+    border-left: 2px solid;
+}
+blockquote, p { white-space: pre-line; }
 
 /* HEADER */
 header { margin-bottom: -50px; }
@@ -95,8 +103,14 @@ a {
     text-decoration: none;
     color: inherit;
 }
-p a, li a { font-weight: bold; }
-p a:hover, li a:hover, .footer-links a { text-decoration: underline; }
+p a, li a, blockquote a, .hlink { font-weight: bold; }
+p a:hover, li a:hover, .footer-links a,
+blockquote a:hover, .hlink:hover { text-decoration: underline; }
+blockquote span.quote-title {
+    font-weight: bold;
+    text-decoration: underline;
+}
+blockquote br { margin-top: 0px; }
 
 /* MISCELLANEOUS */
 ul { margin-top: -1%; margin-bottom: 0%; }
