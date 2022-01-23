@@ -60,7 +60,7 @@ var structures = {
             <a href="https://ko-fi.com/murdomaclachlan">Donate</a> |
             <a href="https://stats.uptimerobot.com/6MYLZHPP1V">Status</a> |
             <a href="` + prefix + `legal">Terms & Privacy</a> |
-            <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
+            <a href="https://codeberg.org/MurdoMaclachlan/pages">Website Source</a>
         </section>
     </footer>`
 }
