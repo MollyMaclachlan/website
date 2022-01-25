@@ -31,7 +31,7 @@ function changeTheme() {
     }
     themeSheet.href = parse(prefix + "../static/css/themes/theme_%v.css", [theme]);
     if (pronounsImg != null) {
-        pronounsImg.src = parse(prefix + "../static/img/banners/pronouns_%v_theme.png", [theme]);
+        pronounsImg.src = parse(prefix + "../static/img/banners/pronouns_%v_theme.webp", [theme]);
     }
 
     createCookie("theme", theme);
@@ -86,6 +86,7 @@ function setCookie(name, value, expiryDate) {
 // MISCELLANEOUS
 
 // Parse an array of variables into a string
+// Taken from a StackOverflow answer, the link to which I've unfortunately lost.
 function parse(str, targets) {
     var i = 0;
     return str.replace(/%v/g, () => targets[i++]);
