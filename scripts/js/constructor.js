@@ -12,7 +12,7 @@ var structures = {
         <nav>
             <div id="nav-container">
                 <button id="home-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `home'">Home</button><br>
-                <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing'">Writing</button>
+                <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing.html'">Writing</button>
                 <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `endeavours'">Endeavours</button><br>
                 <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `accounts'">Accounts</button><br>
             </div>
@@ -51,8 +51,8 @@ var structures = {
                 <!-- There will be different text inserted here depending on the date -->
             </p>
             <p id="footer-right">
-                <b>murdomaclachlan.github.io</b>
-                © 2021-present, Murdo B. Maclachlan
+                © 2021-present,
+                <b>Murdo B. Maclachlan</b>
             </p>
         </section>
         <section class="footer-links">
@@ -89,7 +89,7 @@ function construct() {
     // Add the scripts for specific pages
     for (const page of ["poetry"]) {
         if (document.title.split(" | ")[1].toLowerCase() == page) {
-            insertScript(prefix + "../scripts/js/"+page+".js");
+            insertScript(prefix + "../scripts/js/" + page + ".js");
         }
     }
 }
