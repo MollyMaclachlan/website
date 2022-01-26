@@ -51,8 +51,8 @@ var structures = {
                 <!-- There will be different text inserted here depending on the date -->
             </p>
             <p id="footer-right">
-                © 2021-present,
-                <b>Murdo B. Maclachlan</b>
+                <b>` + window.location.href.split("//")[1].split("/")[0] + `</b>
+                © 2021-present, Murdo B. Maclachlan
             </p>
         </section>
         <section class="footer-links">
