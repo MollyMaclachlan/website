@@ -1,0 +1,13 @@
+#about-container {
+    margin-left: -17%;
+    margin-right: 22%;
+    margin-top: 5%;
+}
+#avatar {
+    border-radius: 50%;
+    margin-left: 24%;
+    width: 53%;
+    height: auto;
+    margin-top: 12%;
+    z-index: -1;
+}
