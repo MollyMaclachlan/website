@@ -19,13 +19,13 @@ var footerSnippets = {
 }
 
 if (currentDate.getMonth() == 3 && currentDate.getDate() == 6 ) {
-    favicon.href = "../static/img/favicons/events/ace.png";
+    favicon.href = "../static/img/favicons/events/ace.webp";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.ace);
 } else if (currentDate.getMonth() == 5 ) {
-    favicon.href = "../static/img/favicons/events/lgbt.png";
+    favicon.href = "../static/img/favicons/events/lgbt.webp";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.pride);
 } else if (currentDate.getMonth() == 9 && currentDate.getDate() == 31 ) {
-    favicon.href = "../static/img/favicons/events/halloween.png";
+    favicon.href = "../static/img/favicons/events/halloween.webp";
     footerText.insertAdjacentHTML('beforeend', footerSnippets.halloween);
 } else if (currentDate.getMonth() == 10 && currentDate.getDate() == 24 ) {
     footerText.insertAdjacentHTML('beforeend', footerSnippets.birthday);

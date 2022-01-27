@@ -1,5 +1,11 @@
 "use strict";
 
+try {
+    var prefix = document.getElementById('prefix').content;
+} catch (TypeError) {
+    var prefix = "";
+}
+
 const DAY_SECONDS = 86400000
 
 var font = fetchCookie("font");
@@ -10,7 +16,7 @@ var pronounsImg = document.getElementById("pronouns-img");
 
 for (var i of [["font", font, fontSheet], ["theme", theme, themeSheet]]) {
     if (i[1] != null) {
-        i[2].href = parse("../static/css/themes/%v_%v.css", [i[0], i[1]]);
+        i[2].href = parse(prefix + "../static/css/themes/%v_%v.css", [i[0], i[1]]);
     }
 }
 
@@ -23,9 +29,9 @@ function changeTheme() {
     } else {
         theme = "dark";
     }
-    themeSheet.href = parse("../static/css/themes/theme_%v.css", [theme]);
+    themeSheet.href = parse(prefix + "../static/css/themes/theme_%v.css", [theme]);
     if (pronounsImg != null) {
-        pronounsImg.src = parse("../static/img/banners/pronouns_%v_theme.png", [theme]);
+        pronounsImg.src = parse(prefix + "../static/img/banners/pronouns_%v_theme.webp", [theme]);
     }
 
     createCookie("theme", theme);
@@ -40,7 +46,7 @@ function changeFont() {
     } else {
         font = "serif";
     }
-    fontSheet.href = parse("../static/css/themes/font_%v.css", [font]);
+    fontSheet.href = parse(prefix + "../static/css/themes/font_%v.css", [font]);
 
     createCookie("font", font);
 }
@@ -56,12 +62,10 @@ function createCookie(name, value) {
 
 // Fetch a cookie and parse information
 function fetchCookie(name) {
-    let cookie = document.cookie.split(";");
-    console.log(cookie);
+    let cookie = document.cookie.split("; ");
     for (var i = cookie.length-1; i >= 0; i--) {
         let cookieElements = cookie[i].split("=");
-        console.log(cookieElements)
-        if (cookieElements[0] === " " + name) {
+        if (name === decodeURIComponent(cookieElements[0])) {
             return decodeURIComponent(cookieElements[1]);
         }
     }
@@ -82,6 +86,7 @@ function setCookie(name, value, expiryDate) {
 // MISCELLANEOUS
 
 // Parse an array of variables into a string
+// Taken from a StackOverflow answer, the link to which I've unfortunately lost.
 function parse(str, targets) {
     var i = 0;
     return str.replace(/%v/g, () => targets[i++]);

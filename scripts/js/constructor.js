@@ -1,3 +1,9 @@
+try {
+    var prefix = document.getElementById('prefix').content;
+} catch (TypeError) {
+    var prefix = "";
+}
+
 var structures = {
     "header":
     `<header>
@@ -5,10 +11,10 @@ var structures = {
         <!-- Navigation buttons -->
         <nav>
             <div id="nav-container">
-                <button id="home-button" class="nav-button" type="button" onclick="window.location.href='home'">Home</button><br>
-                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='accounts'">Accounts</button><br>
-                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='endeavours'">Endeavours</button><br>
-                <button id="blog-button" class="nav-button" type="button" onclick="window.location.href='https://wordsmith.social/murdomaclachlan/'">Blog</button>
+                <button id="home-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `home'">Home</button><br>
+                <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing.html'">Writing</button>
+                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `endeavours'">Endeavours</button><br>
+                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `accounts'">Accounts</button><br>
             </div>
         </nav>
 
@@ -16,7 +22,7 @@ var structures = {
         <img
             id="logo"
             class="light-image"
-            src="../static/img/logo.webp"
+            src="` + prefix + `../static/img/logo.webp"
             onclick="window.location.href='home'"
             alt="Stylised italic text reading 'Murdo Maclachlan'."
         >
@@ -24,7 +30,7 @@ var structures = {
             <img
                 id="theme-image"
                 class="dark-image"
-                src="../static/img/sun.webp"
+                src="` + prefix + `../static/img/sun.webp"
                 alt="A sun icon."
             >
         </button>
@@ -32,7 +38,7 @@ var structures = {
             <img
                 id="font-image"
                 class="dark-image"
-                src="../static/img/font.webp"
+                src="` + prefix + `../static/img/font.webp"
                 alt="A capital and a lower case letter A, side by side."
             >
         </button>
@@ -45,23 +51,22 @@ var structures = {
                 <!-- There will be different text inserted here depending on the date -->
             </p>
             <p id="footer-right">
-                <b>murdomaclachlan.github.io</b>
-                <br>
-                © 2021 Murdo B. Maclachlan
+                <b>` + window.location.href.split("//")[1].split("/")[0] + `</b>
+                © 2021-present, Murdo B. Maclachlan
             </p>
         </section>
         <section class="footer-links">
             <a href="mailto:murdomaclachlan@duck.com">Contact Me</a> |
             <a href="https://ko-fi.com/murdomaclachlan">Donate</a> |
             <a href="https://stats.uptimerobot.com/6MYLZHPP1V">Status</a> |
-            <a href="legal">Terms & Privacy</a> |
-            <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
+            <a href="` + prefix + `legal">Terms & Privacy</a> |
+            <a href="https://codeberg.org/MurdoMaclachlan/pages">Website Source</a>
         </section>
     </footer>`
 }
 var secondaryScripts = [
-    "../scripts/js/themes.js",
-    "../scripts/js/events.js"
+    prefix + "../scripts/js/themes.js",
+    prefix + "../scripts/js/events.js"
 ];
 
 construct();
@@ -79,6 +84,13 @@ function construct() {
     // Insert other universal scripts
     for (let i = secondaryScripts.length-1; i >= 0; i--) {
         insertScript(secondaryScripts[i]);
+    }
+
+    // Add the scripts for specific pages
+    for (const page of ["poetry"]) {
+        if (document.title.split(" | ")[1].toLowerCase() == page) {
+            insertScript(prefix + "../scripts/js/" + page + ".js");
+        }
     }
 }
 
@@ -99,7 +111,7 @@ function insertScript(source) {
 // Marks one of the nav buttons as selected if the page is a primary one
 function processSelectedButton() {
     let title = document.title.split(" | ")[1].toLowerCase();
-    if (["home", "accounts", "endeavours", "blog"].includes(title)) {
+    if (["home", "accounts", "endeavours", "writing"].includes(title)) {
         document.getElementById(title + "-button").classList.add("selected");
     }
 }
