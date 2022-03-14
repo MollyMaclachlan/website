@@ -30,3 +30,6 @@ p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #AAA; }
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
+#grafeas-logo {
+    background-color: #fff !important;
+}
