@@ -26,7 +26,7 @@ var structures = {
             onclick="window.location.href='home'"
             alt="Stylised italic text reading 'Murdo Maclachlan'."
         >
-        <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="changeTheme()">
+        <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="change_theme()">
             <img
                 id="theme-image"
                 class="dark-image"
@@ -34,7 +34,7 @@ var structures = {
                 alt="A sun icon."
             >
         </button>
-        <button id="font-button" title="Toggle font (uses cookies)" type="button" name="button" onclick="changeFont()">
+        <button id="font-button" title="Toggle font (uses cookies)" type="button" name="button" onclick="change_font()">
             <img
                 id="font-image"
                 class="dark-image"
@@ -64,7 +64,7 @@ var structures = {
         </section>
     </footer>`
 }
-var secondaryScripts = [
+var secondary_scripts = [
     prefix + "../scripts/js/themes.js",
     prefix + "../scripts/js/events.js"
 ];
@@ -74,34 +74,33 @@ construct();
 // Constructs the universal elements of the page
 function construct() {
     // Insert header and footer
-    for ([name, content] of Object.entries(structures)) {
-        insertSnippet("beforeend", name + "-container", content);
+    for ([key, content] of Object.entries(structures)) {
+        insert_snippet("beforeend", key + "-container", content);
     }
 
     // Style nav buttons as needed
-    processSelectedButton();
+    process_selected_button();
 
     // Insert other universal scripts
-    for (let i = secondaryScripts.length-1; i >= 0; i--) {
-        insertScript(secondaryScripts[i]);
+    for (let i = secondary_scripts.length-1; i >= 0; i--) {
+        insert_script(secondary_scripts[i]);
     }
 
     // Add the scripts for specific pages
-    for (const page of ["poetry"]) {
-        if (document.title.split(" | ")[1].toLowerCase() == page) {
-            insertScript(prefix + "../scripts/js/" + page + ".js");
-        }
+    let title = document.title.split(" | ")[1].toLowerCase()
+    if (["home","poetry"].includes(title)) {
+        insert_script(prefix + "../scripts/js/single/" + title + ".js");
     }
 }
 
 // Inserts an HTML snippet at a given position relative to a unique element
-function insertSnippet(position, id, snippet) {
+function insert_snippet(position, id, snippet) {
     let element = document.getElementById(id);
     element.insertAdjacentHTML(position, snippet);
 }
 
 // Inserts a script tag at the given location
-function insertScript(source) {
+function insert_script(source) {
     let script = document.createElement('script');
     let location = document.getElementById('scripts');
     script.src = source;
@@ -109,7 +108,7 @@ function insertScript(source) {
 }
 
 // Marks one of the nav buttons as selected if the page is a primary one
-function processSelectedButton() {
+function process_selected_button() {
     let title = document.title.split(" | ")[1].toLowerCase();
     if (["home", "accounts", "endeavours", "writing"].includes(title)) {
         document.getElementById(title + "-button").classList.add("selected");

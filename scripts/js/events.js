@@ -1,7 +1,7 @@
-var currentDate = new Date();
+var date = new Date();
 var favicon = document.getElementById("favicon");
-var footerText = document.getElementById("footer-left");
-var footerSnippets = {
+var footer = document.getElementById("footer-left");
+var snippets = {
     ace:
     `Today is the 6th of April! That means it's <a href="https://en.wikipedia.org/wiki/Asexuality#International_Asexuality_Day">International
     <br>
@@ -18,15 +18,15 @@ var footerSnippets = {
     Month.</a> Don't forget to love each other!`,
 }
 
-if (currentDate.getMonth() == 3 && currentDate.getDate() == 6 ) {
+if (date.getMonth() == 3 && date.getDate() == 6 ) {
     favicon.href = "../static/img/favicons/events/ace.webp";
-    footerText.insertAdjacentHTML('beforeend', footerSnippets.ace);
-} else if (currentDate.getMonth() == 5 ) {
+    footer.insertAdjacentHTML('beforeend', snippets.ace);
+} else if (date.getMonth() == 5 ) {
     favicon.href = "../static/img/favicons/events/lgbt.webp";
-    footerText.insertAdjacentHTML('beforeend', footerSnippets.pride);
-} else if (currentDate.getMonth() == 9 && currentDate.getDate() == 31 ) {
+    footer.insertAdjacentHTML('beforeend', snippets.pride);
+} else if (date.getMonth() == 9 && date.getDate() == 31 ) {
     favicon.href = "../static/img/favicons/events/halloween.webp";
-    footerText.insertAdjacentHTML('beforeend', footerSnippets.halloween);
-} else if (currentDate.getMonth() == 10 && currentDate.getDate() == 24 ) {
-    footerText.insertAdjacentHTML('beforeend', footerSnippets.birthday);
+    footer.insertAdjacentHTML('beforeend', snippets.halloween);
+} else if (date.getMonth() == 10 && date.getDate() == 24 ) {
+    footer.insertAdjacentHTML('beforeend', snippets.birthday);
 }

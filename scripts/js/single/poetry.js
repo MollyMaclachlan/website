@@ -7,7 +7,7 @@ var states = {
     "forest": false
 };
 
-function togglePoem(link) {
+function toggle_poem(link) {
     let name = link.id.split("-")[0];
     let text = document.getElementById(name + "-text");
 
