@@ -1,0 +1,91 @@
+UNRELEASED:
+
+- Added icons to the website's appearance in browser search bars, bookmarks, etc.
+- Fixed broken link on the Home page.
+
+2022-01-27:
+
+- Switched main website and repository host to Codeberg.
+    - Added original GitHub repository as a push mirror for the Codeberg repository.
+    - Changed most GitHub references to Codeberg references.
+    - Kept GitHub pages site as a mirror to cover any Codeberg downtime not directly related to commits.
+    - Made the domain listed in the footer copyright notice vary depending on which instance is being viewed.
+    - Added Codeberg site to the status monitor.
+- Updated Home page:
+    - Removed 'Welcome' section.
+    - Added yin-yang logo as an avatar image.
+    - Horizontally centred elements.
+- Moved Writing section of the Endeavours page to part of the new 'Writing' page.
+    - Created Poetry subpage for the new Writing page.
+- Updated Accounts page:
+    - Added Codeberg entry.
+    - Relegated DeviantArt to the inactive account list.
+- Switched all remaining PNG images to WEBP, resulting in a 20%-60% reduction in file size in most cases.
+- Fixed cookie handling on Chromium (tested on Chromium Ungoogled & Falkon).
+- Switched to using pre-line whitespace.
+- Updated figcaption styling:
+    - Increased font size.
+    - Removed italics.
+- Adjusted positioning of the theme & font buttons.
+- Removed unused 'class="empty"' declarations in some pages' body tags.
+
+2022-01-17-02:
+
+- Switched default font to Linux Libertine.
+- Added button for switching between the new (serif) and old (sans-serif) font styles. Uses cookies.
+- Improved readability and mobile experience:
+    - Increased font size of headings, paragraphs and the footer.
+    - Added small gaps between navigation buttons to make them more individual.
+    - Switched main logo font from UHC Chancery W to the more redable Linux Libertine.
+    - Very slightly darkened text colour on dark theme to improve contrast with links.
+- Updated Accounts page:
+    - Accounts are now listed in 2 columns instead of 3.
+    - Image previews and video embeds are larger.
+    - Added new accounts on Inkitt & Sweek to the inactive account list.
+    - Relegated Tumblr & Wattpad to the inactive account list.
+    - Added notes explaining the inactivity of some accounts.
+- Removed some excessive details that were cluttering up the "About Me" section on the home page.
+- Updated copyright notice in the footer:
+    - Added middle initial.
+    - Extended copyright from 2021 to 2021-present.
+- Switched from .png to .webp for logo and button images.
+- Improved positioning of the main logo.
+- The main logo no longer hides before the theme and font buttons would overlap it.
+- Changed some hex codes in the CSS to use shorter codes (e.g. #FFFFFF -> #FFF).
+- Possibly broke cookie handling.
+
+2022-01-17:
+
+- Removed the Blog page.
+- Changed the header to link to my Wordsmith blog.
+
+2021-10-23:
+
+- Added a 'Music' section to the Endeavours page.
+- Fixed YouTube video embeds.
+
+2021-09-17-02:
+
+- Fixed secondary script insertion.
+
+2021-09-17:
+
+- Centralised the header, footer and universal scripts using constructor.js
+- Added a system to change the favicon and footer based on real-life events
+- Expanded and/or clarified some account blurbs
+- Improved the code quality of themes.js
+- Reorganised the CSS folder
+- Minor styling adjustment in empty.css
+
+2021-09-11-02:
+
+- Switched all image files to internal hosting rather than relying on other websites
+- Restructured favicon handling to allow for multiple favicons
+- Made the Great Helm Sketch preview a link to the full image
+
+2021-09-11:
+
+- Restructured backend of HTML and CSS to fix an issue with display on different resolutions
+- Reworked footer styling management to address a problem with pages that do not overflow on the y-axis
+- Readability and organisational improvements within HTML files
+- Organisational improvements within CSS files
