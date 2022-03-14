@@ -1,5 +1,9 @@
 UNRELEASED:
 
+2022-03-14-02:
+
+- Fixed broken expander buttons on the Poetry page.
+
 2022-03-14:
 
 - Added icons to the website's appearance in browser search bars, bookmarks, etc.
