@@ -1,7 +1,17 @@
 UNRELEASED:
 
+2022-03-14:
+
 - Added icons to the website's appearance in browser search bars, bookmarks, etc.
-- Fixed broken link on the Home page.
+- Fixed a broken link on the Home page.
+- The colour of the Grafeas Group logo is no longer handled weirdly on dark mode.
+- JavaScript updates:
+    - Moved single-page scripts to scripts/js/single.
+    - Added a script for the Home page to automatically calculate my age.
+    - Changed as many instances of camelCase as possible to snake_case, as it is superior.
+    - Shortened some variable names.
+    - Slightly optimised constructor script.
+- Slight clarification on the Terms & Privacy page.
 
 2022-01-27:
 
