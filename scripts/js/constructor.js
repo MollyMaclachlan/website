@@ -12,7 +12,7 @@ var structures = {
         <nav>
             <div id="nav-container">
                 <button id="home-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `home'">Home</button><br>
-                <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing.html'">Writing</button>
+                <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing'">Writing</button>
                 <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `endeavours'">Endeavours</button><br>
                 <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `accounts'">Accounts</button><br>
             </div>

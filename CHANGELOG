@@ -1,5 +1,8 @@
 UNRELEASED:
 
+- Switched from Linux Libertine font to Linux Biolinum font, as it is more readable and I personally prefer it.
+- Removed trailing `.html` from the link in the 'Writing' navigation button. This removes `.html` from the URL on the GitHub hosted site (Codeberg just adds the extension back in).
+
 2022-03-14-02:
 
 - Fixed broken expander buttons on the Poetry page.
