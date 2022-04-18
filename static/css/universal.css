@@ -111,6 +111,7 @@ blockquote span.quote-title {
     text-decoration: underline;
 }
 blockquote br { margin-top: 0px; }
+blockquote a { cursor: pointer; }
 
 /* MISCELLANEOUS */
 ul { margin-top: -1%; margin-bottom: 0%; }

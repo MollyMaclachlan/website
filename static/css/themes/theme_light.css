@@ -8,6 +8,7 @@ h2:after {
 }
 footer { color: #333; }
 button { border-color: #000; }
+button:hover { border-color: #8d7f4b; }
 
 /* HEADER ELEMENTS */
 #logo {
@@ -17,6 +18,7 @@ button { border-color: #000; }
 
 /* NAVIGATION */
 .selected { border-color: #7d6800; }
+.selected:hover { border-color: #7d6800; }
 
 /* MISCELLANEOUS */
 blockquote {
