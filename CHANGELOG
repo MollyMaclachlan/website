@@ -1,7 +1,19 @@
 UNRELEASED:
 
+- Completely revamped the Accounts page.
+    - Added a list of accounts to choose from the side, instead of showing all descriptions at once in one huge list.
+    - Added full entries for inactive accounts.
+    - Added 'Go to account' button as a more visible alternative to in-paragraph hyperlinks.
+    - Added activity indicators for all accounts (active, periodic, dormant, inactive).
+    - Added new 'Belletristica' account to accounts list.
+    - Removed 'Inkitt' and 'Sweek' from accounts list, as those accounts have been deleted.
+    - Removed website favicons, as they did not fit in with the new theme and may have been legally questionable.
+    - To support these changes, added an `accounts.js` single-page script and an `accounts.css` extension stylesheet.
 - Switched from Linux Libertine font to Linux Biolinum font, as it is more readable and I personally prefer it.
-- Removed trailing `.html` from the link in the 'Writing' navigation button. This removes `.html` from the URL on the GitHub hosted site (Codeberg just adds the extension back in).
+- Buttons are now highlighted when the cursor hovers over them.
+- Enforced cursor to display as a pointer when hovering over navigation links in headers, lists and blockquotes.
+- Fixed typos, unnecessary tags and misplacement of closing tags on various pages.
+- Removed trailing `.html` from the link in the 'Writing' navigation button. This removes `.html` from the URL on the GitHub hosted site (Codeberg adds the extension back in).
 
 2022-03-14-02:
 

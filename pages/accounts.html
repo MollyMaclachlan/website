@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 
-<html lang="en">
-    <head>
+<html lang="en-UK">
+    <head id="head">
         <!-- Meta elements -->
-        <meta charset="utf-8">
-        <meta name="author" content="Murdo B. Maclachlan">
+        <meta charset="utf-8"/>
+        <meta name="author" content="Murdo B. Maclachlan"/>
         <meta
-          name="description"
-          content="The home page of Murdo Maclachlan."
-        >
+            name="description"
+            content="A list of Murdo Maclachlan's various accounts."
+        />
+        <meta
+            name="type"
+            content="main"
+        />
         <title>Murdo Maclachlan | Accounts</title>
 
         <!-- Styling -->
         <link id="structure" rel="stylesheet" href="../static/css/universal.css">
         <link id="theme" rel="stylesheet" href="../static/css/themes/theme_dark.css">
+        <link rel="stylesheet" href="../static/css/extensions/accounts.css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>
         <link id="font" rel="stylesheet" href="../static/css/themes/font_serif.css">
         <link id="favicon" rel="shortcut icon" type="image/webp" href="../static/img/favicons/main.webp">
@@ -22,284 +27,98 @@
         <div id="header-container">
             <!-- Header will be inserted here -->
         </div>
-        <div id="body-container">
-            <div class="text-row">
-                <div class="text-column">
-                    <h2><a id="#accounts" href="#accounts">Accounts</a></h2>
-                    <p>Here you can find an alphabetical list of navigation links to my various internet accounts, accompanied by short explanations of what I generally do with them. I have a number of accounts I consider still in use, although activity may still be infrequent, but many more that are completely inactive. They are listed at the bottom of this page, though there are likely some I've forgotten.
-                    </p>
-                </div>
+        <div id="body-container" class="text-row">
+            <div id="account-description" class="text-column">
+                <h2>Accounts</h2>
+                <p>Here you can find an alphabetical list of navigation links to my various internet accounts, accompanied by short explanations of what I generally do with them.
+
+                    Click on an item on the list to the right to view information about that account. 'Info' displays this page.
+
+                    On each account's information page you will find a single-letter code representing its level of activity. They are as follows:
+                </p>
+                <ul>
+                    <li>(A): active.</li>
+                    <li>(P): periodically active (can be sporadic or for specific regular time periods).</li>
+                    <li>(D): dormant; inactive but with the intent of becoming active in the future.</li>
+                    <li>(I): inactive for the forseeable future.</li>
+                </ul><p>If an account does not appear in this list, that does not <i>necessarily</i> mean it is not mine, but you should check before assuming so.
+                </p>
             </div>
-
-            <!-- AllPoetry, Codeberg -->
-
-            <div class="text-row">
-                <div class="text-column left-column">
-                    <h2>
-                        <a href="#allpoetry" class="collapsable-header">
-                        <img
-                            class="external-favicon dark-image"
-                            src="../static/img/favicons/external/allpoetry.webp"
-                            alt="The AllPoetry logo; a silhouette of a crow."
-                        >
-                        AllPoetry</a>
-                    </h2>
-                    <p> I'm on AllPoetry, a large poetry-sharing website, as <a href="https://allpoetry.com/Murdo_Maclachlan">Murdo Maclachlan</a>. I joined the site on the 1st of October, 2018, and have been active intermittently ever since.
-
-                    This is one of my less active "officially" active accounts at the moment, as although I love poetry and this website with all my heart, I'm focusing much more on prose writing than poetry. I still come back and write a poem or two every now and then, though.
-                    </p>
-                </div>
-                <div class="text-column">
-                    <h2>
-                        <a id="#codeberg" href="#codeberg">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/codeberg.webp"
-                            alt="The Codeberg logo; a pyramid-shaped white iceberg on a blue background."
-                        >
-                        Codeberg</a>
-                    </h2>
-                    <p>Since moving from GitHub, my primary repository hosting website, and the <a href="https://codeberg.org/MurdoMaclachlan/pages">main host for this site</a>, has been Codeberg. My account is called <a href="https://codeberg.org/MurdoMaclachlan">MurdoMaclachlan</a>. Feel free to pop over, have a look at the source for this site, and browse my other repositories or even contribute if you want.
-
-                    I no longer use GitHub much any more, but most repositories on Codeberg do have a GitHub push mirror -- just don't open any issues on GitHub, as I prefer to have everthing managed on Codeberg.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Discord, GitHub -->
-
-            <div class="text-row">
-                <div class="text-column left-column">
-                    <h2>
-                        <a id="#discord" href="#discord">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/discord.webp"
-                            alt="The old Discord logo; a stylised blue controller silhouette."
-                        >
-                        Discord</a>
-                    </h2>
-                    <p>I use Discord for a lot of my communication with people. My account is <a href="https://discord.com/users/234960566278553600">Murdo#0949</a>, but be warned that I don't generally accept friend requests from people I haven't already got to know.
-
-                    Discord is not the place to message me if you are looking to contact about something. For that, use the contact link in the footer of this website.
-                    </p>
-                </div>
-                <div class="text-column">
-                    <h2>
-                        <a id="#github" href="#github">
-                        <img
-                            class="external-favicon dark-image"
-                            src="../static/img/favicons/external/github.webp"
-                            alt="The GitHub logo; a silhouette of an upright cat within a circle."
-                        >
-                        GitHub</a>
-                    </h2>
-                    <p>This whole website is available <a href="https://github.com/MurdoMaclachlan/website">open-source on GitHub</a>, as a push mirror for the Codeberg host. I'm on there as <a href="https://github.com/MurdoMaclachlan">MurdoMaclachlan</a>.
-
-                    Most of my activity on GitHub involves the development of some Python projects related to the <a href="https://www.reddit.com/r/TranscribersOfReddit">Transcribers of Reddit</a>, as well as the maintenance of a collection of transcription templates for common memes and reposts.
-                    </p>
-                </div>
-            </div>
-
-            <!-- LinuxQuestions, Nexus -->
-
-            <div class="text-row">
-                <div class="text-column left-column">
-                    <h2>
-                        <a id="#linux-questions" href="#linux-questions">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/linux.webp"
-                            alt="The Linux mascot; Tux, a cartoon penguin, sitting and smiling."
-                        >
-                        LinuxQuestions</a>
-                    </h2>
-                    <p>LinuxQuestions.org is a forum hub for Linux, unsurprisingly. My account name there is just <a href="https://www.linuxquestions.org/questions/user/murdo-1234055/">murdo</a>. You won't find much in the way of posts or comments from me; I mainly just lurk conversations in order to stay in the loop.
-
-                    If I'm to post, it'll likely be about Pipewire or Wayland, and it will definitely be Slackware related, as that's the only distro (and, in fact, only operating system) I've ever used.
-                    </p>
-                </div>
-                <div class="text-column">
-                    <h2>
-                        <a id="#nexus" href="#nexus">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/nexus.webp"
-                            alt="The Nexus logo; a circle with four arrows reaching around from behind it to point to its centre"
-                        >
-                        Nexus Mods</a>
-                    </h2>
-                    <p>Although I rarely use it at the moment, I consider my Nexus account, <a href="https://www.nexusmods.com/users/79190763">MBMaclachlan</a>, to be active, as I intend to return to modmaking there when I have time, and I still maintain and provide supports for those mods I've published.
-
-                    My most popular mod on Nexus is a Witcher 3 mod, <a href=https://www.nexusmods.com/witcher3/mods/4232>No Dismemberments or Finishers</a>, which disables some of the more gratuitously violent aspects of the game, but I'm personally far more invested in my <a href="https://www.nexusmods.com/legendofgrimrock2/mods/136">Grimrock</a> <a href="https://www.nexusmods.com/legendofgrimrock2/mods/140">imports</a>, bringing enemies from the first game into the second one for use in custom dungeons.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Reddit, Steam -->
-
-            <div class="text-row">
-                <div class="text-column left-column">
-                    <h2>
-                        <a id="#reddit" href="#reddit">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/reddit.webp"
-                            alt="The Reddit logo; an alien face within an orange circle."
-                        >
-                        Reddit</a>
-                    </h2>
-                    <p>My most active account besides Discord, I'm on Reddit as <a href="https://www.reddit.com/u/MurdoMaclachlan">MurdoMaclachlan</a>, and mainly use my account for <a href="endeavours.html#transcribing">transcribing</a>.
-
-                    In my early days on Reddit, I would mainly post to <a href="https://www.reddit.com/r/Worldbuilding">r/worldbuilding</a>, but since joining the Transcribers I've done little else. I don't post to r/worldbuilding these days, as I'm trying to focus fully on writing stories rather than getting carried away in world after world.
-                    </p>
-                </div>
-                <div class="text-column">
-                    <h2>
-                        <a id="#steam" href="#steam">
-                        <img
-                            class="external-favicon light-image"
-                            src="../static/img/favicons/external/steam.webp"
-                            alt="The Steam logo; a silhouette of a piston arm reaching out to turn a wheel."
-                        >
-                        Steam</a>
-                    </h2>
-                    <p>On Steam I'm simply called <a href="https://steamcommunity.com/id/murdomaclachlan/">Murdo</a>. I used to play games all the time, but I've since become more engaged with other things and don't have much time for video games any more. I'd love to get back to playing them though, especially since I'm a bit of a completionist and there are many achievements I never got and games I never finished!
-
-                    On the topic of achievements, I have a couple of Steam achievement hunting accounts:
-                    <ul>
-                        <li><a href="https://completionist.me/steam/profile/76561198249827228">Completionist.me</a></li>
-                        <li><a href="https://steamhunters.com/id/mmaclachlan/games">Steam Hunters</a></li>
-                    </ul>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Stream Archive, Twitch -->
-
-            <div class="text-row">
-                <div class="text-column left-column">
-                    <h2>
-                        <a id="#stream-archive" href="#stream-archive">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/youtube.webp"
-                            alt="The YouTube logo; white play icon on a red button."
-                        >
-                        Stream Archive</a>
-                    </h2>
-                    <p>I have a <a href="https://www.youtube.com/channel/UCvYC7NBRj77MRORgFVsD5nA/featured">YouTube stream archive</a>, where I upload all of my past <a href="https://www.twitch.tv/murdomaclachlan">Twitch streams.</a> You can find one of my streams below:
-                    </p>
-                    <iframe
-                        width="100%"
-                        height="350px"
-                        src="https://www.youtube.com/embed/Aw-4gIXWndI"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="text-column">
-                    <h2>
-                        <a id="#twitch" href="#twitch">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/twitch.webp"
-                            alt="The Twitch logo; a purple-outlined speech bubble with eyes in place of text."
-                        >
-                        Twitch</a>
-                    </h2>
-                    <p>On Twitch I'm <a href="https://www.twitch.tv/murdomaclachlan">MurdoMaclachlan</a> and I stream various video games, primarily <a href="https://www.youtube.com/playlist?list=PLDxJw61Wisx9-C_wu2JT3GaVCZhcbrn93">Hollow Knight</a>. In the past I've also streamed <a href="https://www.youtube.com/playlist?list=PLDxJw61Wisx8ViAzv0xsu_En00cFrMvuU">Dark Souls</a>, <a href="https://www.youtube.com/playlist?list=PLDxJw61Wisx9JIlE7TCpoLOs2Oso9FW_E">Nebuchadnezzar</a>, and even <a href="https://www.youtube.com/playlist?list=PLDxJw61Wisx_IBG7VGw4FN9rLuxQrUSQ3">transcribing</a>!
-
-                    When time permits, I fully intend to go back to streaming and finish Hollow Knight. I've a bucket list of games to play following that, with Dark Souls III at the top. Streaming is genuinely one of my favourite things I've done.
-
-                    Feel free to browse my past streams at my <a href="https://www.youtube.com/channel/UCvYC7NBRj77MRORgFVsD5nA/featured">archive</a>.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Twitter, YouTube -->
-
-            <div class="text-row">
-                <div class="text-column left-column">
-                    <h2>
-                        <a id="#twitter" href="#twitter">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/twitter.webp"
-                            alt="The Twitter logo; a stylised blue silhouette of a songbird in flight."
-                        >
-                        Twitter</a>
-                    </h2>
-                    <p>My Twitter account, <a href="https://twitter.com/murdomaclachlan">@murdomaclachlan</a>, probably has the potential to be rather contraversial. Although I do post other things there, it's almost entirely dedicated to politics.
-
-                    I do my best not to get into arguments about that with people, but inherently there will be people who see things they disagree with on that account, so stay away if you disagree with me politically and are easily triggered.
-                    </p>
-                </div>
-                <div class="text-column">
-                    <h2>
-                        <a id="#youtube" href="#youtube">
-                        <img
-                            class="external-favicon"
-                            src="../static/img/favicons/external/youtube.webp"
-                            alt="The YouTube logo; white play icon on a red button."
-                        >
-                        YouTube</a>
-                    </h2>
-                    <p>I'm on YouTube as <a href="https://www.youtube.com/channel/UCFC6WprQlC7q2pwJEhaCPfA">Murdo Maclachlan</a>. My content is fairly varied, but so far I've mainly upload clips from my Twitch streams; usually edited, occasionally not. Here's an example:
-
-                    <iframe
-                        width="100%"
-                        height="350px"
-                        src="https://www.youtube.com/embed/4JT4lFhEXF8"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Inactive -->
-
-            <div class="text-row">
-                <div class="text-column">
-                    <h2>
-                        <a id="#inactive" href="#inactive">List of inactive accounts</a>
-                    </h2>
-                    <p>This list of my inactive accounts probably isn't exhaustive, as I've likely forgotten a few. If you come across any accounts that look like mine, free to message me and I'll either add them here or deactivate them entirely.
-                    <ul>
-                        <li>DeviantArt: <a href="https://www.deviantart.com/mbmaclachlan">MBMaclachlan</a></li>
-                        <li>
-                            Inkitt: <a href="https://www.inkitt.com/MurdoMaclachlan">Murdo B. Maclachlan</a>
-                            <br>
-                            The intent is for this account to become active in the near future.
-                        </li>
-                        <li>MuseScore: <a href="https://musescore.com/murdomaclachlan">Murdo Maclachlan</a></li>
-                        <li>
-                            NanoWriMo: <a href="https://nanowrimo.org/participants/murdomaclachlan">MurdoMaclachlan</a>
-                            <br>
-                            This account becomes active for the duration of each November.
-                        </li>
-
-                        <li>Sweek: <a href="https://sweek.com/profile/1497095/74088">MurdoMaclachlan</a>
-                            <br>
-                            The intent is for this account to become active in the near future.
-                        </li>
-                        <li>Tumblr: <a href="https://murdomaclachlan.tumblr.com">murdomaclachlan</a></li>
-                        <li>Twitter: <a href="https://twitter.com/drsullivanscp">The Records of Dr Sullivan</a></li>
-                        <li>Wattpad: <a href="https://www.wattpad.com/user/MurdoMaclachlan">MurdoMaclachlan</a>
-                            <br>
-                            This account will likely be deleted in the near future.
-                        </li>
-                        <li>YouTube: <a href="https://www.youtube.com/channel/UCBJynIOEjCk7kVoycR1uyJQ">The Records of Dr Sullivan</a></li>
-                        <!-- <li><a href=""></a></li> -->
-                    </ul>
-                    </p>
-                </div>
-            </div>
+            <ul id="account-list">
+                <li class="entry">
+                    <a id="info" onclick="toggle_account(this)">Info</a>
+                </li>
+                <li class="list-header">Account list:</li>
+                <li class="entry">
+                    <a id="allpoetry" onclick="toggle_account(this)">AllPoetry</a>
+                </li>
+                <li class="entry">
+                    <a id="belletristica" onclick="toggle_account(this)">Belletristica</a>
+                </li>
+                <li class="entry">
+                    <a id="codeberg" onclick="toggle_account(this)">Codeberg</a>
+                </li>
+                <li class="entry">
+                    <a id="deviantart" onclick="toggle_account(this)">DeviantArt</a>
+                </li>
+                <li class="entry">
+                    <a id="discord" onclick="toggle_account(this)">Discord</a>
+                </li>
+                <li class="entry">
+                    <a id="github" onclick="toggle_account(this)">GitHub</a>
+                </li>
+                <li class="entry">
+                    <a id="linuxquestions" onclick="toggle_account(this)">LinuxQuestions</a>
+                </li>
+                <li class="entry">
+                    <a id="movellas" onclick="toggle_account(this)">Movellas</a>
+                </li>
+                <li class="entry">
+                    <a id="musescore" onclick="toggle_account(this)">MuseScore</a>
+                </li>
+                <li class="entry">
+                    <a id="nanowrimo" onclick="toggle_account(this)">NaNoWriMo</a>
+                </li>
+                <li class="entry">
+                    <a id="nexusmods" onclick="toggle_account(this)">NexusMods</a>
+                </li>
+                <li class="entry">
+                    <a id="reddit" onclick="toggle_account(this)">Reddit</a>
+                </li>
+                <li class="entry">
+                    <a id="steam" onclick="toggle_account(this)">Steam</a>
+                </li>
+                <li class="entry">
+                    <a id="tumblr" onclick="toggle_account(this)">Tumblr</a>
+                </li>
+                <li class="entry">
+                    <a id="twitch" onclick="toggle_account(this)">Twitch</a>
+                </li>
+                <li class="entry">
+                    <a id="twitter" onclick="toggle_children(this)">Twitter</a>
+                </li>
+                <li class="entry-twitter child-entry" style="display:none;">
+                    <a id="twitter-main" onclick="toggle_account(this)">Main</a>
+                </li>
+                <li class="entry-twitter child-entry" style="display:none;">
+                    <a id="twitter-sullivan" onclick="toggle_account(this)">The Records of Dr Sullivan</a>
+                </li>
+                <li class="entry">
+                    <a id="wattpad" onclick="toggle_account(this)">Wattpad</a>
+                </li>
+                <li class="entry">
+                    <a id="youtube" onclick="toggle_children(this)">YouTube</a>
+                </li>
+                <li class="entry-youtube child-entry" style="display:none;">
+                    <a id="youtube-main" onclick="toggle_account(this)">Main</a>
+                </li>
+                <li class="entry-youtube child-entry" style="display:none;">
+                    <a id="youtube-archive" onclick="toggle_account(this)">Stream Archive</a>
+                </li>
+                <li class="entry-youtube child-entry" style="display:none;">
+                    <a id="youtube-sullivan" onclick="toggle_account(this)">The Records of Dr Sullivan</a>
+                </li>
+            </ul>
         </div>
         <div id="footer-container">
             <!-- Footer will be inserted here -->

@@ -88,7 +88,7 @@ function construct() {
 
     // Add the scripts for specific pages
     let title = document.title.split(" | ")[1].toLowerCase()
-    if (["home","poetry"].includes(title)) {
+    if (["accounts", "home","poetry"].includes(title)) {
         insert_script(prefix + "../scripts/js/single/" + title + ".js");
     }
 }
@@ -110,7 +110,7 @@ function insert_script(source) {
 // Marks one of the nav buttons as selected if the page is a primary one
 function process_selected_button() {
     let title = document.title.split(" | ")[1].toLowerCase();
-    if (["home", "accounts", "endeavours", "writing"].includes(title)) {
+    if (["accounts", "endeavours", "home", "writing"].includes(title)) {
         document.getElementById(title + "-button").classList.add("selected");
     }
 }
