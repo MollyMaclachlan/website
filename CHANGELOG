@@ -1,5 +1,7 @@
 UNRELEASED:
 
+2022-04-18:
+
 - Completely revamped the Accounts page.
     - Added a list of accounts to choose from the side, instead of showing all descriptions at once in one huge list.
     - Added full entries for inactive accounts.
