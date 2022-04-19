@@ -174,6 +174,11 @@ var accounts = {
         <li><a href="https://steamhunters.com/id/mmaclachlan/games">Steam Hunters</a></li>
     </ul>
     </p>`,
+    "telegram":
+    `<h2>Telegram (A)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://t.me/MurdoMaclachlan', '_blank')">Go to account</button>
+    <p>I haven't used my Telegram account for much yet, as it's very new, but this is another avenue through which you can contact me if you need to. Just bear in mind I will probably be slower to respond than with many other accounts.
+    </p>`,
     "tumblr":
     `<h2>Tumblr (D)</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('https://murdomaclachlan.tumblr.com/', '_blank')">Go to account</button>
@@ -263,9 +268,9 @@ function toggle_account(trigger) {
 }
 
 /**
-template:
+    "template":
     `<h2>()</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('', '_blank')">Go to account</button>
     <p>
-    </p>`
+    </p>`,
 **/
