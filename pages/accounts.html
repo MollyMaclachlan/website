@@ -24,103 +24,114 @@
         <link id="favicon" rel="shortcut icon" type="image/webp" href="../static/img/favicons/main.webp">
     </head>
     <body>
-        <div id="header-container">
+        <div id="header-container" class="outer-container">
             <!-- Header will be inserted here -->
         </div>
-        <div id="body-container" class="text-row">
-            <div id="account-description" class="text-column">
-                <h2>Accounts</h2>
-                <p>Here you can find an alphabetical list of navigation links to my various internet accounts, accompanied by short explanations of what I generally do with them.
+        <div id="body-container" class="outer-container">
+            <main class="text-row inner-container">
+                <div id="account-description" class="text-column">
+                    <h2>Accounts</h2>
+                    <p>Here you can find an alphabetical list of navigation links to my various internet accounts, accompanied by short explanations of what I generally do with them.
 
-                    Click on an item on the list to the right to view information about that account. 'Info' displays this page.
+                        Click on an item on the list to the right to view information about that account. 'Info' displays this page.
 
-                    On each account's information page you will find a single-letter code representing its level of activity. They are as follows:
-                </p>
-                <ul>
-                    <li>(A): active.</li>
-                    <li>(P): periodically active (can be sporadic or for specific regular time periods).</li>
-                    <li>(D): dormant; inactive but with the intent of becoming active in the future.</li>
-                    <li>(I): inactive for the forseeable future.</li>
-                </ul><p>If an account does not appear in this list, that does not <i>necessarily</i> mean it is not mine, but you should check before assuming so.
-                </p>
-            </div>
-            <ul id="account-list">
-                <li class="entry">
-                    <a id="info" onclick="toggle_account(this)">Info</a>
-                </li>
-                <li class="list-header">Account list:</li>
-                <li class="entry">
-                    <a id="allpoetry" onclick="toggle_account(this)">AllPoetry</a>
-                </li>
-                <li class="entry">
-                    <a id="belletristica" onclick="toggle_account(this)">Belletristica</a>
-                </li>
-                <li class="entry">
-                    <a id="codeberg" onclick="toggle_account(this)">Codeberg</a>
-                </li>
-                <li class="entry">
-                    <a id="deviantart" onclick="toggle_account(this)">DeviantArt</a>
-                </li>
-                <li class="entry">
-                    <a id="discord" onclick="toggle_account(this)">Discord</a>
-                </li>
-                <li class="entry">
-                    <a id="github" onclick="toggle_account(this)">GitHub</a>
-                </li>
-                <li class="entry">
-                    <a id="linuxquestions" onclick="toggle_account(this)">LinuxQuestions</a>
-                </li>
-                <li class="entry">
-                    <a id="movellas" onclick="toggle_account(this)">Movellas</a>
-                </li>
-                <li class="entry">
-                    <a id="musescore" onclick="toggle_account(this)">MuseScore</a>
-                </li>
-                <li class="entry">
-                    <a id="nanowrimo" onclick="toggle_account(this)">NaNoWriMo</a>
-                </li>
-                <li class="entry">
-                    <a id="nexusmods" onclick="toggle_account(this)">NexusMods</a>
-                </li>
-                <li class="entry">
-                    <a id="reddit" onclick="toggle_account(this)">Reddit</a>
-                </li>
-                <li class="entry">
-                    <a id="steam" onclick="toggle_account(this)">Steam</a>
-                </li>
-                <li class="entry">
-                    <a id="tumblr" onclick="toggle_account(this)">Tumblr</a>
-                </li>
-                <li class="entry">
-                    <a id="twitch" onclick="toggle_account(this)">Twitch</a>
-                </li>
-                <li class="entry">
-                    <a id="twitter" onclick="toggle_children(this)">Twitter</a>
-                </li>
-                <li class="entry-twitter child-entry" style="display:none;">
-                    <a id="twitter-main" onclick="toggle_account(this)">Main</a>
-                </li>
-                <li class="entry-twitter child-entry" style="display:none;">
-                    <a id="twitter-sullivan" onclick="toggle_account(this)">The Records of Dr Sullivan</a>
-                </li>
-                <li class="entry">
-                    <a id="wattpad" onclick="toggle_account(this)">Wattpad</a>
-                </li>
-                <li class="entry">
-                    <a id="youtube" onclick="toggle_children(this)">YouTube</a>
-                </li>
-                <li class="entry-youtube child-entry" style="display:none;">
-                    <a id="youtube-main" onclick="toggle_account(this)">Main</a>
-                </li>
-                <li class="entry-youtube child-entry" style="display:none;">
-                    <a id="youtube-archive" onclick="toggle_account(this)">Stream Archive</a>
-                </li>
-                <li class="entry-youtube child-entry" style="display:none;">
-                    <a id="youtube-sullivan" onclick="toggle_account(this)">The Records of Dr Sullivan</a>
-                </li>
-            </ul>
+                        On each account's information page you will find a single-letter code representing its level of activity. They are as follows:
+                    </p>
+                    <ul>
+                        <li>(A): active.</li>
+                        <li>(P): periodically active (can be sporadic or for specific regular time periods).</li>
+                        <li>(D): dormant; inactive but with the intent of becoming active in the future.</li>
+                        <li>(I): inactive for the forseeable future.</li>
+                    </ul><p>If an account does not appear in this list, that does not <i>necessarily</i> mean it is not mine, but you should check before assuming so.
+                    </p>
+                </div>
+                <ul id="account-list" class="text-column">
+                    <li class="entry">
+                        <a id="info" onclick="toggle_account(this)">Info</a>
+                    </li>
+                    <li class="list-header">Account list:</li>
+                    <li class="entry">
+                        <a id="allpoetry" onclick="toggle_account(this)">AllPoetry</a>
+                    </li>
+                    <li class="entry">
+                        <a id="belletristica" onclick="toggle_account(this)">Belletristica</a>
+                    </li>
+                    <li class="entry">
+                        <a id="codeberg" onclick="toggle_account(this)">Codeberg</a>
+                    </li>
+                    <li class="entry">
+                        <a id="deviantart" onclick="toggle_account(this)">DeviantArt</a>
+                    </li>
+                    <li class="entry">
+                        <a id="discord" onclick="toggle_account(this)">Discord</a>
+                    </li>
+                    <li class="entry">
+                        <a id="github" onclick="toggle_account(this)">GitHub</a>
+                    </li>
+                    <li class="entry">
+                        <a id="hardlimit" onclick="toggle_children(this)">Hardlimit</a>
+                    </li>
+                    <li class="entry-hardlimit child-entry" style="display:none;">
+                        <a id="hardlimit-main" onclick="toggle_account(this)">Main</a>
+                    </li>
+                    <li class="entry-hardlimit child-entry" style="display:none;">
+                        <a id="hardlimit-archive" onclick="toggle_account(this)">Stream Archive</a>
+                    </li>
+                    <li class="entry">
+                        <a id="linuxquestions" onclick="toggle_account(this)">LinuxQuestions</a>
+                    </li>
+                    <li class="entry">
+                        <a id="movellas" onclick="toggle_account(this)">Movellas</a>
+                    </li>
+                    <li class="entry">
+                        <a id="musescore" onclick="toggle_account(this)">MuseScore</a>
+                    </li>
+                    <li class="entry">
+                        <a id="nanowrimo" onclick="toggle_account(this)">NaNoWriMo</a>
+                    </li>
+                    <li class="entry">
+                        <a id="nexusmods" onclick="toggle_account(this)">NexusMods</a>
+                    </li>
+                    <li class="entry">
+                        <a id="reddit" onclick="toggle_account(this)">Reddit</a>
+                    </li>
+                    <li class="entry">
+                        <a id="steam" onclick="toggle_account(this)">Steam</a>
+                    </li>
+                    <li class="entry">
+                        <a id="tumblr" onclick="toggle_account(this)">Tumblr</a>
+                    </li>
+                    <li class="entry">
+                        <a id="twitch" onclick="toggle_account(this)">Twitch</a>
+                    </li>
+                    <li class="entry">
+                        <a id="twitter" onclick="toggle_children(this)">Twitter</a>
+                    </li>
+                    <li class="entry-twitter child-entry" style="display:none;">
+                        <a id="twitter-main" onclick="toggle_account(this)">Main</a>
+                    </li>
+                    <li class="entry-twitter child-entry" style="display:none;">
+                        <a id="twitter-sullivan" onclick="toggle_account(this)">The Records of Dr Sullivan</a>
+                    </li>
+                    <li class="entry">
+                        <a id="wattpad" onclick="toggle_account(this)">Wattpad</a>
+                    </li>
+                    <li class="entry">
+                        <a id="youtube" onclick="toggle_children(this)">YouTube</a>
+                    </li>
+                    <li class="entry-youtube child-entry" style="display:none;">
+                        <a id="youtube-main" onclick="toggle_account(this)">Main</a>
+                    </li>
+                    <li class="entry-youtube child-entry" style="display:none;">
+                        <a id="youtube-archive" onclick="toggle_account(this)">Stream Archive</a>
+                    </li>
+                    <li class="entry-youtube child-entry" style="display:none;">
+                        <a id="youtube-sullivan" onclick="toggle_account(this)">The Records of Dr Sullivan</a>
+                    </li>
+                </ul>
+            </main>
         </div>
-        <div id="footer-container">
+        <div id="footer-container"  class="outer-container">
             <!-- Footer will be inserted here -->
         </div>
         <div id="scripts">

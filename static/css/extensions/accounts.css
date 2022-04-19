@@ -5,7 +5,8 @@
     flex: 1;
     list-style-type: none;
     text-align: center;
-    margin-right: -1.2em;
+    margin-right: -0.4em;
+    margin-left: -0.7em;
     margin-top: 1em;
 }
 li.entry {
@@ -23,10 +24,11 @@ li.child-entry {
 li.entry a, li.child-entry a { cursor: pointer; }
 
 /* DESCRIPTION STYLING */
-.text-column { flex: 7; }
+#account-description { flex: 7; }
 
 /* BUTTON STYLING */
 #account-button {
     margin-top: 1em;
     margin-bottom: -0.8em;
+    width: 110px;
 }

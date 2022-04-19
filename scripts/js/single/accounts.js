@@ -1,4 +1,5 @@
 var child_groups = {
+    "hardlimit": false,
     "twitter": false,
     "youtube": false,
 }
@@ -90,6 +91,42 @@ var accounts = {
 
     I no longer use GitHub as much as I used to, but most of my repositories on Codeberg do have GitHub push mirrors -- just don't open issues on GitHub if there's a codeberg alternative, as I prefer to have things managed over here, farther from corporate hands.
     </p>`,
+    "hardlimit-archive":
+    `<h2>Hardlimit: Stream Archive (A)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://video.hardlimit.com/c/mmaclachlanarchive', '_blank')">Go to account</button>
+    <p>This Hardlimit channel is an archive for all of my past <a href="https://www.twitch.tv/murdomaclachlan">Twitch streams</a>.
+
+    My Hardlimit channels are mirrors of my YouTube channels; I created them to provide access to my videos via the decentralised Peertube network and do discourage dependency on Google.
+
+    I'm yet to export any archived streams, as exporting videos takes a while, but I will begin doing so soon.
+    </p>
+    <!--<iframe
+        width="60%"
+        height="350px"
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>-->`,
+    "hardlimit-main":
+    `<h2>Hardlimit: Primary (P)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://video.hardlimit.com/c/murdomaclachlan/', '_blank')">Go to account</button>
+    <p>he content on my primary YouTube account is fairly varied. So far I've uploaded mainly clips and highlights from my Twitch streams, but there is also a small amount of music, a mod comparison, and really anything that pops into my head.
+
+    My Hardlimit channels are mirrors of my YouTube channels; I created them to provide access to my videos via the decentralised Peertube network and do discourage dependency on Google.
+
+    Below is an example of one of my highlights videos:
+    </p>
+    <iframe
+        width="60%"
+        height="350px"
+        src="https://video.hardlimit.com/videos/embed/926671e7-0c3c-42db-81b4-909c1c813732"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>`,
     "linuxquestions":
     `<h2>LinuxQuestions (P)</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.linuxquestions.org/questions/user/murdo-1234055/', '_blank')">Go to account</button>
@@ -114,7 +151,7 @@ var accounts = {
     </p>`,
     "nexusmods":
     `<h2>NexusMods (P)</h2>
-    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.nexusmods.com/witcher3/mods/4232', '_blank')">Go to account</button>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.nexusmods.com/users/79190763', '_blank')">Go to account</button>
     <p>Periodically-active in terms of support and dormant in terms of new mods, I occasionally hop on here to see if there are any questions needing answered about the few mods I've published. I would love to get back to modding at some point, although I've encountered confusing obstacles with one mod I was trying to make.
 
     My most popular mod on Nexus is for the Witcher 3: <a href="https://www.nexusmods.com/witcher3/mods/4232">No Dismemberments or Finishers</a>, which disables some of the more gratuitously violent aspects of the game. However, I'm personally far more invested in my <a href="https://www.nexusmods.com/legendofgrimrock2/mods/136">Grimrock</a> <a href="https://www.nexusmods.com/legendofgrimrock2/mods/140">imports</a>, bringing enemies from the first game into the second one for use in custom dungeons.

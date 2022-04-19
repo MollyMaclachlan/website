@@ -2,6 +2,7 @@ figcaption {
     width: 100%;
     text-align: center;
     font-size: 15px;
+    margin-bottom: -3.5em;
 }
 figcaption p { margin-top: 1; }
 a.caption-link { font-weight: bold !important; }
@@ -10,5 +11,5 @@ a.caption-link:hover { text-decoration: underline !important; }
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 69%;
+    width: 65%;
 }

@@ -6,13 +6,18 @@ body {
     flex-flow: column;
     max-width: 1230px;
     margin: auto;
-    padding: 10px;
 }
-#body-container, #footer-container { max-width: 1230px; }
-footer { padding-bottom: 8px; }
+.outer-container {
+  width: 100%;
+}
+.inner-container {
+  max-width: 1230px;
+  margin: auto;
+  padding: 5px;
+}
+/*footer { padding-bottom: 8px; }*/
 #body-container {
     flex-grow: 1;
-    width: 100%;
 }
 .footer-contents {
     display: flex;
