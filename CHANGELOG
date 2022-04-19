@@ -2,6 +2,7 @@ UNRELEASED:
 
 - Added 'Telegram' to account list.
 - Reduced code duplication in `toggle_children()` function of `accounts.js`.
+- Removed trailing `.html` in the link to the Poetry page from the Writing page.
 
 2022-04-19:
 
