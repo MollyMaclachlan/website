@@ -1,9 +1,12 @@
 UNRELEASED:
 
 - Added 'Hardlimit' accounts to the Accounts page.
+- Fixed overflow occurring on pages that shouldn't have enough content to trigger one. (Thanks @TimJentzsch on GitHub!)
+    - Removed `empty.css`, as it is no longer needed due to this fix.
 - Fixed 'Go to account' button for NexusMods directing to a specific mod instead of my account profile.
 - Adjusted width of 'Go to account' buttons, keeping the text on one line for browser minimum font sizes up to 15px.
 - Adjusted positioning of account list so that longer website names to do not flow over the boundaries of the page container.
+- Adjusted size of pronouns.page banner and positioning of footer on `identity.html`, removing overflow on 1080p+ without significantly reducing image size.
 
 2022-04-18:
 

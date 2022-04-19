@@ -6,7 +6,7 @@ try {
 
 var structures = {
     "header":
-    `<header>
+    `<header class="inner-container">
 
         <!-- Navigation buttons -->
         <nav>
@@ -45,7 +45,7 @@ var structures = {
     </header>`,
 
     "footer":
-    `<footer>
+    `<footer class="inner-container">
         <section class="footer-contents">
             <p id="footer-left">
                 <!-- There will be different text inserted here depending on the date -->
