@@ -1,6 +1,7 @@
 UNRELEASED:
 
 - Added 'Telegram' to account list.
+- Reduced code duplication in `toggle_children()` function of `accounts.js`.
 
 2022-04-19:
 

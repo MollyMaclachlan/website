@@ -6,24 +6,20 @@ var child_groups = {
 
 function toggle_children(trigger) {
     let children = document.getElementsByClassName("entry-" + trigger.id);
-    console.log("entry-" + trigger.id);
-    console.log(children)
-
     if (!child_groups[trigger.id]) {
-        for (let i = children.length-1; i >= 0; i--) {
-            let element = children.item(i);
-            console.log(i);
-            element.style = "display:block;";
-        }
-        child_groups[trigger.id] = true;
+        toggle_display(children, trigger.id, true);
     } else {
-        for (let i = children.length-1; i >= 0; i--) {
-            let element = children.item(i);
-            element.style = "display:none;";
-
-        }
-        child_groups[trigger.id] = false;
+        toggle_display(children, trigger.id, false);
     }
+}
+
+function toggle_display(list, trigger_id, state) {
+    let display = (state ? "block;" : "none;");
+    for (let i = list.length-1; i >= 0; i--) {
+        let element = list.item(i);
+        element.style = "display:" + display;
+    }
+    child_groups[trigger_id] = state;
 }
 
 var accounts = {
