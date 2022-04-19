@@ -1,5 +1,7 @@
 UNRELEASED:
 
+2022-04-19:
+
 - Added 'Hardlimit' accounts to the Accounts page.
 - Fixed overflow occurring on pages that shouldn't have enough content to trigger one. (Thanks @TimJentzsch on GitHub!)
     - Removed `empty.css`, as it is no longer needed due to this fix.
