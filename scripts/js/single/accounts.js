@@ -1,4 +1,5 @@
 var child_groups = {
+    "hardlimit": false,
     "twitter": false,
     "youtube": false,
 }
@@ -90,6 +91,42 @@ var accounts = {
 
     I no longer use GitHub as much as I used to, but most of my repositories on Codeberg do have GitHub push mirrors -- just don't open issues on GitHub if there's a codeberg alternative, as I prefer to have things managed over here, farther from corporate hands.
     </p>`,
+    "hardlimit-archive":
+    `<h2>Hardlimit: Stream Archive (A)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://video.hardlimit.com/c/mmaclachlanarchive', '_blank')">Go to account</button>
+    <p>This Hardlimit channel is an archive for all of my past <a href="https://www.twitch.tv/murdomaclachlan">Twitch streams</a>.
+
+    My Hardlimit channels are mirrors of my YouTube channels; I created them to provide access to my videos via the decentralised Peertube network and do discourage dependency on Google.
+
+    I'm yet to export any archived streams, as exporting videos takes a while, but I will begin doing so soon.
+    </p>
+    <!--<iframe
+        width="60%"
+        height="350px"
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>-->`,
+    "hardlimit-main":
+    `<h2>Hardlimit: Primary (P)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://video.hardlimit.com/c/murdomaclachlan/', '_blank')">Go to account</button>
+    <p>he content on my primary YouTube account is fairly varied. So far I've uploaded mainly clips and highlights from my Twitch streams, but there is also a small amount of music, a mod comparison, and really anything that pops into my head.
+
+    My Hardlimit channels are mirrors of my YouTube channels; I created them to provide access to my videos via the decentralised Peertube network and do discourage dependency on Google.
+
+    Below is an example of one of my highlights videos:
+    </p>
+    <iframe
+        width="60%"
+        height="350px"
+        src="https://video.hardlimit.com/videos/embed/926671e7-0c3c-42db-81b4-909c1c813732"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>`,
     "linuxquestions":
     `<h2>LinuxQuestions (P)</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.linuxquestions.org/questions/user/murdo-1234055/', '_blank')">Go to account</button>
