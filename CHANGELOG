@@ -2,6 +2,7 @@ UNRELEASED:
 
 - Added 'Telegram' to account list.
 - Added link to my Gender & Sexuality Spectrum on Identity page.
+- Fixed a typo in the 'Codeberg' account profile.
 - Reduced code duplication in `toggle_children()` function of `accounts.js`.
 - Removed trailing `.html` in the link to the Poetry page from the Writing page.
 

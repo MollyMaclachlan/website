@@ -58,7 +58,7 @@ var accounts = {
     "codeberg":
     `<h2>Codeberg (A)</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('https://codeberg.org/MurdoMaclachlan', '_blank')">Go to account</button>
-    <p>Since moving from GitHub, my primary repository histoing website, and the <a href="https://codeberg.org/MurdoMaclachlan/pages">main host for this site</a>, has been Codeberg. Feel free to pop over, have a look at the source for this site, and browse my other repositories or even contribute if you want.
+    <p>Since moving from GitHub, my primary repository hosting website, and the <a href="https://codeberg.org/MurdoMaclachlan/pages">main host for this site</a>, has been Codeberg. Feel free to pop over, have a look at the source for this site, and browse my other repositories or even contribute if you want.
 
     Most of my activity on Codeberg involves the development of some Python projects related to the <a href="https://www.reddit.com/r/TranscribersOfReddit">Transcribers of Reddit</a>, as well as the maintenance of a collection of transcriptions templates for common memes and reposts.
     </p>`,
