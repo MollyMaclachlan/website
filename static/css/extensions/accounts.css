@@ -5,7 +5,8 @@
     flex: 1;
     list-style-type: none;
     text-align: center;
-    margin-right: -1.2em;
+    margin-right: -0.5em;
+    margin-left: -0.5em;
     margin-top: 1em;
 }
 li.entry {
