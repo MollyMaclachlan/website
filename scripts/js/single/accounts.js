@@ -114,7 +114,7 @@ var accounts = {
     </p>`,
     "nexusmods":
     `<h2>NexusMods (P)</h2>
-    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.nexusmods.com/witcher3/mods/4232', '_blank')">Go to account</button>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.nexusmods.com/users/79190763', '_blank')">Go to account</button>
     <p>Periodically-active in terms of support and dormant in terms of new mods, I occasionally hop on here to see if there are any questions needing answered about the few mods I've published. I would love to get back to modding at some point, although I've encountered confusing obstacles with one mod I was trying to make.
 
     My most popular mod on Nexus is for the Witcher 3: <a href="https://www.nexusmods.com/witcher3/mods/4232">No Dismemberments or Finishers</a>, which disables some of the more gratuitously violent aspects of the game. However, I'm personally far more invested in my <a href="https://www.nexusmods.com/legendofgrimrock2/mods/136">Grimrock</a> <a href="https://www.nexusmods.com/legendofgrimrock2/mods/140">imports</a>, bringing enemies from the first game into the second one for use in custom dungeons.
