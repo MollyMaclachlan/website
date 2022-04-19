@@ -7,6 +7,8 @@ UNRELEASED:
 - Adjusted width of 'Go to account' buttons, keeping the text on one line for browser minimum font sizes up to 15px.
 - Adjusted positioning of account list so that longer website names to do not flow over the boundaries of the page container.
 - Adjusted size of pronouns.page banner and positioning of footer on `identity.html`, removing overflow on 1080p+ without significantly reducing image size.
+- Deleted all external favicons now that they are no longer used.
+- Removed mention of external favicons on Legal page.
 
 2022-04-18:
 
