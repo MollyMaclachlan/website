@@ -123,6 +123,11 @@ var accounts = {
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
     </iframe>`,
+    "kofi":
+    `<h2>Ko-Fi (D)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://ko-fi.com/murdomaclachlan', '_blank')">Go to account</button>
+    <p>I feel a little bad putting this account on here since it feels like begging for money when I'm not actively streaming, uploading videos, modding or publishing writing, but this is supposed to be a link of all my accounts, so here it is. Don't donate at the moment.
+    </p>`,
     "linuxquestions":
     `<h2>LinuxQuestions (P)</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.linuxquestions.org/questions/user/murdo-1234055/', '_blank')">Go to account</button>
@@ -132,6 +137,11 @@ var accounts = {
     `<h2>Movellas (D)</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('https://movellas.com/movellian/MurdoMaclachlan', '_blank')">Go to account</button>
     <p>The search for a good Wattpad alternative is a long one, but Movellas looks like a good candidate. Currently dormant, I hope to get writing prose on this site as soon as I have the time. Watch this space!
+    </p>`,
+    "mozilla":
+    `<h2>Mozilla Addons (I)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('https://addons.mozilla.org/en-GB/firefox/user/16624319/', '_blank')">Go to account</button>
+    <p>I've made a grand total of one (1) addon for Mozilla Firefox; a theme called <a href="https://addons.mozilla.org/en-GB/firefox/addon/soft-topaz-highlights/">Soft Topaz Highlights</a>, which I still personally use. I don't know if I'll ever make any more themes or any proper addons. Possibly, but probably not any time soon, so I consider this account inactive.
     </p>`,
     "musescore":
     `<h2>MuseScore (I)</h2>
@@ -207,6 +217,11 @@ var accounts = {
     `<h2>Wattpad (I)</h2>
     <button id="account-button" class="nav-button" type="button" onclick="window.open('https://www.wattpad.com/user/MurdoMaclachlan', '_blank')">Go to account</button>
     <p>My Wattpad account dates back to the 23rd of February 2022, but I've never published anything on it and never use it these days. I'm not a fan fo the website in general and intend to move to sites like <a href="https://belletristica.com/en/users/14865-murdo-maclachlan#profile">Belletristica</a> and <a href="https://movellas.com/movellian/MurdoMaclachlan">Movellas</a>, so this account will most likely be deactivated.
+    </p>`,
+    "wikipedia":
+    `<h2>Wikipedia (P)</h2>
+    <button id="account-button" class="nav-button" type="button" onclick="window.open('', '_blank')">Go to account</button>
+    <p>I don't do much editing on Wikipedia at the moment; I've tended to have a history of short burts of a few edits here and there, then nothing for ages. When I do edit, generally I do copyedits and cleanups, just to make pages look neater and better convey their information.
     </p>`,
     "wordsmith":
     `<h2>Wordsmith (D)</h2>
