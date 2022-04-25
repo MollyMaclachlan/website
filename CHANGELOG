@@ -1,11 +1,16 @@
 UNRELEASED:
 
-- Added 'Ko-Fi', 'Mozilla Addons', 'Telegram' and 'Wikipedia' to account list.
+2022-04-26:
+
+- Added 'Ko-Fi', 'Mastodon' ''Mozilla Addons', 'Telegram' and 'Wikipedia' to account list.
+- Updated 'Twitter: Primary' entry to reflect my migration to Mastodon.
+- Removed 'Twitter: The Records of Dr Sullivan' from account list, as the account has been deactivated.
 - Fixed 'Wordsmith' not displaying in account list.
 - Fixed missing link to 'Wikipedia' account and missing link to Twitch on 'Stream Archive' entry.
 - Moved account entries to `accounts.json` data file.
 - Added link to my Gender & Sexuality Spectrum on Identity page.
-- Fixed a typo in the 'Codeberg' account profile.
+- Added an invisible link to my Mastodon account to the home page to verify with Mastodon that this website is mine.
+- Fixed a typo in the 'Codeberg' account profile, and another on the Home page.
 - Reduced code duplication in `toggle_children()` function of `accounts.js`.
 - Removed trailing `.html` in the link to the Poetry page from the Writing page.
 

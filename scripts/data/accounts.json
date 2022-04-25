@@ -156,6 +156,19 @@
             }
         ]
     },
+    "mastodon": {
+        "header": "Mastodon (A)",
+        "elements": [
+            {
+                "type": "button",
+                "content": "https://mastodon.online/@murdomaclachlan"
+            },
+            {
+                "type": "paragraph",
+                "content": "My Mastodon account is brand new, but I'm hoping it will be far more active than my Twitter account was. I finally migrated from Twitter because of Elon Musk's purchase of the site, but it had been my intent to do so for some time; Twitter was too political, and politics was pretty much all I saw there.\n\nI hope Mastodon will provide me with the environment I need to be able to post about things that actually interest me and bring me joy, and thus everyone will be a lot better off for it. And it's open source and decentralised, which is always a plus in my book."
+            }
+        ]
+    },
     "movellas": {
         "header": "Movellas (D)",
         "elements": [
@@ -293,8 +306,8 @@
             }
         ]
     },
-    "twitter-main": {
-        "header": "Twitter: Primary (P)",
+    "twitter": {
+        "header": "Twitter (I)",
         "elements": [
             {
                 "type": "button",
@@ -302,20 +315,7 @@
             },
             {
                 "type": "paragraph",
-                "content": "My primary Twitter account, @murdomaclachlan, doesn't have a specific use, but is quite politically active. I'm politically left-wing - green and socialist - so if you disagree with those positions this account might not be worth your time.\n\nIf you're not bothered with that, I'll very occasionally post other things here as well."
-            }
-        ]
-    },
-    "twitter-sullivan": {
-        "header": "Twitter: The Records of Dr Sullivan (D)",
-        "elements": [
-            {
-                "type": "button",
-                "content": "https://twitter.com/drsullivanscp"
-            },
-            {
-                "type": "paragraph",
-                "content": "Currently dormant, this Twitter account, @drsullivanscp, was created for a YouTube channel I created called 'The Records of Dr Sullivan'. It was a pretty basic SCP-narration account and is currently dormant."
+                "content": "When I used Twitter, it was originally for political stuff. I didn't get much joy out of that use and had been wanting to go to a different, nicer website where I could talk about nicer things, for some time. Elon Musk's purchase of Twitter gave me the push I needed to join <a rel=\"me\" href=\"https://mastodon.online/@murdomaclachlan\">Mastodon</a> instead.\n\nMy Twitter account still exists, but I've deleted most of my tweets and I don't post there any more; I'm just on it to redirect to my Mastodon and keep my name reserved."
             }
         ]
     },

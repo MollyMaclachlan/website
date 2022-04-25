@@ -1,7 +1,6 @@
 var accs = {};
 var child_groups = {
     "hardlimit": false,
-    "twitter": false,
     "youtube": false,
 }
 
