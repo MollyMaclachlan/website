@@ -1,5 +1,7 @@
 UNRELEASED:
 
+- Removed Inkitt link from Writing page.
+
 2022-04-26-02:
 
 - Codeberg and GitHub pages don't like the fetch() method, it seems.
