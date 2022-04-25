@@ -46,7 +46,7 @@ async function retrieve_json(file, data = {}) {
         mode: 'cors',
         cache: 'no-cache',
         credentials: 'same-origin',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' },
         redirect: 'follow',
         referrerPolicy: 'no-referrer',
         body: data
