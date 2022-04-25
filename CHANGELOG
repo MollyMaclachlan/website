@@ -1,5 +1,9 @@
 UNRELEASED:
 
+2022-04-26-02:
+
+- Codeberg and GitHub pages don't like the fetch() method, it seems.
+
 2022-04-26:
 
 - Added 'Ko-Fi', 'Mastodon', 'Mozilla Addons', 'Telegram' and 'Wikipedia' to account list.
