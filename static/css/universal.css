@@ -139,3 +139,43 @@ ul { margin-top: -1%; margin-bottom: 0%; }
     float: right;
     margin-left: 8px;
 }
+
+/* COOKIE */
+#cookie-popup {
+/*
+Adapted from the following source:
+https://blog.formpl.us/how-to-create-a-simple-cookie-consent-pop-up-for-your-website-dad17a174b60
+*/
+    position: fixed;
+    bottom: 20px;
+    left: 0.6%;
+    right: 10%;
+    width: 15%;
+    min-width: 290px;
+    height: 38%;
+    padding: 5px 14px;
+    align-items: center;
+    border-style: solid;
+    border-radius: 5px;
+    overflow-y: auto;
+    font-size: 20px !important;
+}
+#cookie-popup p {
+    margin-top: -1em;
+    font-family: sans-serif;
+}
+#cookie-accept, #cookie-decline {
+    width: 180x;
+    font-size: 20px;
+    height: 40px;
+}
+#cookie-button-container {
+/*
+Adapted from the following StackOverflow answer:
+https://stackoverflow.com/questions/45911051/buttons-centered-and-side-by-side
+*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5em;
+}

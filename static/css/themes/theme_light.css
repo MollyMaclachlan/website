@@ -33,3 +33,9 @@ p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #444; }
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
+
+/* COOKIES */
+#cookie-popup {
+    background-color: #fff;
+    border-color: #000;
+}

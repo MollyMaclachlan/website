@@ -35,3 +35,9 @@ p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #AAA; }
 #grafeas-logo {
     background-color: #FFF !important;
 }
+
+/* COOKIES */
+#cookie-popup {
+    background-color: #000;
+    border-color: #fff;
+}
