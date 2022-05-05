@@ -1,6 +1,7 @@
 UNRELEASED:
 
 - Added mentions of "Hallowe'en 2018, Rewritten".
+- Switched Mastodon identifier link out for head links, which will hopefully actually work.
 
 2022-04-28:
 
