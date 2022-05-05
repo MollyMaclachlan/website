@@ -131,6 +131,23 @@ var accountsJSON = {
             }
         ]
     },
+    "itchio": {
+        "header": "itch.io (P)",
+        "elements": [
+            {
+                "type": "button",
+                "content": "https://murdomaclachlan.itch.io/"
+            },
+            {
+                "type": "paragraph",
+                "content": "I occasionally use my itch.io account to post content such the poetry compilation linked below. Generally, this content has also been posted elsewhere, and I just provide a (hopefully) nicely-formatted PDF on itch.io."
+            },
+            {
+                "type": "custom",
+                "content": "\<iframe frameborder=\"0\" src=\"https:\/\/itch.io\/embed\/1467060?bg_color=000000&amp;fg_color=ffffff&amp;link_color=c93400&amp;border_color=252525\" width=\"552\" height=\"167\"\>\<a href=\"https:\/\/murdomaclachlan.itch.io\/halloween-2018-rewritten\"\>Hallowe'en 2018, Rewritten by Murdo B. Maclachlan\<\/a\>\<\/iframe\>"
+            }
+        ]
+    },
     "kofi": {
         "header": "Ko-Fi (D)",
         "elements": [
@@ -445,6 +462,8 @@ async function parse_json() {
                     content += "<button id=\"account-button\" class=\"nav-button\" type=\"button\" onclick=\"window.open('";
                     content += element["content"] + "', '_blank')\">Go to account</button>\n";
                     break;
+                case "custom":
+                    content += element["content"];
                 case "iframe":
                     content += "<iframe width=\"60%\" height=\"355px\" src=\"" + element["link"] + "\" title=\"" + element["title"];
                     content += "\" frameborder=\"0\" allow=\"accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"";
