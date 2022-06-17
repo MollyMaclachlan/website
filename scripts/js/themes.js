@@ -11,7 +11,7 @@ const COOKIE_HTML =
         <p>
             This website may store cookies for the purposes of changing the font or theme, and for disabling this popup. Cookies are stored for 24 hours, and no other data is collected. <a href="legal">See more</a>.
 
-            If you decline, this popup will, by necessity continue to appear each time you load a page on this site.
+            If you decline, this popup will, by necessity, continue to appear each time you load a page on this site.
             <div id="cookie-button-container">
                 <button id="cookie-accept" class="nav-button" type="button" onclick="accept_cookie()">Accept</button><button id="cookie-decline" class="nav-button" type="button" onclick="decline_cookie()">Decline</button>
             </div>

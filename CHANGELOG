@@ -1,3 +1,10 @@
+2022-06-17:
+
+- Replaced old logo and favicon with new eye-style theme.
+- Removed 'Hardlimit' from account list, as those accounts have been deleted.
+- Removed excessive empty space between lines on multi-line footers.
+- Fixed a typo in the cookie banner.
+
 2022-05-06:
 
 - Added mentions of "Hallowe'en 2018, Rewritten".
