@@ -100,37 +100,6 @@ var accountsJSON = {
             }
         ]
     },
-    "hardlimit-archive": {
-        "header": "Hardlimit: Stream Archive (A)",
-        "elements": [
-            {
-                "type": "button",
-                "content": "https://video.hardlimit.com/c/mmaclachlanarchive"
-            },
-            {
-                "type": "paragraph",
-                "content": "This Hardlimit channel is an archive for all of my past <a href=\"https://www.twitch.tv/murdomaclachlan\">Twitch streams</a>.\n\n    My Hardlimit channels are mirrors of my YouTube channels; I created them to provide access to my videos via the decentralised Peertube network and do discourage dependency on Google.\n\n    I'm yet to export any archived streams, as exporting videos takes a while, but I will begin doing so soon."
-            }
-        ]
-    },
-    "hardlimit-main": {
-        "header": "Hardlimit: Primary (P)",
-        "elements": [
-            {
-                "type": "button",
-                "content": "https://video.hardlimit.com/c/murdomaclachlan/"
-            },
-            {
-                "type": "paragraph",
-                "content": "The content on my primary YouTube account is fairly varied. So far I've uploaded mainly clips and highlights from my Twitch streams, but there is also a small amount of music, a mod comparison, and really anything that pops into my head.\n\nMy Hardlimit channels are mirrors of my YouTube channels; I created them to provide access to my videos via the decentralised Peertube network and do discourage dependency on Google.\n\nBelow is an example of one of my highlights videos:"
-            },
-            {
-                "type": "iframe",
-                "link": "https://video.hardlimit.com/videos/embed/926671e7-0c3c-42db-81b4-909c1c813732",
-                "title": "Hardlimit video player"
-            }
-        ]
-    },
     "itchio": {
         "header": "itch.io (P)",
         "elements": [
