@@ -48,7 +48,6 @@ var structures = {
     `<footer class="inner-container">
         <section class="footer-contents">
             <p id="footer-left">
-                <!-- There will be different text inserted here depending on the date -->
             </p>
             <p id="footer-right">
                 <b>` + window.location.href.split("//")[1].split("/")[0] + `</b>
