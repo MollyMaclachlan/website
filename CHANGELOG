@@ -1,3 +1,11 @@
+2022-07-09:
+
+- Added 'RoyalRoad' to account list.
+- Removed 'Movellas' from account list, as that account has been deleted.
+- Updated 'Belletristica' account summary to include mention of poetry collections and 'Rooms of the Desolate'.
+- Corrected several typos.
+- Minor code cleanup.
+
 2022-06-20:
 
 - Fixed height mismatch between left & right footer blocks.
@@ -118,7 +126,7 @@
 - Improved readability and mobile experience:
     - Increased font size of headings, paragraphs and the footer.
     - Added small gaps between navigation buttons to make them more individual.
-    - Switched main logo font from UHC Chancery W to the more redable Linux Libertine.
+    - Switched main logo font from UHC Chancery W to the more readable Linux Libertine.
     - Very slightly darkened text colour on dark theme to improve contrast with links.
 - Updated Accounts page:
     - Accounts are now listed in 2 columns instead of 3.

@@ -13,7 +13,7 @@ var accountsJSON = {
                     "(A): active.",
                     "(P): periodically active (can be sporadic or for specific regular time periods).",
                     "(D): dormant; inactive but with the intent of becoming active in the future.",
-                    "(I): inactive for the forseeable future."
+                    "(I): inactive for the foreseeable future."
                 ]
             },
             {
@@ -36,7 +36,7 @@ var accountsJSON = {
         ]
     },
     "belletristica": {
-        "header": "Belletristica (D)",
+        "header": "Belletristica (P)",
         "elements": [
             {
                 "type": "button",
@@ -44,7 +44,7 @@ var accountsJSON = {
             },
             {
                 "type": "paragraph",
-                "content": "The search for a good Wattpad alternative is a long one, but Belletristica looks like a good candidate. Currently dormant, I hope to get writing prose on this site as soon as I have the time. Watch this space!"
+                "content": "The search for a good Wattpad alternative is a long one, but Belletristica looks like a good candidate. I have some poetry collections and an ongoing short story collection, 'Rooms of the Desolate' here, updated whenever I find the time."
             }
         ]
     },
@@ -139,7 +139,7 @@ var accountsJSON = {
             },
             {
                 "type": "paragraph",
-                "content": "LinuxQuestions.org is a forum hub for Linux, unsurprisingly. You won't find that much in the way of activity from me; I mainly just lurk conversations in order to stay in the loop. When I do post, it's often about Pipewire or Wayland, and it's always Slackware-related, as that's the only distrobution, and indeed the only operating system, I've ever used."
+                "content": "LinuxQuestions.org is a forum hub for Linux, unsurprisingly. You won't find that much in the way of activity from me; I mainly just lurk conversations in order to stay in the loop. When I do post, it's often about Pipewire or Wayland, and it's always Slackware-related, as that's the only distribution, and indeed the only operating system, I've ever used."
             }
         ]
     },
@@ -153,19 +153,6 @@ var accountsJSON = {
             {
                 "type": "paragraph",
                 "content": "My Mastodon account is brand new, but I'm hoping it will be far more active than my Twitter account was. I finally migrated from Twitter because of Elon Musk's purchase of the site, but it had been my intent to do so for some time; Twitter was too political, and politics was pretty much all I saw there.\n\nI hope Mastodon will provide me with the environment I need to be able to post about things that actually interest me and bring me joy, and thus everyone will be a lot better off for it. And it's open source and decentralised, which is always a plus in my book."
-            }
-        ]
-    },
-    "movellas": {
-        "header": "Movellas (D)",
-        "elements": [
-            {
-                "type": "button",
-                "content": "https://movellas.com/movellian/MurdoMaclachlan"
-            },
-            {
-                "type": "paragraph",
-                "content": "The search for a good Wattpad alternative is a long one, but Movellas looks like a good candidate. Currently dormant, I hope to get writing prose on this site as soon as I have the time. Watch this space!"
             }
         ]
     },
@@ -191,7 +178,7 @@ var accountsJSON = {
             },
             {
                 "type": "paragraph",
-                "content": "You won't find any of my compisitions on here. I made my MuseScore account so that I could use their forums, posted twice, favourited 'The Swan', and never looked back. I might post something at some point, I might not. For the forseeable future, consider it inactive."
+                "content": "You won't find any of my compositions on here. I made my MuseScore account so that I could use their forums, posted twice, favourited 'The Swan', and never looked back. I might post something at some point, I might not. For the foreseeable future, consider it inactive."
             }
         ]
     },
@@ -230,7 +217,20 @@ var accountsJSON = {
             },
             {
                 "type": "paragraph",
-                "content": "Probably my most active account besides Discord, I mainly use my Reddit account for <a href=\"endeavours#transcribing\">transcribing</a>.\n\nIn my early days on Reddit, I would mainly post to <a href=\"https://www.reddit.com/r/worldbuilding\">r/worldbuilding</a>, but since joining the Transcribers I've done little else. I don't post to r/worldbuilding these days, as I'm trying to focus fully on writing stories rather than getting carried away in world after world."
+                "content": "Probably my most active account besides Discord, I mainly use my Reddit account for <a href=\"endeavours#transcribing\">transcribing</a>.\n\nIn my early days on Reddit, I would mainly post to <a href=\"https://www.reddit.com/r/worldbuilding\">r/world-building</a>, but since joining the Transcribers I've done little else. I don't post to r/world-building these days, as I'm trying to focus fully on writing stories rather than getting carried away in world after world."
+            }
+        ]
+    },
+    "royalroad": {
+        "header": "RoyalRoad (P)",
+        "elements": [
+            {
+                "type": "button",
+                "content": "https://www.royalroad.com/profile/296119"
+            },
+            {
+                "type": "paragraph",
+                "content": "The search for a good Wattpad alternative is a long one, but RoyalRoad looks like a good candidate. I have an ongoing short story collection, 'Rooms of the Desolate' here, updated whenever I find the time."
             }
         ]
     },
@@ -315,7 +315,7 @@ var accountsJSON = {
             },
             {
                 "type": "paragraph",
-                "content": "My Wattpad account dates back to the 23rd of February 2022, but I've never published anything on it and never use it these days. I'm not a fan fo the website in general and intend to move to sites like <a href=\"https://belletristica.com/en/users/14865-murdo-maclachlan#profile\">Belletristica</a> and <a href=\"https://movellas.com/movellian/MurdoMaclachlan\">Movellas</a>, so this account will most likely be deactivated."
+                "content": "My Wattpad account dates back to the 23rd of February 2022, but I've never published anything on it and never use it these days. I'm not a fan fo the website in general and intend to move to sites like <a href=\"https://belletristica.com/en/users/14865-murdo-maclachlan#profile\">Belletristica</a> and <a href=\"https://www.royalroad.com/profile/296119\">RoyalRoad</a>, so this account will most likely be deactivated."
             }
         ]
     },
@@ -328,7 +328,7 @@ var accountsJSON = {
             },
             {
                 "type": "paragraph",
-                "content": "I don't do much editing on Wikipedia at the moment; I've tended to have a history of short burts of a few edits here and there, then nothing for ages. When I do edit, generally I do copyedits and cleanups, just to make pages look neater and better convey their information."
+                "content": "I don't do much editing on Wikipedia at the moment; I've tended to have a history of short bursts of a few edits here and there, then nothing for ages. When I do edit, generally I do copy-edits and cleanups, just to make pages look neater and better convey their information."
             }
         ]
     },
@@ -390,7 +390,7 @@ var accountsJSON = {
             },
             {
                 "type": "paragraph",
-                "content": "he Records of Dr Sullivan is a small voice acting project I started on a whim. The jist of it is a fairly basic SCP-narration account, and it only has 4 videos at the moment and has been dormant for quite some time. However, I'd love to get back to it at some point. I did start making a 5th video, but I was unsatisfied with the quality of both my narration and the editing, and choosing the next article is always hard when there are so many good ones. Regardless, here's an example:"
+                "content": "The Records of Dr Sullivan is a small voice acting project I started on a whim. The gist of it is a fairly basic SCP-narration account, and it only has 4 videos at the moment and has been dormant for quite some time. However, I'd love to get back to it at some point. I did start making a 5th video, but I was unsatisfied with the quality of both my narration and the editing, and choosing the next article is always hard when there are so many good ones. Regardless, here's an example:"
             },
             {
                 "type": "iframe",
@@ -414,7 +414,6 @@ var accountsJSON = {
     }
 };
 var child_groups = {
-    "hardlimit": false,
     "youtube": false,
 }
 

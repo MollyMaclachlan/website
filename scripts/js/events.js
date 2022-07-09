@@ -10,7 +10,7 @@ var footer = document.getElementById("footer-left");
 var snippets = {
     ace:
     `Today is the 6th of April! That means it's <a href="https://en.wikipedia.org/wiki/Asexuality#International_Asexuality_Day">International
-    Asexuality Day</a>. I'm ace (aegosexual, specifically!), so today is close to my heart.`,
+    Asexuality Day</a>. I'm ace, so today is close to my heart.`,
     birthday:
     `Today is the 24th of November. That means it's my birthday. I don't like that.`,
     halloween:
