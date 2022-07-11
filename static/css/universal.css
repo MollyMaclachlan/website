@@ -15,7 +15,6 @@ body {
   margin: auto;
   padding: 5px;
 }
-/*footer { padding-bottom: 8px; }*/
 #body-container {
     flex-grow: 1;
 }
