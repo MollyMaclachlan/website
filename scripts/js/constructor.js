@@ -15,6 +15,7 @@ var structures = {
                 <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing'">Writing</button>
                 <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `endeavours'">Endeavours</button><br>
                 <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `accounts'">Accounts</button><br>
+                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='https://murdomaclachlan.github.io/blog/'">Blog</button><br>
             </div>
         </nav>
 
@@ -59,7 +60,7 @@ var structures = {
             <a href="https://ko-fi.com/murdomaclachlan">Donate</a> |
             <a href="https://stats.uptimerobot.com/6MYLZHPP1V">Status</a> |
             <a href="` + prefix + `legal">Terms & Privacy</a> |
-            <a href="https://codeberg.org/MurdoMaclachlan/pages">Website Source</a>
+            <a href="https://github.com/MurdoMaclachlan/website">Website Source</a>
         </section>
     </footer>`
 }
