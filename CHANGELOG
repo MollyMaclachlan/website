@@ -1,3 +1,9 @@
+2022-07-16:
+
+- Add link to new blog.
+- Change footer source link to GitHub repository to be more consistent, as Codeberg only allows hosting for a single repository. Commits will still be made through Codeberg.
+- Readjust positioning of logo and theme/font buttons.
+
 2022-07-11-2:
 
 - Fix 'Prose' header on 'Writing' page not linking to 'Prose' subpage.
