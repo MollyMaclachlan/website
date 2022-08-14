@@ -376,7 +376,7 @@ var accountsJSON = {
             },
             {
                 "type": "iframe",
-                "link": "https://www.youtube.com/embed/OT0Kh_FxtGs",
+                "link": "https://www.youtube.com/embed/fzmzxboCfHE",
                 "title": "YouTube video player"
             }
         ]
