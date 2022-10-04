@@ -47,8 +47,8 @@ var structures = {
             <div class="text-column nav-column dropdown">
                 <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing'">WRITING</button>
                 <div class="dropdown-content">
-                  <a href="writing/poetry">POETRY</a>
-                  <a href="writing/prose">PROSE</a>
+                  <a href="` + prefix + `writing/poetry">POETRY</a>
+                  <a href="` + prefix + `writing/prose">PROSE</a>
                 </div>
             </div>
             <div class="text-column nav-column">

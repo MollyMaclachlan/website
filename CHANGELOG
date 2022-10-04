@@ -5,6 +5,10 @@
     - Changed positioning of logo image.
     - Added a drop-down menu beneath 'Writing', containing links to 'Poetry' and 'Prose'.
 
+This release was re-released with the following fix:
+
+- Fixed 'Prose' and 'Poetry' links on navbar linking to non-existent page if followed from a second-level page.
+
 2022-09-20:
 
 - Fixed lingering link to removed 'Writing' section of 'Endeavours' page; redirected to 'Writing' page.
