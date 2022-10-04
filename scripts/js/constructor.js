@@ -6,43 +6,61 @@ try {
 
 var structures = {
     "header":
-    `<header class="inner-container">
-
-        <!-- Navigation buttons -->
-        <nav>
-            <div id="nav-container">
-                <button id="home-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `home'">Home</button><br>
-                <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing'">Writing</button>
-                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `endeavours'">Endeavours</button><br>
-                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `accounts'">Accounts</button><br>
-                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='https://murdomaclachlan.github.io/blog/'">Blog</button><br>
-            </div>
-        </nav>
+    `<main class="inner-container">
 
         <!--Logo and theme button-->
-        <img
-            id="logo"
-            class="light-image"
-            src="` + prefix + `../static/img/logo.webp"
-            onclick="window.location.href='home'"
-            alt="Stylised italic text reading 'Murdo Maclachlan'."
-        >
-        <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="change_theme()">
-            <img
-                id="theme-image"
-                class="dark-image"
-                src="` + prefix + `../static/img/sun.webp"
-                alt="A sun icon."
-            >
-        </button>
-        <button id="font-button" title="Toggle font (uses cookies)" type="button" name="button" onclick="change_font()">
-            <img
-                id="font-image"
-                class="dark-image"
-                src="` + prefix + `../static/img/font.webp"
-                alt="A capital and a lower case letter A, side by side."
-            >
-        </button>
+        <div class="text-row">
+            <div class="text-column">
+                <img
+                    id="logo"
+                    class="light-image"
+                    src="` + prefix + `../static/img/logo.webp"
+                    onclick="window.location.href='home'"
+                    alt="Stylised italic text reading 'Murdo Maclachlan'."
+                >
+            </div>
+
+            <div id="settings-column" class="text-column">
+                <button id="theme-button" title="Toggle theme (uses cookies)" type="button" name="button" onclick="change_theme()">
+                    <img
+                        id="theme-image"
+                        class="dark-image"
+                        src="` + prefix + `../static/img/sun.webp"
+                        alt="A sun icon."
+                    >
+                </button>
+                <button id="font-button" title="Toggle font (uses cookies)" type="button" name="button" onclick="change_font()">
+                    <img
+                        id="font-image"
+                        class="dark-image"
+                        src="` + prefix + `../static/img/font.webp"
+                        alt="A capital and a lower case letter A, side by side."
+                    >
+                </button>
+            </div>
+        </div>
+        <!-- Navigation buttons -->
+        <div class="text-row nav-row">
+            <div class="text-column nav-column-left">
+                <button id="home-button" class="nav-button-left" type="button" onclick="window.location.href='` + prefix + `home'">HOME</button>
+            </div>
+            <div class="text-column nav-column dropdown">
+                <button id="writing-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `writing'">WRITING</button>
+                <div class="dropdown-content">
+                  <a href="writing/poetry">POETRY</a>
+                  <a href="writing/prose">PROSE</a>
+                </div>
+            </div>
+            <div class="text-column nav-column">
+                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `endeavours'">ENDEAVOURS</button>
+            </div>
+            <div class="text-column nav-column">
+                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `accounts'">ACCOUNTS</button>
+            </div>
+            <div class="text-column nav-column-right">
+                <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='https://murdomaclachlan.github.io/blog/'">BLOG</button>
+            </div>
+        </div>
     </header>`,
 
     "footer":

@@ -13,7 +13,7 @@ const COOKIE_HTML =
 
             If you decline, this popup will, by necessity, continue to appear each time you load a page on this site.
             <div id="cookie-button-container">
-                <button id="cookie-accept" class="nav-button" type="button" onclick="accept_cookie()">Accept</button><button id="cookie-decline" class="nav-button" type="button" onclick="decline_cookie()">Decline</button>
+                <button id="cookie-accept" class="cookie-button" type="button" onclick="accept_cookie()">ACCEPT</button><button id="cookie-decline" class="cookie-button" type="button" onclick="decline_cookie()">DECLINE</button>
             </div>
         </p>
     </div>`;

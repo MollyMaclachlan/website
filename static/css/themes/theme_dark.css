@@ -25,7 +25,8 @@ blockquote {
     background-image: linear-gradient(to right, #111, #111, #111, #111, #000);
     border-color: #555;
 }
-p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #AAA; }
+p a:hover, li a:hover, blockquote a:hover, .hlink:hover,
+.nav-button:hover, .nav-button-left:hover, .cookie-button:hover { color: #AAA; }
 .footer-links a:hover { color: #CCC; }
 .preview-image { border-color: #FFF; }
 .dark-image {
@@ -41,3 +42,6 @@ p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #AAA; }
     background-color: #000;
     border-color: #fff;
 }
+
+/* DROPDOWN */
+.dropdown-content { background-color: #000; }

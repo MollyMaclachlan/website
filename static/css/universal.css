@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-flow: column;
     max-width: 1230px;
+    min-width: 640px;
     margin: auto;
 }
 .outer-container {
@@ -56,51 +57,53 @@ blockquote, p { white-space: pre-line; }
 /* HEADER */
 header { margin-bottom: -50px; }
 #logo {
-    float: left;
-    margin-left: 5em;
-    margin-top: -6.25em;
+    margin: auto;
+    margin-left: 0;
     width: 400px;
     height: auto;
 }
 @media(max-width:575px) {
     #logo { visibility: hidden; }
 }
-#theme-button {
-    float: right;
-    margin-top: -9.7em;
+#theme-button, #font-button {
+    margin-top: 1px;
+    margin-bottom: 2px;
+    margin-left: calc(100% - 40px);
     width: 40px;
     height: 40px;
 }
-#font-button {
-    float: right;
-    margin-top: -6.45em;
-    width: 40px;
-    height: 40px;
-}
-#theme-image {
-    width: 40px;
+#theme-image, #font-image {
     height: auto;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -5px;
+}
+#theme-image {
+    width: 40px;
     margin-bottom: -6px;
 }
 #font-image {
     width: 30px;
-    height: auto;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -5px;
     margin-bottom: -8px;
 }
 
 /* NAVIGATION */
-nav { text-decoration: none; }
-#nav-container { width: 100px; }
-.nav-button {
-    width: 100px;
-    margin: 1px;
+.nav-row {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 1em;
 }
+.nav-button, .nav-button-left, .cookie-button {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+.nav-button { text-align: left; }
+.nav-button-left { text-align: right; }
+.nav-column, .nav-column-right, .nav-column-left { padding: 2%; }
+.nav-column { flex: 0 1 auto; }
+.nav-column-right, .nav-column-left { flex: 1; }
 
 /* EMBELLISHMENTS */
 a {
@@ -108,8 +111,9 @@ a {
     color: inherit;
 }
 p a, li a, blockquote a, .hlink { font-weight: bold; }
-p a:hover, li a:hover, .footer-links a,
-blockquote a:hover, .hlink:hover { text-decoration: underline; }
+p a:hover, li a:hover, .footer-links a, blockquote a:hover,
+.hlink:hover, .nav-button:hover, .nav-button-left:hover,
+.cookie-button:hover { text-decoration: underline; }
 blockquote span.quote-title {
     font-weight: bold;
     text-decoration: underline;
@@ -168,6 +172,10 @@ https://blog.formpl.us/how-to-create-a-simple-cookie-consent-pop-up-for-your-web
     font-size: 20px;
     height: 40px;
 }
+.cookie-button {
+    padding: 1em;
+    padding-top: 0.5em;
+}
 #cookie-button-container {
 /*
 Adapted from the following StackOverflow answer:
@@ -177,4 +185,47 @@ https://stackoverflow.com/questions/45911051/buttons-centered-and-side-by-side
     align-items: center;
     justify-content: center;
     padding-top: 0.5em;
+}
+
+/* DROPDOWN
+Adapted from the following w3schools tutorial:
+https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+*/
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 1.5em;
+  border-style: solid;
+  border-radius: 2px;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: sans;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
