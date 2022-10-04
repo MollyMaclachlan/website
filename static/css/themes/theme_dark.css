@@ -41,3 +41,6 @@ p a:hover, li a:hover, blockquote a:hover, .hlink:hover { color: #AAA; }
     background-color: #000;
     border-color: #fff;
 }
+
+/* DROPDOWN */
+.dropdown-content { background-color: #000; }

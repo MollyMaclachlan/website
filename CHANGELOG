@@ -1,3 +1,10 @@
+2022-10-04:
+
+- Re-styled navigation menu:
+    - Changed appearance and positioning of navigation links.
+    - Changed positioning of logo image.
+    - Added a drop-down menu beneath 'Writing', containing links to 'Poetry' and 'Prose'.
+
 2022-09-20:
 
 - Fixed lingering link to removed 'Writing' section of 'Endeavours' page; redirected to 'Writing' page.
