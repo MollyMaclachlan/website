@@ -428,7 +428,7 @@ async function parse_json() {
             switch (element["type"]) {
                 case "button":
                     content += "<button id=\"account-button\" class=\"nav-button\" type=\"button\" onclick=\"window.open('";
-                    content += element["content"] + "', '_blank')\">Go to account</button>\n";
+                    content += element["content"] + "', '_blank')\">GO TO ACCOUNT</button>\n";
                     break;
                 case "custom":
                     content += element["content"];

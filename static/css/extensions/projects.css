@@ -1,0 +1,9 @@
+.projects-button {
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50%;
+    padding-inline: 20px;
+}
+.projects-button:hover { text-decoration: none; }

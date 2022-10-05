@@ -1,3 +1,11 @@
+2022-10-05:
+
+- Renamed 'Endeavours' to 'Projects'.
+- Moved 'Music' and 'Transcribing' to their own pages:
+    - These pages are subpages of 'Projects'.
+    - Hovering 'Projects' button on the navbar now opens a dropdown menu for these pages.
+- Improved appearance of 'GO TO ACCOUNT' button on 'Accounts' page.
+
 2022-10-04:
 
 - Re-styled navigation menu:

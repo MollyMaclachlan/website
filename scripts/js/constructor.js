@@ -51,8 +51,12 @@ var structures = {
                   <a href="` + prefix + `writing/prose">PROSE</a>
                 </div>
             </div>
-            <div class="text-column nav-column">
-                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `endeavours'">ENDEAVOURS</button>
+            <div class="text-column nav-column dropdown">
+                <button id="endeavours-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `projects'">PROJECTS</button>
+                <div class="dropdown-content">
+                  <a href="` + prefix + `projects/music">MUSIC</a>
+                  <a href="` + prefix + `projects/transcribing">TRANSCRIBING</a>
+                </div>
             </div>
             <div class="text-column nav-column">
                 <button id="accounts-button" class="nav-button" type="button" onclick="window.location.href='` + prefix + `accounts'">ACCOUNTS</button>

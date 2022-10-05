@@ -7,7 +7,7 @@ h2:after {
     width: inherit;
 }
 footer { color: #999; }
-button:hover { border-color: #ffdf5e; }
+#settings-column button:hover { border-color: #ffdf5e; }
 
 /* HEADER ELEMENTS */
 #theme-image {
@@ -15,27 +15,26 @@ button:hover { border-color: #ffdf5e; }
     filter: invert(100%);
 }
 
-/* NAVIGATION */
-.selected { border-color: gold; }
-.selected:hover { border-color: gold; }
-
 /* MISCELLANEOUS */
 blockquote {
     /* There must be a better way to do this */
     background-image: linear-gradient(to right, #111, #111, #111, #111, #000);
     border-color: #555;
 }
-p a:hover, li a:hover, blockquote a:hover, .hlink:hover,
-.nav-button:hover, .nav-button-left:hover, .cookie-button:hover { color: #AAA; }
+p a:hover, li a:hover, blockquote a:hover, .hlink:hover, .nav-button:hover,
+.nav-button-left:hover, .cookie-button:hover { color: #AAA; }
+.projects-button:hover {
+    color: #FFF;
+    background-color: #444;
+}
 .footer-links a:hover { color: #CCC; }
 .preview-image { border-color: #FFF; }
 .dark-image {
     -webkit-filter: invert(100%);
     filter: invert(100%);
 }
-#grafeas-logo {
-    background-color: #FFF !important;
-}
+#grafeas-logo { background-color: #FFF !important; }
+#account-button { border: 2px solid #FFF; }
 
 /* COOKIES */
 #cookie-popup {

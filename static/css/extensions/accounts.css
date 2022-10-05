@@ -29,6 +29,7 @@ li.entry a, li.child-entry a { cursor: pointer; }
 /* BUTTON STYLING */
 #account-button {
     margin-top: 1em;
-    margin-bottom: -0.8em;
-    width: 110px;
+    margin-bottom: -0.4em;
+    width: 182px;
 }
+#account-button:hover { text-decoration: none; }
