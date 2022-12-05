@@ -1,0 +1,29 @@
+/* All pages */
+#button-theme {
+    margin-right: 0.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Multiple pages */
+.card-link {
+    height: 100%;
+}
+.card-above-footer {
+    height: calc(100% - 48px);
+}
+.card-link-header {
+    height: 4.5em;
+    border-bottom: 1px solid lightgrey;
+}
+.card-link-multi {
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    border-right: 1px solid lightgrey;
+}
+
+/* Home page only */
+#about-card {
+    max-width: 1000px;
+    margin-top: -1.5em;
+}

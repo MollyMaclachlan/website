@@ -4,56 +4,87 @@
     <head>
         <!-- Meta elements -->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Murdo B. Maclachlan">
+        <meta name="prefix" content="../">
         <meta
           name="description"
           content="The home page of Murdo Maclachlan."
         >
-        <meta id="prefix" content="../">
-        <link rel="me" id="mastodon-identifier" href="https://mastodon.online/@murdomaclachlan">
-        <title>Murdo Maclachlan | Music</title>
+        <title>Music | Murdo Maclachlan</title>
 
         <!-- Styling -->
-        <link id="structure" rel="stylesheet" href="../../static/css/universal.css">
-        <link id="theme" rel="stylesheet" href="../../static/css/themes/theme_dark.css">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>
-        <link id="font" rel="stylesheet" href="../../static/css/themes/font_serif.css">
-        <link id="favicon" rel="shortcut icon" type="image/webp" href="../../static/img/favicons/default.webp">
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+        <link id="favicon" rel="shortcut icon" type="image/webp" href="../../media/img/favicons/default.webp">
     </head>
     <body>
-        <div id="header-container" class="outer-container">
+        <section id="container-header" class="outer-container">
             <!-- Header will be inserted here -->
-        </div>
-        <div id="body-container" class="outer-container">
-            <main class="inner-container">
-                <div class="text-row">
-                    <div class="text-column">
-                        <h2><a id="#music" href="#music">Music</a></h2>
-                        <p><iframe
-                                width="40%"
-                                align="right"
-                                style="margin-left: 7px; height: 13em;"
-                                src="https://www.youtube.com/embed/N5QZRr5IFVg"
-                                title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                        </iframe>I've always loved music, and especially singing (I was in choir in secondary school) and during lockdown I decided it was time to become a lot more active with music. To that effect, I've been singing more, fiddling with MuseScore more, and so on. Not a great deal is public at the moment, but it has led to one thing I'm particularly proud of.
-
-                        The <a href="https://ggroupies.bandcamp.com/">GrafeasGroupies</a> are a group consisting of myself and several friends. Together we occasionally make albums consisting of memes and some serious tracks. To the right you'll find my cover of 'Mad World', which was included in our second album, <a href="https://ggroupies.bandcamp.com/album/mister-typealot-2">mister TypeALot</a>.
-
+        </section>
+        <section id="body-container" class="section">
+            <h1 class="title text-centred">Music</h1>
+            <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview examples">
+                <ul>
+                    <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a>Overview</a></li>
+                    <li class="" data-target="examples" onclick="switch_tab(this)"><a>Examples</a></li>
+                </ul>
+            </div>
+            <section class="custom-centred medium-width">
+                <div id="overview" class="">
+                    <div class="block">
+                        I've always loved music. Was in choir in secondary school. Fiddle with MuseScore. Sing practically all the time. Probably annoy my neighbours.
+                    </div>
+                    <div class="block">
+                        In terms of things that are public, you've got the <a href="https://ggroupies.bandcamp.com/">GrafeasGroupies</a>, a group consisting of myself and several friends. Together we occasionally make albums consisting of memes and some serious tracks. There's also my cover of 'Mad World', which was included in our second album, <a href="https://ggroupies.bandcamp.com/album/mister-typealot-2">mister TypeALot</a>.
+                    </div>
+                    <div class="block">
                         I hope to create more proper music videos in the future. It can be difficult considering my lack of skill with instrumentals; I have to rely on YouTube to give good backing tracks, which it can't always be relied upon to do. Nonetheless, I sometimes find excellent ones, such as for 'Mad World', and in these cases I hope to create more recordings good enough to upload.
-                        </p>
+                    </div>
+                    <div class="block">
+                        Oh, I also did a little piano thing in MuseScore on a whim one time. It's called 'A Fire Glimmers in the North'.
                     </div>
                 </div>
-            </main>
-        </div>
-        <div id="footer-container" class="outer-container">
+            </section>
+            <section class="custom-centred medium-width">
+                <div id="examples" class="hidden">
+                    <div class="columns is-multiline has-top-gap">
+                        <div class="column">
+                            <div class="custom-centred" style="width: 512px;">
+                                <iframe
+                                    width="512"
+                                    height="288"
+                                    src="https://www.youtube.com/embed/N5QZRr5IFVg"
+                                    title="Mad World | Cover by Murdo Maclachlan"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="custom-centred" style="width: 512px;">
+                                <iframe
+                                    width="512"
+                                    height="288"
+                                    src="https://www.youtube.com/embed/xw0T-zGxaNk"
+                                    title="A Fire Glimmers in the North"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="container-footer" class="outer-container">
             <!-- Footer will be inserted here -->
-        </div>
-        <div id="scripts">
-            <!-- Scripts (secondary scripts inserted during constructor runtime) -->
-            <script id="constructor" src="../../scripts/js/constructor.js"></script>
-        </div>
+        </section>
+        <section id="scripts">
+            <!-- Scripts -->
+            <script id="builder" src="../../scripts/page_builder.js"></script>
+            <script id="tabulator" src="../../scripts/tabulator.js"></script>
+        </section>
     </body>
 </html>

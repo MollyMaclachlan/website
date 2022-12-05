@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Meta elements -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Murdo B. Maclachlan">
+        <meta name="prefix" content="../">
+        <meta
+          name="description"
+          content="The home page of Murdo Maclachlan."
+        >
+        <title>Programming | Murdo Maclachlan</title>
+
+        <!-- Styling -->
+        <link rel="stylesheet" type="text/css" href="../../styles/main.css">
+        <link id="favicon" rel="shortcut icon" type="image/webp" href="../../media/img/favicons/default.webp">
+    </head>
+    <body>
+        <section id="container-header" class="outer-container">
+            <!-- Header will be inserted here -->
+        </section>
+        <section id="body-container" class="section">
+            <h1 class="title text-centred">Programming</h1>
+            <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview repositories">
+                <ul>
+                    <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a>Overview</a></li>
+                    <li class="" data-target="repositories" onclick="switch_tab(this)"><a>Repositories</a></li>
+                </ul>
+            </div>
+            <section class="custom-centred medium-width">
+                <div id="overview" class="">
+                    <div class="block">
+                        Secondary to almost everything else on this website (don't tell my lecturers that!), I'm a programmer. I'm currently studying for a Bachelor's in software engineering, but only as a safety net. None of the other things I'm interested in are stable career paths ― programming, something I'm good at, even if not <i>particularly</i> passionate about it these days, is a good backup to have.
+                    </div>
+                    <div class="block">
+                        Aside from my studies, I do have a few programming hobby projects. Most of them are quite closely tied in with my activities with the <a href="transcribing.html">Transcribers of Reddit</a>, but there are one or two that I wrote because it helped me slightly shorten a task I was carrying out repeatedly, or just because I thought it would be interesting. And, of course, this website is one of my programming projects!
+                    </div>
+                    <div class="block">
+                        You can find some links to some of my more interesting (and maybe slightly presentable in terms of code quality?) projects in the 'Repositories' section of this page, and the link to this website's source code is in the footer.
+                    </div>
+                </div>
+            </section>
+            <section class="custom-centred medium-width">
+                <div id="repositories" class="hidden">
+                    <div class="columns is-multiline has-top-gap">
+                        <div class="column">
+                            <div class="card card-link">
+                                <div class="card-above-footer">
+                                    <div class="card-content">
+                                        <h1 class="title is-size-5 text-centred">Smooth Logger</h1>
+                                        <div class="block">
+                                            A simple logger made primarily for my own personal use. I got so lazy that instead of searching for a library that suited my needs, I integer overflowed back around to being productive and wrote one myself.
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <a href="https://codeberg.org/MurdoMaclachlan/smooth_logger/" target="_blank">Go to repository</a>
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card card-link">
+                                <div class="card-above-footer">
+                                    <div class="card-content">
+                                        <h1 class="title is-size-5 text-centred">Smooth Progress</h1>
+                                        <div class="block">
+                                            A simple progress bar made primarily for my own personal use. See the description of 'Smooth Logger', to the left, for the origins of this library. They have the same story.
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <a href="https://codeberg.org/MurdoMaclachlan/smooth_progress" target="_blank">Go to repository</a>
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-multiline has-top-gap has-bottom-gap">
+                        <div class="column">
+                            <div class="card card-link">
+                                <div class="card-above-footer">
+                                    <div class="card-content">
+                                        <h1 class="title is-size-5 text-centred">OSCR</h1>
+                                        <div class="block">
+                                            Removes listed comments from the user's Reddit profile after a period of time. Primarily designed for <a href="transcribing.html">r/TranscribersOfReddit</a> users. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <a href="https://github.com/MurdoMaclachlan/oscr" target="_blank">Go to repository</a>
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card card-link">
+                                <div class="card-above-footer">
+                                    <div class="card-content">
+                                        <h1 class="title is-size-5 text-centred">TADR</h1>
+                                        <div class="block">
+                                            A tool that will automatically reply 'done' to the first 'cannot find transcription' message from the <a href="transcribing.html">r/TranscribersOfReddit</a> bot, which is usually triggered by initially replying too early.
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <a href="https://github.com/MurdoMaclachlan/tadr" target="_blank">Go to repository</a>
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card card-link">
+                                <div class="card-above-footer">
+                                    <div class="card-content">
+                                        <h1 class="title is-size-5 text-centred">TORCF</h1>
+                                        <div class="block">
+                                            Detects cloned posts in <a href="transcribing.html">r/TranscribersOfReddit</a> queue, with an additional capability to track posts from a specified partner subreddit.
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <p class="card-footer-item">
+                                        <a href="https://github.com/MurdoMaclachlan/torcf" target="_blank">Go to repository</a>
+                                    </p>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section id="container-footer" class="outer-container">
+            <!-- Footer will be inserted here -->
+        </section>
+        <section id="scripts">
+            <!-- Scripts -->
+            <script id="builder" src="../../scripts/page_builder.js"></script>
+            <script id="tabulator" src="../../scripts/tabulator.js"></script>
+        </section>
+    </body>
+</html>

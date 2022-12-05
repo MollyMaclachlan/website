@@ -4,59 +4,51 @@
     <head>
         <!-- Meta elements -->
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Murdo B. Maclachlan">
         <meta
           name="description"
           content="The home page of Murdo Maclachlan."
         >
-        <link rel="me" id="mastodon-identifier" href="https://mastodon.online/@murdomaclachlan">
-        <title>Murdo Maclachlan | Legal</title>
+        <title>Terms & Privacy | Murdo Maclachlan</title>
 
         <!-- Styling -->
-        <link id="structure" rel="stylesheet" href="../static/css/universal.css">
-        <link id="theme" rel="stylesheet" href="../static/css/themes/theme_dark.css">
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>
-        <link id="font" rel="stylesheet" href="../static/css/themes/font_serif.css">
-        <link id="favicon" rel="shortcut icon" type="image/webp" href="../static/img/favicons/default.webp">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
+        <link id="favicon" rel="shortcut icon" type="image/webp" href="../media/img/favicons/default.webp">
     </head>
     <body>
-        <div id="header-container" class="outer-container">
+        <section id="container-header" class="outer-container">
             <!-- Header will be inserted here -->
-        </div>
-        <div id="body-container" class="outer-container">
-            <main class="inner-container">
-                <div class="text-row">
-                    <div class="text-column left-column">
-                        <h2><a id="#terms-and-privacy" href="#terms-and-privacy">Terms and Privacy</a></h2>
-                        <p>Usage of this website ("Website") and its content ("Content") indicates acceptance of these terms of service ("Terms").
-
-                        The Content on the Website falls under a variety of licenses, as detailed in the licensing section on the right of this page.
-
-                        The Website may store cookies for the purpose of theme and font selection. If cookies are accepted, a cookie will be stored to remember that setting; cookies thereafter are only created and stored upon changing theme or font. All cookies last 24 hours. No personal data is collected or stored by the Website.
-                        </p>
-                    </div>
-                    <div class="text-column">
-                        <h2><a id="#licensing" href="#licensing">Licensing</a></h2>
-                        <p>Various aspects of this website fall under different licenses.
-
-                        All software aspects of this website, such as the code, markup and styling, are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">Creative Commons v4.0 by Attribution Non-Commercial Share-Alike license</a>. A human-readable summary may be found <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">here</a>, but is not a substitute for the full license. This license provides no warranty.
-
-                        The rights to content created by Murdo Maclachlan that is not related to the code, styling or design of this website are fully withheld to Murdo Maclachlan with no exceptions. Examples of such content include but are not necessarily limited to: the written text of this website, and any content created by Murdo Maclachlan that has been embedded from other websites.
-
-                        The rights to any content not created by Murdo Maclachlan, such as the logo of the <a href="https://grafeas.org">Grafeas Group</a>, are fully withheld to their respective owners. The Grafeas Group logo is used with permission from the Grafeas Group.
-
-                        Any exceptions to these licensing terms will be explicitly stated on the relevant part of the website.
-                        </p>
-                    </div>
+        </section>
+        <section id="body-container" class="section">
+            <div class="low-width custom-centred">
+                <h1 class="title">Terms of Service</h1>
+                <div class="block">
+                    Usage of this website ("Website") and its content ("Content") or software ("Software") indicates acceptance of these terms of service ("Terms").
                 </div>
-            </main>
-        </div>
-        <div id="footer-container" class="outer-container">
+                <div class="block">
+                    By using any faculty of the Website, you are indiacting your acceptance of these Terms, and are indicating your understanding that the Service is provided "as is", without warranty of any kind, express or implied, and that in no event shall the the authors or copyright holders be liable for any claim, damages or other liability relating to the Website.
+                </div>
+                <h1 class="title is-size-4">Licensing</h1>
+                <div class="block">
+                    Faculties of the Website that pertain solely to functionality, such as the HTML tags and attributes, the JavaScript, and the CSS, are collectively referred to as the "Software", and are released under the <a href="https://github.com/MurdoMaclachlan/website/blob/master/LICENSE">MIT license</a>.
+                </div>
+                <div class="block">
+                    Any and all other faculties of the Website, including but not limited to, any content that does not directly affect functionality, embedded or otherwise, such as plain text, images and other media, or the content of tables, are collectively referred to as the "Content", and are fully reserved to their respective owners.
+                </div>
+                <h1 class="title is-size-4">Privacy</h1>
+                <div class="block">
+                    The Website may store cookies for the purpose of theme selection. If cookies are accepted, a cookie will be stored to remember that setting; cookies thereafter are only created and stored upon changing theme. No personal data is collected or stored by the Website.
+                </div>
+            </div>
+        </section>
+        <section id="container-footer" class="outer-container">
             <!-- Footer will be inserted here -->
-        </div>
-        <div id="scripts">
-            <!-- Scripts (secondary scripts inserted during constructor runtime) -->
-            <script id="constructor" src="../scripts/js/constructor.js"></script>
-        </div>
+        </section>
+        <section id="scripts">
+            <!-- Scripts -->
+            <script id="builder" src="../scripts/page_builder.js"></script>
+            <script id="tabulator" src="../scripts/tabulator.js"></script>
+        </section>
     </body>
 </html>
