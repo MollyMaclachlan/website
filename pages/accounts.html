@@ -1,149 +1,81 @@
 <!DOCTYPE html>
 
-<html lang="en-UK">
-    <head id="head">
+<html lang="en">
+    <head>
         <!-- Meta elements -->
-        <meta charset="utf-8"/>
-        <meta name="author" content="Murdo B. Maclachlan"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Murdo B. Maclachlan">
         <meta
-            name="description"
-            content="A list of Murdo Maclachlan's various accounts."
-        />
-        <meta
-            name="type"
-            content="main"
-        />
-        <link rel="me" id="mastodon-identifier" href="https://mastodon.online/@murdomaclachlan">
-        <title>Murdo Maclachlan | Accounts</title>
+          name="description"
+          content="The home page of Murdo Maclachlan."
+        >
+        <title>About | Murdo Maclachlan</title>
 
         <!-- Styling -->
-        <link id="structure" rel="stylesheet" href="../static/css/universal.css">
-        <link id="theme" rel="stylesheet" href="../static/css/themes/theme_dark.css">
-        <link rel="stylesheet" href="../static/css/extensions/accounts.css"/>
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/linux-biolinum" type="text/css"/>
-        <link id="font" rel="stylesheet" href="../static/css/themes/font_serif.css">
-        <link id="favicon" rel="shortcut icon" type="image/webp" href="../static/img/favicons/default.webp">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
+        <link id="favicon" rel="shortcut icon" type="image/webp" href="../media/img/favicons/default.webp">
     </head>
     <body>
-        <div id="header-container" class="outer-container">
+        <section id="container-header" class="outer-container">
             <!-- Header will be inserted here -->
-        </div>
-        <div id="body-container" class="outer-container">
-            <main class="text-row inner-container">
-                <div id="account-description" class="text-column">
-                    <h2>Accounts</h2>
-                    <p>Here you can find an alphabetical list of navigation links to my various internet accounts, accompanied by short explanations of what I generally do with them.
-
-                        Click on an item on the list to the right to view information about that account. 'Info' displays this page.
-
-                        On each account's information page you will find a single-letter code representing its level of activity. They are as follows:
-                    </p>
-                    <ul>
-                        <li>(A): active.</li>
-                        <li>(P): periodically active (can be sporadic or for specific regular time periods).</li>
-                        <li>(D): dormant; inactive but with the intent of becoming active in the future.</li>
-                        <li>(I): inactive for the foreseeable future.</li>
-                    </ul><p>If an account does not appear in this list, that does not <i>necessarily</i> mean it is not mine, but you should check before assuming so.
-                    </p>
+        </section>
+        <section id="body-container" class="section">
+            <h1 class="title text-centred">Accounts</h1>
+            <div class="low-width custom-centred">
+                <div class="block">
+                    The following is a list of all accounts I have. I aim to keep this up-to-date. Be warned that many accounts are inactive or sporadically active.
                 </div>
-                <ul id="account-list" class="text-column">
-                    <li class="entry">
-                        <a id="info" onclick="toggle_account(this)">Info</a>
-                    </li>
-                    <li class="list-header">Account list:</li>
-                    <li class="entry">
-                        <a id="allpoetry" onclick="toggle_account(this)">AllPoetry</a>
-                    </li>
-                    <li class="entry">
-                        <a id="belletristica" onclick="toggle_account(this)">Belletristica</a>
-                    </li>
-                    <li class="entry">
-                        <a id="codeberg" onclick="toggle_account(this)">Codeberg</a>
-                    </li>
-                    <li class="entry">
-                        <a id="deviantart" onclick="toggle_account(this)">DeviantArt</a>
-                    </li>
-                    <li class="entry">
-                        <a id="discord" onclick="toggle_account(this)">Discord</a>
-                    </li>
-                    <li class="entry">
-                        <a id="github" onclick="toggle_account(this)">GitHub</a>
-                    </li>
-                    <li class="entry">
-                        <a id="itchio" onclick="toggle_account(this)">itch.io</a>
-                    </li>
-                    <li class="entry">
-                        <a id="kofi" onclick="toggle_account(this)">Ko-Fi</a>
-                    </li>
-                    <li class="entry">
-                        <a id="linuxquestions" onclick="toggle_account(this)">LinuxQuestions</a>
-                    </li>
-                    <li class="entry">
-                        <a id="mastodon" onclick="toggle_account(this)">Mastodon</a>
-                    </li>
-                    <li class="entry">
-                        <a id="mozilla" onclick="toggle_account(this)">Mozilla Addons</a>
-                    </li>
-                    <li class="entry">
-                        <a id="musescore" onclick="toggle_account(this)">MuseScore</a>
-                    </li>
-                    <li class="entry">
-                        <a id="nanowrimo" onclick="toggle_account(this)">NaNoWriMo</a>
-                    </li>
-                    <li class="entry">
-                        <a id="nexusmods" onclick="toggle_account(this)">NexusMods</a>
-                    </li>
-                    <li class="entry">
-                        <a id="reddit" onclick="toggle_account(this)">Reddit</a>
-                    </li>
-                    <li class="entry">
-                        <a id="royalroad" onclick="toggle_account(this)">RoyalRoad</a>
-                    </li>
-                    <li class="entry">
-                        <a id="steam" onclick="toggle_account(this)">Steam</a>
-                    </li>
-                    <li class="entry">
-                        <a id="telegram" onclick="toggle_account(this)">Telegram</a>
-                    </li>
-                    <li class="entry">
-                        <a id="tumblr" onclick="toggle_account(this)">Tumblr</a>
-                    </li>
-                    <li class="entry">
-                        <a id="twitch" onclick="toggle_account(this)">Twitch</a>
-                    </li>
-                    <li class="entry">
-                        <a id="twitter" onclick="toggle_account(this)">Twitter</a>
-                    </li>
-                    <li class="entry">
-                        <a id="wattpad" onclick="toggle_account(this)">Wattpad</a>
-                    </li>
-                    <li class="entry">
-                        <a id="wikipedia" onclick="toggle_account(this)">Wikipedia</a>
-                    </li>
-                    <li class="entry">
-                        <a id="wordsmith" onclick="toggle_account(this)">Wordsmith</a>
-                    </li>
-                    <li class="entry">
-                        <a id="youtube" onclick="toggle_children(this)">YouTube</a>
-                    </li>
-                    <li class="entry-youtube child-entry" style="display:none;">
-                        <a id="youtube-main" onclick="toggle_account(this)">Main</a>
-                    </li>
-                    <li class="entry-youtube child-entry" style="display:none;">
-                        <a id="youtube-archive" onclick="toggle_account(this)">Stream Archive</a>
-                    </li>
-                    <li class="entry-youtube child-entry" style="display:none;">
-                        <a id="youtube-sullivan" onclick="toggle_account(this)">The Records of Dr Sullivan</a>
-                    </li>
-                </ul>
-            </main>
-        </div>
-        <div id="footer-container"  class="outer-container">
+                <div class="block">
+                    It's possible I've missed a few, but generally, if an account does not appear in our records, it does not exist. Or at the very least it's not mine.
+                </div>
+            </div>
+            <div id="account-list" class="columns is-multiline low-width custom-centred has-top-gap">
+                <div class="column">
+                    <ul>
+                        <li><a href="https://allpoetry.com/Murdo_Maclachlan" target="_blank">AllPoetry</a></li>
+                        <li><a href="https://belletristica.com/en/users/14865-murdo-maclachlan#profile" target="_blank">Belletristica</a></li>
+                        <li><a href="https://codeberg.org/MurdoMaclachlan" target="_blank">Codeberg</a></li>
+                        <li><a href="https://www.deviantart.com/mbmaclachlan" target="_blank">DeviantArt</a></li>
+                        <li><a href="https://discord.com/users/234960566278553600" target="_blank">Discord</a></li>
+                        <li><a href="https://github.com/MurdoMaclachlan" target="_blank">GitHub</a></li>
+                        <li><a href="https://murdomaclachlan.itch.io/" target="_blank">itch.io</a></li>
+                        <li><a href="https://ko-fi.com/murdomaclachlan" target="_blank">Ko-Fi</a></li>
+                        <li><a href="https://www.linuxquestions.org/questions/user/murdo-1234055/" target="_blank">LinuxQuestions</a></li>
+                        <li><a href="https://mastodon.online/@murdomaclachlan" target="_blank">Mastodon</a></li>
+                        <li><a href="https://addons.mozilla.org/en-GB/firefox/user/16624319/" target="_blank">Mozilla Addons</a></li>
+                        <li><a href="https://musescore.com/murdomaclachlan" target="_blank">MuseScore</a></li>
+                        <li><a href="https://nanowrimo.org/participants/murdomaclachlan" target="_blank">NaNoWriMo</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li><a href="https://www.nexusmods.com/users/79190763" target="_blank">NexusMods</a></li>
+                        <li><a href="https://old.reddit.com/user/MurdoMaclachlan" target="_blank">Reddit</a></li>
+                        <li><a href="https://www.royalroad.com/profile/296119" target="_blank">RoyalRoad</a></li>
+                        <li><a href="https://www.scribblehub.com/profile/105962/murdomaclachlan/" target="_blank">Scribble Hub</a></li>
+                        <li><a href="https://steamcommunity.com/id/murdomaclachlan" target="_blank">Steam</a></li>
+                        <li><a href="https://murdomaclachlan.tumblr.com/" target="_blank">Tumblr</a></li>
+                        <li><a href="https://www.twitch.tv/murdomaclachlan" target="_blank">Twitch</a></li>
+                        <li><a href="https://twitter.com/murdomaclachlan" target="_blank">Twitter</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/User:MurdoMaclachlan" target="_blank">Wikipedia</a></li>
+                        <li><a href="https://wordsmith.social/murdomaclachlan/" target="_blank">Wordsmith</a></li>
+                        <li><u>YouTube</u></li>
+                        <ul class="nested-list">
+                            <li><a href="https://www.youtube.com/@murdomaclachlan" target="_blank">Primary</a></li>
+                            <li><a href="https://www.youtube.com/@mmaclachlanarchive" target="_blank">Stream Archive</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="container-footer" class="outer-container">
             <!-- Footer will be inserted here -->
-        </div>
-        <div id="scripts">
-            <!-- Scripts (secondary scripts inserted during constructor runtime) -->
-            <script id="constructor" src="../scripts/js/constructor.js"></script>
-        </div>
+        </section>
+        <section id="scripts">
+            <!-- Scripts -->
+            <script id="builder" src="../scripts/page_builder.js"></script>
+            <script id="tabulator" src="../scripts/tabulator.js"></script>
+        </section>
     </body>
 </html>

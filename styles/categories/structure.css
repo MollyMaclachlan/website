@@ -1,0 +1,54 @@
+:root {
+    --footer-border: 1px solid lightgrey
+}
+
+/* IDs */
+#body-container {
+    flex-grow: 1;
+}
+
+/* Footer */
+.footer-left {
+    border-right: var(--footer-border);
+    text-align: right;
+}
+@media screen and (max-width: 768px) {
+    .footer-left, .footer-right {
+        text-align: center;
+    }
+    .footer-left {
+        border-right: none;
+        border-bottom: var(--footer-border);
+        max-width: 170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Centring (the default 'is-centered' offered by Bulma doesn't seem to work in all contexts) */
+.custom-centred {
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-centred {
+    text-align: center;
+}
+
+/* Misc */
+.has-top-gap {
+    margin-top: 1em;
+}
+.is-size-4 {
+    margin-bottom: 0.3em !important;
+}
+.nested-list {
+    margin-left: 1em;
+}
+
+/* Widths */
+.low-width {
+    max-width: 615px;
+}
+.medium-width {
+    max-width: 1230px;
+}

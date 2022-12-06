@@ -1,3 +1,33 @@
+------- CHANGELOG NO LONGER MAINTAINED HERE, SEE: https://github.com/MurdoMaclachlan/website/releases -------
+
+
+2022-12-06:
+
+- Various fixes, improvements and updates.
+
+2022-12-05:
+
+- Created new website design.
+
+
+
+------- CHANGELOG FOR OLD WEBSITE DESIGN BELOW THIS LINE -------
+
+
+
+2022-10-07:
+
+- Restructured CSS files and improved styling.
+- Changed navigation and setting buttons to light up when hovered over, instead of being underlined with darkened text.
+
+2022-10-05:
+
+- Renamed 'Endeavours' to 'Projects'.
+- Moved 'Music' and 'Transcribing' to their own pages:
+    - These pages are subpages of 'Projects'.
+    - Hovering 'Projects' button on the navbar now opens a dropdown menu for these pages.
+- Improved appearance of 'GO TO ACCOUNT' button on 'Accounts' page.
+
 2022-10-04:
 
 - Re-styled navigation menu:

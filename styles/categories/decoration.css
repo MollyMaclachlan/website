@@ -1,0 +1,40 @@
+:root {
+    --border-values: 1px solid lightgrey;
+}
+
+
+body, html { height: 100%; }
+body {
+    display: flex;
+    flex-flow: column;
+}
+
+.poem {
+    white-space: pre;
+    font-style: italic;
+    text-align: center;
+}
+.navbar-dropdown-link {
+    border: none;
+}
+
+#account-list li {
+    margin-left: 1em;
+    list-style-type: disc;
+}
+
+/* Page boundaries */
+#footer {
+    background-color: white;
+    border-top: var(--border-values);
+}
+#footer .content {
+    margin-bottom: -2.5em;
+}
+#header {
+    border-bottom: var(--border-values);
+}
+#header .dropdown-trigger {
+    margin-right: -0.6em;
+    margin-left: -0.6em;
+}
