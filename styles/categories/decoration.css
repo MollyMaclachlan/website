@@ -9,13 +9,16 @@ body {
     flex-flow: column;
 }
 
+.navbar-dropdown-link {
+    border: none;
+}
+.navbar-brand a {
+    cursor: default !important;
+}
 .poem {
     white-space: pre;
     font-style: italic;
     text-align: center;
-}
-.navbar-dropdown-link {
-    border: none;
 }
 
 #account-list li {
