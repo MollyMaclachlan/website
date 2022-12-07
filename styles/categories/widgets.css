@@ -1,8 +1,14 @@
 /* All pages */
-#button-theme {
-    margin-right: 0.5em;
-    margin-top: auto;
-    margin-bottom: auto;
+#skip-link {
+    background-color: white;
+    position: fixed;
+    margin-top: 0.5em;
+    margin-left: -11.5em;
+    z-index: 1;
+    transition: margin-left 0.5s linear;
+}
+#skip-link:focus {
+    margin-left: 0.5em;
 }
 
 /* Multiple pages */
