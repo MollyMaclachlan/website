@@ -9,8 +9,6 @@ try {
  * Inserts the universal elements of the website into the page.
  */
 function build_page() {
-
-    // Header and footer
     insert_structure("header");
     insert_structure("footer");
 }
@@ -51,8 +49,7 @@ function insert_structure(structure) {
  * @return The modified structure
  */
 function modify_footer(structure) {
-    structure = modify_links(structure);
-    return structure;
+    return modify_links(structure);
 }
 
 /**
