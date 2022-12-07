@@ -14,12 +14,12 @@
 }
 .card-link-header {
     height: 4.5em;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: var(--border-basic);
 }
 .card-link-multi {
     padding-right: 0.5em;
     margin-right: 0.5em;
-    border-right: 1px solid lightgrey;
+    border-right: var(--border-basic);
 }
 #tabset ul {
     margin: 0.2em;
