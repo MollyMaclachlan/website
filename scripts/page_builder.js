@@ -1,6 +1,6 @@
 // Fetch the page's prefix for compatibility between pages in the top-level folder & those in subfolders
 try {
-    var prefix = document.getElementsByName('prefix')[0].content;
+    var prefix = document.getElementsByName("prefix")[0].content;
 } catch (TypeError) {
     var prefix = "";
 }
@@ -11,19 +11,20 @@ try {
 function build_page() {
     insert_structure("header");
     insert_structure("footer");
-    insert_script(`${prefix}../scripts/events.js`)
+    insert_script(`${prefix}../scripts/events.js`, "events")
 }
 
 /**
  * Inserts a script element into the page's list of scripts.
  *
  * @param source The path to the script
+ * @param id     The id for the HTML element
  */
-function insert_script(source) {
-    let script = document.createElement('script');
-    script.id = "events";
+function insert_script(source, id) {
+    let script = document.createElement("script");
+    script.id = id;
     script.src = source;
-    document.getElementById('scripts').appendChild(script);
+    document.getElementById("scripts").appendChild(script);
 }
 
 /**
@@ -38,7 +39,7 @@ function insert_structure(structure) {
     .then(response=> response.text())
     .then(text=> document.getElementById(`container-${structure}`).insertAdjacentHTML(
         "beforeend",
-        modify_structure(parser.parseFromString(text, 'text/html'), structure)
+        modify_structure(parser.parseFromString(text, "text/html"), structure)
     ));
 }
 
@@ -64,21 +65,21 @@ function modify_footer(structure) {
  */
 function modify_header(structure) {
     structure = modify_links(structure);
-    let logo = structure.getElementById('logo');
-    logo.src = `${prefix}${logo.dataset['src']}`;
+    let logo = structure.getElementById("logo");
+    logo.src = `${prefix}${logo.dataset["src"]}`;
     return structure;
 }
 
 /**
  * Modifies all 'a' elements in a given structure.
  * 
- * @param structure The structure to modify the 'a' elements of
+ * @param structure The structure to modify the "a" elements of
  * 
  * @return The modified structure
  */
 function modify_links(structure) {
-    for (element of structure.getElementsByTagName('a')) {
-        let target = element.dataset['target'];
+    for (element of structure.getElementsByTagName("a")) {
+        let target = element.dataset["target"];
         if (target != null) {
             element.href = `${prefix}${target}`;
         }
@@ -91,21 +92,21 @@ function modify_links(structure) {
  * position within the file structure.
  *
  * @param structure The HTML structure to modify
- * @param name      The name of the structure; either 'header' or 'footer'
+ * @param name      The name of the structure; either "header" or "footer"
  *
  * @return The header or footer element from within the modified structure
  */
 function modify_structure(structure, name) {
     switch (name) {
-        case 'footer':
+        case "footer":
             structure = modify_footer(structure);
             break;
-        case 'header':
+        case "header":
             structure = modify_header(structure);
             break;
         default:
     }
-    return structure.getElementsByTagName('body')[0].innerHTML;
+    return structure.getElementsByTagName("body")[0].innerHTML;
 }
 
 build_page();
