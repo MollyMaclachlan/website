@@ -1,6 +1,6 @@
-var tabs_widget = document.getElementById('tabset');
+var tabs_widget = document.getElementById("tabset");
 var tabs_links = tabs_widget.children[0].children;
-var tabset = tabs_widget.dataset['tabset'].split(' ');
+var tabset = tabs_widget.dataset["tabset"].split(" ");
 
 /**
  * Switches the active tab in the page's tabset.
@@ -20,7 +20,7 @@ function switch_tab(trigger) {
 function switch_active(trigger) {
     for (element of tabs_links) {
         class_toggler(
-            'is-active',
+            "is-active",
             (element == trigger),
             element
         );
@@ -37,8 +37,8 @@ function switch_shown(trigger) {
     for (element of tabset) {
         let current_section = document.getElementById(element);
         class_toggler(
-            'hidden',
-            (element != trigger.dataset['target']),
+            "hidden",
+            (element != trigger.dataset["target"]),
             current_section
         );
     }

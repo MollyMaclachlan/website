@@ -1,11 +1,11 @@
 // Fetch the page's prefix for compatibility between pages in the top-level folder & those in subfolders
 try {
-    var prefix = document.getElementsByName('prefix')[0].content;
+    var prefix = document.getElementsByName("prefix")[0].content;
 } catch (TypeError) {
     var prefix = "";
 }
 
-var favicon = document.getElementById('favicon');
+var favicon = document.getElementById("favicon");
 var logo;
 
 var events = {
@@ -22,7 +22,7 @@ var events = {
  * Determine if any event is happening, and if so, trigger the changes to reflect that.
  */
 function calculate_event() {
-    logo = document.getElementById('logo'); // logo must be initialised here, see line 47 for rationale
+    logo = document.getElementById("logo"); // logo must be initialised here, see line 47 for rationale
     let date = new Date();
     let day = `${date.getDate()}/${date.getMonth()}`;
     let month = `${date.getMonth()}`;
