@@ -22,7 +22,7 @@ var events = {
  * Determine if any event is happening, and if so, trigger the changes to reflect that.
  */
 function calculate_event() {
-    logo = document.getElementById('logo'); // logo must be initialised here, see line 40 for rationale
+    logo = document.getElementById('logo'); // logo must be initialised here, see line 47 for rationale
     let date = new Date();
     let day = `${date.getDate()}/${date.getMonth()}`;
     let month = `${date.getMonth()}`;
