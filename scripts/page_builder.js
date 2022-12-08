@@ -11,17 +11,18 @@ try {
 function build_page() {
     insert_structure("header");
     insert_structure("footer");
-    insert_script(`${prefix}../scripts/events.js`)
+    insert_script(`${prefix}../scripts/events.js`, "events")
 }
 
 /**
  * Inserts a script element into the page's list of scripts.
  *
  * @param source The path to the script
+ * @param id     The id for the HTML element
  */
-function insert_script(source) {
+function insert_script(source, id) {
     let script = document.createElement('script');
-    script.id = "events";
+    script.id = id;
     script.src = source;
     document.getElementById('scripts').appendChild(script);
 }
