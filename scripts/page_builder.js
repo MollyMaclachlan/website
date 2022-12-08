@@ -11,6 +11,7 @@ try {
 function build_page() {
     insert_structure("header");
     insert_structure("footer");
+    insert_script(`${prefix}../scripts/events.js`)
 }
 
 /**
@@ -20,6 +21,7 @@ function build_page() {
  */
 function insert_script(source) {
     let script = document.createElement('script');
+    script.id = "events";
     script.src = source;
     document.getElementById('scripts').appendChild(script);
 }
