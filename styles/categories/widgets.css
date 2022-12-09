@@ -1,4 +1,7 @@
 /* All pages */
+
+/* The #logo-container styling is adapted from the following Stack Overflow answer:
+https://stackoverflow.com/questions/11672946/styling-an-image-title-attribute-using-css */
 #logo-container:after {
     content: attr(data-desc);
     position: absolute;
@@ -17,6 +20,7 @@
     left: 5%;
     opacity: 1;
 }
+
 #skip-link {
     background-color: white;
     position: fixed;

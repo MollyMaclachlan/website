@@ -71,12 +71,14 @@ function calculate_event() {
 }
 
 /**
- * Update the description for the logo with the new event.
+ * Update the description for the logo with the new event, and makes it anchorable.
  * 
  * @param {*} desc The new description.
  */
 function update_desc(desc) {
     logo_container.dataset['desc'] = desc;
+    logo_container.href = "#";
+    logo_container.onclick = "return false;";
 }
 
 /**
