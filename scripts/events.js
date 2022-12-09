@@ -25,15 +25,25 @@ try {
 }
 
 var favicon = document.getElementById("favicon");
+var logo_container;
 var logo;
 
 var events = {
     "days": {
-        "6/3": "../media/img/favicons/events/ace.webp",
-        "31/9": "../media/img/favicons/events/halloween.webp"
+        "6/3": [
+            "../media/img/favicons/events/ace.webp",
+            "Today is International Asexuality Day!"
+        ],
+        "31/9": [
+            "../media/img/favicons/events/halloween.webp",
+            "Today is Hallowe'en!"
+        ]
     },
     "months": {
-        "5": "../media/img/favicons/events/pride.webp"
+        "5": [
+            "../media/img/favicons/events/pride.webp",
+            "June is Pride Month!"
+        ]
     }
 }
 
@@ -41,16 +51,32 @@ var events = {
  * Determine if any event is happening, and if so, trigger the changes to reflect that.
  */
 function calculate_event() {
-    logo = document.getElementById("logo"); // logo must be initialised here, see line 47 for rationale
+    // these must be initialised here, see line 47 for rationale
+    logo_container = document.getElementById("logo-container");
+    logo = document.getElementById("logo");
+
+    let data;
     let date = new Date();
     let day = `${date.getDate()}/${date.getMonth()}`;
     let month = `${date.getMonth()}`;
 
     if (Object.keys(events["days"]).includes(day)) {
-        update_icons(events["days"][day]);
+        data = events["days"][day];
     } else if (Object.keys(events["months"]).includes(month)) {
-        update_icons(events["months"][month]);
+        data = events["months"][month];
     }
+
+    update_icons(data[0]);
+    update_desc(data[1]);
+}
+
+/**
+ * Update the description for the logo with the new event.
+ * 
+ * @param {*} desc The new description.
+ */
+function update_desc(desc) {
+    logo_container.dataset['desc'] = desc;
 }
 
 /**
