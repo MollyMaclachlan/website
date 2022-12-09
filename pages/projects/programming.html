@@ -24,9 +24,10 @@
         <main id="main-content">
             <section id="body-container" class="section">
                 <h1 class="title text-centred">Programming</h1>
-                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview repositories">
+                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview foss repositories">
                     <ul>
                         <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a href="#" onclick="return false;">Overview</a></li>
+                        <li class="" data-target="foss" onclick="switch_tab(this)"><a href="#" onclick="return false;">FOSS</a></li>
                         <li class="" data-target="repositories" onclick="switch_tab(this)"><a href="#" onclick="return false;">Repositories</a></li>
                     </ul>
                 </div>
@@ -40,6 +41,19 @@
                         </div>
                         <div class="block">
                             You can find some links to some of my more interesting (and maybe slightly presentable in terms of code quality?) projects in the 'Repositories' section of this page, and the link to this website's source code is in the footer.
+                        </div>
+                    </div>
+                </section>
+                <section class="custom-centred medium-width">
+                    <div id="foss" class="hidden">
+                        <div class="block">
+                            <strong>FOSS</strong> is <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank">free and open-source software</a>, which means that it's licensed in a way that grants users the right to study, change and distribute it and its source code to anyone and for any purpose. I'm very passionate about FOSS.
+                        </div>
+                        <div class="block">
+                            It's my personal belief that all software should be freely available to everyone. Take this website, for example. Its scripts are algorithms; logical progression and sets of instructions. Its HTML is just data representations. I don't believe in the ability of anyone to "own" a set of logical intsructions or a specific way of representing data. Thus, this website's software component are released under the AGPLv3 license. (See the <a href="../legal.html">Terms & Conditions</a> page for more detail.)
+                        </div>
+                        <div class="block">
+                            To further the prevlance of FOSS, I aim to use copyleft licenses as much as possible. <a href="https://en.wikipedia.org/wiki/Copyleft" target="_blank">Copyleft</a> is a technique whereby the continued freedom of derivative software is ensured by requiring that such software use the same license as the original. The AGPLv3 license as seen above is very strongly copyleft. It requires, among other things, that if you distribute software from this website, modified or unmodified, or allow users to access it over a network, you must also release the source under AGPLv3.
                         </div>
                     </div>
                 </section>
