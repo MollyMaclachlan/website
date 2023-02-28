@@ -24,11 +24,12 @@
         <main id="main-content">
             <section id="body-container" class="section">
                 <h1 class="title text-centred">Writing</h1>
-                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview poetry prose">
+                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview poetry prose quill">
                     <ul>
                         <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a href="#" onclick="return false;">Overview</a></li>
                         <li class="" data-target="poetry" onclick="switch_tab(this)"><a href="#" onclick="return false;">Poetry</a></li>
                         <li class="" data-target="prose" onclick="switch_tab(this)"><a href="#" onclick="return false;">Prose</a></li>
+                        <li class="" data-target="quill" onclick="switch_tab(this)"><a href="#" onclick="return false;">The Sleepy Quill</a></li>
                         <!--<li class="" data-target="examples" onclick="switch_tab(this)"><a>Examples</a></li>-->
                     </ul>
                 </div>
@@ -116,7 +117,7 @@ for autumn's loss it grieves.</blockquote>
                         <div class="columns is-multiline medium-width custom-centred">
                             <div class="column">
                                 <div class="card low-width custom-centred">
-                                    <div class="card-above-footer">
+                                    <div class="card-above-footer" style="min-height: 406.5px;">
                                         <div class="card-content">
                                             <h1 class="title is-size-5 text-centred">Rooms of the Desolate</h1>
                                             <div class="block">
@@ -139,11 +140,11 @@ for autumn's loss it grieves.</blockquote>
                             </div>
                             <div class="column">
                                 <div class="card low-width custom-centred">
-                                    <div class="card-above-footer" style="min-height: 382.5px;">
+                                    <div class="card-above-footer">
                                         <div class="card-content">
                                             <h1 class="title is-size-5 text-centred">My accounts</h1>
                                             <div class="block">
-                                                I have accounts on several prose writing websites.
+                                                I have accounts on several prose writing websites, and a substack page called "The Sleepy Quill"; see its specific section for more information.
                                             </div>
                                             <div class="block">
                                                 On Belletristica, I have both prose and some poetry collections. This was also the first prose writing website I joined, out of the ones I still have accounts for.
@@ -160,14 +161,28 @@ for autumn's loss it grieves.</blockquote>
                                         <p class="card-footer-item">
                                             <a class="card-link-multi" href="https://belletristica.com/en/users/14865-murdo-maclachlan#profile" target="_blank"">Belletristica</a>
                                             <a class="card-link-multi" href="https://www.royalroad.com/profile/296119" target="_blank">RoyalRoad</a>
-                                            <a href="https://www.scribblehub.com/profile/105962/murdomaclachlan/" target="_blank">Scribble Hub</a>
+                                            <a class="card-link-multi" href="https://www.scribblehub.com/profile/105962/murdomaclachlan/" target="_blank">Scribble Hub</a>
+                                            <a href="https://murdomaclachlan.substack.com/" target="_blank">The Sleepy Quill</a>
                                         </p>
                                     </footer>
                                 </div>
                             </div>
                         </div> 
                     </div>
-                </section>     
+                </section>  
+                <section class="custom-centred medium-width">
+                    <div id="quill" class="hidden">
+                        <div class="block">
+                            <strong>The Sleepy Quill</strong> is a substack newsletter/blog I've started to host my fiction writing and maybe also some non-fiction writing. I created it because writing sites I'm on, such as Belletristica and RoyalRoad, aren't well-suited to standalone short stories or non-fiction posts.
+                        </div>
+                        <div class="block">
+                            Any short story collections or other serialisations will be posted on Belletristica, RoyalRoad and Scribble Hub as is already the case, but any short standalone stories or non-fiction will be posted at the Sleepy Quill.
+                        </div>
+                        <div class="custom-centred" style="max-width: 480px;">
+                            <iframe src="https://murdomaclachlan.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+                        </div>
+                    </div>
+                </section>   
             </section>
         </main>
         <section id="container-footer" class="outer-container">
