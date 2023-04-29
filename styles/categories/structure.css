@@ -22,6 +22,11 @@
 }
 
 /* Centring (the default 'is-centered' offered by Bulma doesn't seem to work in all contexts) */
+.contents-centred {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .custom-centred {
     margin-left: auto;
     margin-right: auto;
