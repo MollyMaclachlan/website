@@ -24,14 +24,9 @@
         <main id="main-content">
             <section id="body-container" class="section">
                 <h1 class="title text-centred">Music</h1>
-                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview examples">
-                    <ul>
-                        <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a href="#" onclick="return false;">Overview</a></li>
-                        <li class="" data-target="examples" onclick="switch_tab(this)"><a href="#" onclick="return false;">Examples</a></li>
-                    </ul>
-                </div>
-                <section class="custom-centred medium-width">
-                    <div id="overview" class="">
+                <section class="custom-centred kilo-width">
+                    <div id="overview">
+                        <h2 class="subtitle text-centred is-subtitle" href="#overview" tabindex="0">Overview</h2>
                         <div class="block">
                             I've always loved music. Was in choir in secondary school. Fiddle with MuseScore. Sing practically all the time. Probably annoy my neighbours.
                         </div>
@@ -47,7 +42,8 @@
                     </div>
                 </section>
                 <section class="custom-centred medium-width">
-                    <div id="examples" class="hidden">
+                    <div id="examples">
+                        <h2 class="subtitle text-centred is-subtitle" href="#examples" tabindex="0">Examples</h2>
                         <div class="columns is-multiline has-top-gap">
                             <div class="column">
                                 <div class="custom-centred" style="width: 512px;">
@@ -86,7 +82,6 @@
         <section id="scripts">
             <!-- Scripts -->
             <script id="builder" src="../../scripts/page_builder.js"></script>
-            <script id="tabulator" src="../../scripts/tabulator.js"></script>
         </section>
     </body>
 </html>

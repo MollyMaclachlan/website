@@ -24,17 +24,9 @@
         <main id="main-content">
             <section id="body-container" class="section">
                 <h1 class="title text-centred">Writing</h1>
-                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview poetry prose quill">
-                    <ul>
-                        <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a href="#" onclick="return false;">Overview</a></li>
-                        <li class="" data-target="poetry" onclick="switch_tab(this)"><a href="#" onclick="return false;">Poetry</a></li>
-                        <li class="" data-target="prose" onclick="switch_tab(this)"><a href="#" onclick="return false;">Prose</a></li>
-                        <li class="" data-target="quill" onclick="switch_tab(this)"><a href="#" onclick="return false;">The Sleepy Quill</a></li>
-                        <!--<li class="" data-target="examples" onclick="switch_tab(this)"><a>Examples</a></li>-->
-                    </ul>
-                </div>
-                <section class="custom-centred medium-width">
-                    <div id="overview" class="">
+                <section class="custom-centred kilo-width">
+                    <div id="overview">
+                        <h2 class="subtitle text-centred is-subtitle" href="#overview" tabindex="0">Overview</h2>
                         <div class="block">
                             Writing: there's nothing I love more. Well, obviously family and friends and so on, but I meant in terms of activities. I first became interested in writing during my first year of secondary school, aged 11. I already loved reading, so instead of paying attention to my classes, I began writing blurbs for non-existent books.
                         </div>
@@ -46,8 +38,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="custom-centred medium-width">
-                    <div id="poetry" class="hidden">
+                <section class="custom-centred kilo-width">
+                    <div id="poetry">
+                        <h2 class="subtitle text-centred is-subtitle" href="#poetry" tabindex="0">Poetry</h2>
                         <div class="block">
                             Poetry. Despite being secondary in my interests, this is actually the first type of writing I ever did, and for the moment the type I have the most published work in. Note that 'published' doesn't mean I'm properly published. It means I published it on the internet. Get off my back. Getting published is hard.
                         </div>
@@ -57,7 +50,7 @@
                         <div class="columns is-multiline medium-width custom-centred">
                             <div class="column">
                                 <div class="card low-width custom-centred">
-                                    <div class="card-above-footer">
+                                    <div class="card-above-footer" style="min-height: 334.5px;">
                                         <div class="card-content">
                                             <h1 class="title is-size-5 text-centred">Winter's Song, Excerpt</h1>
                                             <div class="block">
@@ -82,7 +75,7 @@ for autumn's loss it grieves.</blockquote>
                             </div>
                             <div class="column">
                                 <div class="card low-width custom-centred">
-                                    <div class="card-above-footer" style="min-height: 310.5px;">
+                                    <div class="card-above-footer">
                                         <div class="card-content">
                                             <h1 class="title is-size-5 text-centred">AllPoetry</h1>
                                             <div class="block">
@@ -103,8 +96,9 @@ for autumn's loss it grieves.</blockquote>
                         </div> 
                     </div>
                 </section>
-                <section class="custom-centred medium-width">
-                    <div id="prose" class="hidden">
+                <section class="custom-centred kilo-width">
+                    <div id="prose">
+                        <h2 class="subtitle text-centred is-subtitle" href="#prose" tabindex="0">Prose</h2>
                         <div class="block">
                             Prose writing, especially fantasy and science fiction, is my absolute favourite thing to do. In fact, I've done far more of it than poetry, but only a tiny amount of my work can actually be found anywhere.
                         </div>
@@ -117,7 +111,7 @@ for autumn's loss it grieves.</blockquote>
                         <div class="columns is-multiline medium-width custom-centred">
                             <div class="column">
                                 <div class="card low-width custom-centred">
-                                    <div class="card-above-footer" style="min-height: 406.5px;">
+                                    <div class="card-above-footer" style="min-height: 454.5px;">
                                         <div class="card-content">
                                             <h1 class="title is-size-5 text-centred">Rooms of the Desolate</h1>
                                             <div class="block">
@@ -153,7 +147,7 @@ for autumn's loss it grieves.</blockquote>
                                                 On RoyalRoad and Scribble Hub, I solely post prose. My RoyalRoad account came first, and Scribble Hub followed about two months later.
                                             </div>
                                             <div class="block">
-                                                I my best to synchronise releases on all three of these sites, but Belletristica doesn't have scheduling capabilities yet, so releases there are sometimes a bit later.
+                                                I my best to synchronise releases on all of these sites, but Belletristica doesn't have scheduling capabilities yet, so releases there are sometimes a bit later.
                                             </div>
                                         </div>
                                     </div>
@@ -170,8 +164,9 @@ for autumn's loss it grieves.</blockquote>
                         </div> 
                     </div>
                 </section>  
-                <section class="custom-centred medium-width">
-                    <div id="quill" class="hidden">
+                <section class="custom-centred kilo-width">
+                    <div id="the-sleepy-quill">
+                        <h2 class="subtitle text-centred is-subtitle" href="#the-sleepy-quill" tabindex="0">The Sleepy Quill</h2>
                         <div class="block">
                             <strong>The Sleepy Quill</strong> is a substack newsletter/blog I've started to host my fiction writing and maybe also some non-fiction writing. I created it because writing sites I'm on, such as Belletristica and RoyalRoad, aren't well-suited to standalone short stories or non-fiction posts.
                         </div>
@@ -191,7 +186,6 @@ for autumn's loss it grieves.</blockquote>
         <section id="scripts">
             <!-- Scripts -->
             <script id="builder" src="../../scripts/page_builder.js"></script>
-            <script id="tabulator" src="../../scripts/tabulator.js"></script>
         </section>
     </body>
 </html>

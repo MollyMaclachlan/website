@@ -24,16 +24,9 @@
         <main id="main-content">
             <section id="body-container" class="section">
                 <h1 class="title text-centred">Videos</h1>
-                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview youtube twitch examples">
-                    <ul>
-                        <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a href="#" onclick="return false;">Overview</a></li>
-                        <li class="" data-target="twitch" onclick="switch_tab(this)"><a href="#" onclick="return false;">Twitch</a></li>
-                        <li class="" data-target="youtube" onclick="switch_tab(this)"><a href="#" onclick="return false;">YouTube</a></li>
-                        <li class="" data-target="examples" onclick="switch_tab(this)"><a href="#" onclick="return false;">Examples</a></li>
-                    </ul>
-                </div>
-                <section class="custom-centred medium-width">
-                    <div id="overview" class="">
+                <section class="custom-centred kilo-width">
+                    <div id="overview">
+                        <h2 class="subtitle text-centred is-subtitle" href="#overview" tabindex="0">Overview</h2>
                         <div class="block">
                             I didn't know what to call this page. Didn't want to call it 'YouTube' because I have a Twitch account, even if I don't use it at the moment. Didn't want to call it 'YouTube & Twitch' because all the other projects have one-word names and I wanted it to be consistent. So I called it 'Videos'.
                         </div>
@@ -42,21 +35,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="custom-centred medium-width">
-                    <div id="twitch" class="hidden">
-                        <div class="block">
-                            It turns out I have a Twitch channel. I'd say I stream video games (mainly Hollow Knight) on here, but that's not true any more. It would be accurate to say I <i>did</i> stream video games on here. I even streamed <a href="transcribing.html">transcribing</a> a few times, and that was fun.
-                        </div>
-                        <div class="block">
-                            I don't stream on Twitch right now because it started refusing to let me change my stream details. I thought if I cleared my cache and cookies that might fix it. Instead, now I can't log in either. So I might as well not have a Twitch account. For now, I stream on YouTube.
-                        </div>
-                        <div class="block has-text-centered">
-                            <a href="https://twitch.tv/murdomaclachlan" class="button" target="_blank">Go to channel</a>
-                        </div>
-                    </div>
-                </section>
-                <section class="custom-centred medium-width">
-                    <div id="youtube" class="hidden">
+                <section class="custom-centred kilo-width">
+                    <div id="youtube">
+                        <h2 class="subtitle text-centred is-subtitle" href="#youtube" tabindex="0">YouTube</h2>
                         <div class="block">
                             YouTube. I have a YouTube account. I upload edited highlights from my streams, unedited short clips, the occasional shitpost, sometimes musical things, and once I narrated a <a href="writing.html">short story I wrote</a>.
                         </div>
@@ -66,7 +47,7 @@
                         <div class="block">
                             My account isn't all that active. I wish it were more so, I just don't have time for all the things I want to do. But if you subscribe and turn on notifications, you'll know when there <i>is</i> activity.
                         </div>
-                        <div class="columns is-multiline medium-width custom-centred">
+                        <div class="columns is-multiline custom-centred">
                             <div class="column">
                                 <div class="card card-link">
                                     <div class="card-above-footer">
@@ -104,9 +85,30 @@
                         </div>
                     </div>
                 </section>
+                <section class="custom-centred kilo-width">
+                    <div id="twitch">
+                        <h2 class="subtitle text-centred is-subtitle" href="#twitch" tabindex="0">Twitch</h2>
+                        <div class="columns">
+                            <div class="column is-four-fifths">
+                                <div class="block">
+                                    It turns out I have a Twitch channel. I'd say I stream video games (mainly Hollow Knight) on here, but that's not true any more. It would be accurate to say I <i>did</i> stream video games on here. I even streamed <a href="transcribing.html">transcribing</a> a few times, and that was fun.
+                                </div>
+                                <div class="block">
+                                    I don't stream on Twitch right now because it started refusing to let me change my stream details. I thought if I cleared my cache and cookies that might fix it. Instead, now I can't log in either. So I might as well not have a Twitch account. For now, I stream on YouTube.
+                                </div>
+                            </div>
+                            <div class="column contents-centred">
+                                <div class="block has-text-centered">
+                                    <a href="https://twitch.tv/murdomaclachlan" class="button" target="_blank">Go to channel</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="custom-centred medium-width">
-                    <div id="examples" class="hidden">
-                        <div class="block low-width custom-centred">
+                    <div id="examples">
+                        <h2 class="subtitle text-centred is-subtitle" href="#examples" tabindex="0">Examples</h2>
+                        <div class="block kilo-width custom-centred">
                             Here are my four best videos, by which I mean they're a combination of my two most popular videos and the two I'm most proud of. In no particular order.
                         </div>
                         <div class="columns is-multiline has-top-gap">
@@ -175,7 +177,6 @@
         <section id="scripts">
             <!-- Scripts -->
             <script id="builder" src="../../scripts/page_builder.js"></script>
-            <script id="tabulator" src="../../scripts/tabulator.js"></script>
         </section>
     </body>
 </html>

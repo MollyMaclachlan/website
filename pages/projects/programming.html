@@ -24,15 +24,9 @@
         <main id="main-content">
             <section id="body-container" class="section">
                 <h1 class="title text-centred">Programming</h1>
-                <div id="tabset" class="tabs is-fullwidth has-top-gap" data-tabset="overview foss repositories">
-                    <ul>
-                        <li class="is-active" data-target="overview" onclick="switch_tab(this)"><a href="#" onclick="return false;">Overview</a></li>
-                        <li class="" data-target="foss" onclick="switch_tab(this)"><a href="#" onclick="return false;">FOSS</a></li>
-                        <li class="" data-target="repositories" onclick="switch_tab(this)"><a href="#" onclick="return false;">Repositories</a></li>
-                    </ul>
-                </div>
-                <section class="custom-centred medium-width">
-                    <div id="overview" class="">
+                <section class="custom-centred kilo-width">
+                    <div id="overview">
+                        <h2 class="subtitle text-centred is-subtitle" href="#overview" tabindex="0">Overview</h2>
                         <div class="block">
                             Secondary to almost everything else on this website (don't tell my lecturers that!), I'm a programmer. I'm currently studying for a Bachelor's in software engineering, but only as a safety net. None of the other things I'm interested in are stable career paths ― programming, something I'm good at, even if not <i>particularly</i> passionate about it these days, is a good backup to have.
                         </div>
@@ -44,10 +38,11 @@
                         </div>
                     </div>
                 </section>
-                <section class="custom-centred medium-width">
-                    <div id="foss" class="hidden">
+                <section class="custom-centred kilo-width">
+                    <div id="foss">
+                        <h2 class="subtitle text-centred is-subtitle" href="#foss" tabindex="0">FOSS</h2>
                         <div class="block">
-                            <strong>FOSS</strong> is <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank">free and open-source software</a>, which means that it's licensed in a way that grants users the right to study, change and distribute it and its source code to anyone and for any purpose. I'm very passionate about FOSS.
+                            FOSS is <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software" target="_blank">free and open-source software</a>, which means that it's licensed in a way that grants users the right to study, change and distribute it and its source code to anyone and for any purpose. I'm very passionate about FOSS.
                         </div>
                         <div class="block">
                             It's my personal belief that all software should be freely available to everyone. Take this website, for example. Its scripts are algorithms; logical progression and sets of instructions. Its HTML is just data representations. I don't believe in the ability of anyone to "own" a set of logical intsructions or a specific way of representing data. Thus, this website's software component are released under the AGPLv3 license. (See the <a href="../legal.html">Terms & Conditions</a> page for more detail.)
@@ -58,7 +53,8 @@
                     </div>
                 </section>
                 <section class="custom-centred medium-width">
-                    <div id="repositories" class="hidden">
+                    <div id="repositories">
+                        <h2 class="subtitle text-centred is-subtitle" href="#repositories" tabindex="0">Repositories</h2>
                         <div class="columns is-multiline has-top-gap">
                             <div class="column">
                                 <div class="card card-link">
@@ -158,7 +154,6 @@
         <section id="scripts">
             <!-- Scripts -->
             <script id="builder" src="../../scripts/page_builder.js"></script>
-            <script id="tabulator" src="../../scripts/tabulator.js"></script>
         </section>
     </body>
 </html>
