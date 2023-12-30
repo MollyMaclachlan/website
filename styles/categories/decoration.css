@@ -15,6 +15,9 @@ body {
     font-style: italic;
     text-align: center;
 }
+.references {
+    font-size: 80%;
+}
 
 #account-list li {
     margin-left: 1em;
