@@ -66,8 +66,10 @@ function calculate_event() {
         data = events["months"][month];
     }
 
-    update_icons(data[0]);
-    update_desc(data[1]);
+    if (data != undefined) {
+        update_icons(data[0]);
+        update_desc(data[1]);
+    }
 }
 
 /**
