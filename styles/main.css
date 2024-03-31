@@ -4,7 +4,6 @@
 @import url('categories/structure.css');   /* Structure of pages */
 @import url('categories/widgets.css');     /* Custom widgets */
 @import url('categories/decoration.css');  /* Decorative tweaks */
-@import url('categories/unique.css');      /* Styles specific to a single page */
 
 .hidden { display: none; }
 
