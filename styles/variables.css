@@ -1,3 +1,18 @@
 :root {
     --border-basic: 1px solid lightgrey;
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --footer-colour: white;
+        --link-colour: #485fc7;
+        --link-colour-hover: #363636;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --link-colour: #5c7aff;
+        --link-colour-hover: var(--bulma-info);
+    }
+}

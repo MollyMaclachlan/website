@@ -4,11 +4,20 @@ body {
     flex-flow: column;
 }
 
+/* NAVIGATION BAR */
 .navbar-dropdown-link {
     border: none;
 }
 .navbar-brand a {
     cursor: default !important;
+}
+
+/* TEXT */
+a {
+    color: var(--link-colour);
+}
+a:hover {
+    color: var(--link-colour-hover);
 }
 .poem {
     white-space: pre;
@@ -19,14 +28,15 @@ body {
     font-size: 80%;
 }
 
+/* LISTS */
 #account-list li {
     margin-left: 1em;
     list-style-type: disc;
 }
 
-/* Page boundaries */
+/* PAGE BOUNDARIES */
 #footer {
-    background-color: white;
+    background-color: var(--footer-colour);
     border-top: var(--border-basic);
 }
 #footer .content {
