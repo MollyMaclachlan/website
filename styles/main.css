@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css");
 
 @import url('variables.css');              /* Commonly re-used values */
 @import url('categories/structure.css');   /* Structure of pages */
