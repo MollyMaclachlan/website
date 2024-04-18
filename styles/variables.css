@@ -7,6 +7,7 @@
         --footer-colour: white;
         --link-colour: #485fc7;
         --link-colour-hover: #363636;
+        --navbar-clickable-colour: #404654;
     }
 }
 
@@ -14,5 +15,6 @@
     :root {
         --link-colour: #5c7aff;
         --link-colour-hover: var(--bulma-info);
+        --navbar-clickable-colour: white;
     }
 }
