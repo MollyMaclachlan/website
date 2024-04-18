@@ -5,6 +5,9 @@ body {
 }
 
 /* NAVIGATION BAR */
+#logo-container, #website-title {
+    pointer-events: none;
+}
 .navbar-dropdown-link {
     border: none;
 }
