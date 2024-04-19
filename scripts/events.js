@@ -79,8 +79,6 @@ function calculate_event() {
  */
 function update_desc(desc) {
     logo_container.dataset['desc'] = desc;
-    logo_container.href = "#";
-    logo_container.onclick = "return false;";
 }
 
 /**
