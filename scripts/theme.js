@@ -29,7 +29,7 @@ const BODY = document.getElementById("body-container");
 const COOKIE_HTML =
     `<div id='cookie-banner' style='display: none;'>
         <div class='block'>
-            This website may store cookies for the purposes of changing the theme, and for disabling this banner. Cookies are stored for 24 hours, and no other data is collected. <a href="` + prefix + `legal.html">See more</a>.
+            This website may store cookies for the purposes of changing the theme, and for disabling this banner. Cookies are stored for 90 days, and no other data is collected. <a href="` + prefix + `legal.html">See more</a>.
         </div>
         <div id="cookie-button-container">
             <button id="cookie-accept" class="button cookie-button" type="button" onclick="accept_cookie()">ACCEPT</button>
