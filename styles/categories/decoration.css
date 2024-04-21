@@ -4,6 +4,21 @@ body {
     flex-flow: column;
 }
 
+/* BUTTONS */
+button.is-danger {
+    background-color: var(--button-colour-danger) !important;
+}
+button.is-danger:hover {
+    background-color: var(--button-colour-danger-hover) !important;
+}
+
+/* COOKIE BANNER */
+#cookie-banner {
+    background-color: var(--cookie-banner-background);
+    border: var(--border-dull);
+    border-radius: 5px;
+}
+
 /* NAVIGATION BAR */
 #logo-container, #website-title {
     pointer-events: none;
@@ -15,6 +30,10 @@ body {
 }
 .navbar-brand a {
     cursor: default !important;
+}
+#theme-button {
+    font-size: 20px;
+    padding: 4px 14px 4px 14px;
 }
 
 /* TEXT */

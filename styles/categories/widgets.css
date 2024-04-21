@@ -1,24 +1,37 @@
 /* All pages */
 
-/* The #logo-container styling is adapted from the following Stack Overflow answer:
+/* This pop-up hint styling is adapted from the following Stack Overflow answer:
 https://stackoverflow.com/questions/11672946/styling-an-image-title-attribute-using-css */
-#logo-container:after {
+#navbar-brand:after, #theme-button:after {
     content: attr(data-desc);
     position: absolute;
     padding: 4px 8px;
-    left: -18em;
-    top: 105%;
-    color: black;
-    background: white;
-    border: var(--border-basic);
+    color: var(--description-colour) !important;
+    background: var(--description-background) !important;
     border-radius: 5px;
-    white-space: nowrap; 
+    white-space: nowrap;
     opacity: 0;
     transition: opacity 0.125s linear;
+    font-weight: var(--bulma-weight-medium);
+    font-size: 16px !important;
 }
-#logo-container[data-desc]:hover:after, #logo-container[data-desc]:focus:after {
-    left: 5%;
+#navbar-brand[data-desc]:hover:after, #navbar-brand[data-desc]:focus:after,
+#theme-button[data-desc]:hover:after {
     opacity: 1;
+}
+#navbar-brand:after {
+    left: -18em;
+    top: 3.8em;
+}
+#navbar-brand[data-desc]:hover:after, #navbar-brand[data-desc]:focus:after {
+    left: 0.1em;
+}
+#theme-button:after {
+    right: -18em;
+    top: 3.25em;
+}
+#theme-button[data-desc]:hover:after {
+    right: -0.25em;
 }
 
 #skip-link {

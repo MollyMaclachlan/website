@@ -1,6 +1,6 @@
 /*
  * This file is part of Murdo Maclachlan's website
- * Copyright (C) 2021-2022 Murdo Maclachlan
+ * Copyright (C) 2021-2024 Murdo Maclachlan
  * Authors: Murdo Maclachlan, et al.
  *
  * This program is free software: you can redistribute it and/or modify it
@@ -25,7 +25,7 @@ try {
 }
 
 var favicon = document.getElementById("favicon");
-var logo_container;
+var navbar_brand;
 var logo;
 
 var events = {
@@ -52,7 +52,7 @@ var events = {
  */
 function calculate_event() {
     // these must be initialised here, see line 47 for rationale
-    logo_container = document.getElementById("logo-container");
+    navbar_brand = document.getElementById("navbar-brand");
     logo = document.getElementById("logo");
 
     let data;
@@ -78,7 +78,7 @@ function calculate_event() {
  * @param {*} desc The new description.
  */
 function update_desc(desc) {
-    logo_container.dataset['desc'] = desc;
+    navbar_brand.dataset['desc'] = desc;
 }
 
 /**
@@ -97,5 +97,5 @@ function update_icons(source) {
 window.setTimeout(
     function() {
         calculate_event()
-    }, 250
+    }, 400
 );

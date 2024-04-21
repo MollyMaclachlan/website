@@ -1,6 +1,6 @@
 /*
  * This file is part of Murdo Maclachlan's website
- * Copyright (C) 2021-2022 Murdo Maclachlan
+ * Copyright (C) 2021-2024 Murdo Maclachlan
  * Authors: Murdo Maclachlan, et al.
  *
  * This program is free software: you can redistribute it and/or modify it
@@ -27,10 +27,11 @@ try {
 /**
  * Inserts the universal elements of the website into the page.
  */
-function build_page() {
+async function build_page() {
     insert_structure("header");
     insert_structure("footer");
-    insert_script(`${prefix}../scripts/events.js`, "events")
+    insert_script(`${prefix}../scripts/events.js`, "events");
+    insert_script(`${prefix}../scripts/theme.js`, "theme");
 }
 
 /**

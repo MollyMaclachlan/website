@@ -1,9 +1,31 @@
 :root {
     --border-basic: 1px solid lightgrey;
+    --border-dull: 1px solid grey;
+    --button-colour-danger: #ff2222;
+    --button-colour-danger-hover: #ff4343;
+    --description-background: transparent;
 }
 
-@media (prefers-color-scheme: light) {
+html[data-theme="dark"] {
+    --cookie-banner-background: #14161a;
+    --description-colour: #fff;
+    --link-colour: #5c7aff;
+    --link-colour-hover: var(--bulma-info);
+    --navbar-clickable-colour: #fff;
+}
+
+html[data-theme="light"] {
+    --cookie-banner-background: #fff;
+    --description-colour: #000;
+    --footer-colour: white;
+    --link-colour: #485fc7;
+    --link-colour-hover: #363636;
+    --navbar-clickable-colour: #404654;
+}
+
+/*@media (prefers-color-scheme: light) {
     :root {
+        --description-colour: #000;
         --footer-colour: white;
         --link-colour: #485fc7;
         --link-colour-hover: #363636;
@@ -13,8 +35,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
+        --cookie-banner-border: 1px solid #000;
+        --cookie-banner-background: #14161a;
+        --description-colour: #fff;
         --link-colour: #5c7aff;
         --link-colour-hover: var(--bulma-info);
-        --navbar-clickable-colour: white;
+        --navbar-clickable-colour: #fff;
     }
-}
+}*/
