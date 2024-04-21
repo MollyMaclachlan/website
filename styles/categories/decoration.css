@@ -25,8 +25,10 @@ button.is-danger:hover {
 }
 #home-button, .navbar-dropdown-link {
     border: none;
-    box-shadow: none;
     color: var(--navbar-clickable-colour);
+}
+#home-button:focus, .navbar-dropdown-link:focus {
+    box-shadow: 0 0 0 2px var(--link-colour) !important;
 }
 .navbar-brand a {
     cursor: default !important;
