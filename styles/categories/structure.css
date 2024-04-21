@@ -2,6 +2,11 @@
     flex-grow: 1;
     margin-top: 3.5em;
 }
+@media screen and (max-width: 34em) {
+    #about-card div.column {
+        display: block;
+    }
+}
 
 /* CENTRING
 (the default 'is-centered' offered by Bulma doesn't seem to work in all contexts)*/
@@ -27,6 +32,13 @@
     bottom: 1em;
     left: 1em;
     z-index: 100 !important;
+}
+@media screen and (max-width: 26em) {
+    #cookie-banner {
+        min-width: 14em;
+        width: auto;
+        margin-right: 1em;
+    }
 }
 
 /* FOOTER */
