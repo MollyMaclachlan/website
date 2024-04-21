@@ -7,7 +7,6 @@
 }
 
 html[data-theme="dark"] {
-    --cookie-banner-background: #14161a;
     --description-colour: #fff;
     --link-colour: #5c7aff;
     --link-colour-hover: var(--bulma-info);
@@ -15,9 +14,8 @@ html[data-theme="dark"] {
 }
 
 html[data-theme="light"] {
-    --cookie-banner-background: #fff;
     --description-colour: #000;
-    --footer-colour: white;
+    --footer-colour: #fff;
     --link-colour: #485fc7;
     --link-colour-hover: #363636;
     --navbar-clickable-colour: #404654;

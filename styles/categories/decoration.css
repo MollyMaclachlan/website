@@ -14,7 +14,7 @@ button.is-danger:hover {
 
 /* COOKIE BANNER */
 #cookie-banner {
-    background-color: var(--cookie-banner-background);
+    background-color: var(--bulma-scheme-main);
     border: var(--border-dull);
     border-radius: 5px;
 }
@@ -30,6 +30,10 @@ button.is-danger:hover {
 }
 .navbar-brand a {
     cursor: default !important;
+}
+#skip-link {
+    background-color: var(--bulma-scheme-main);
+    color: var(--bulma-text);
 }
 #theme-button {
     font-size: 20px;
