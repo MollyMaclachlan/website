@@ -49,28 +49,32 @@ var theme_button_icon;
 var theme_cookie;
 var theme;
 
-window.setTimeout(
-    function() {
-        acceptance_cookie = fetch_cookie_value("acceptance");
-        cookie_popup = document.getElementById("cookie-banner");
-        theme_button = document.getElementById("theme-button");
-        theme_button_icon = document.getElementById("theme-button-icon");
-        theme_cookie = fetch_cookie_value("theme");
+acceptance_cookie = fetch_cookie_value("acceptance");
+theme_cookie = fetch_cookie_value("theme");
+update_element_references();
 
-        if (acceptance_cookie == null) {
-            cookie_popup.style.display = "block";
-        }
+if (acceptance_cookie == null) {
+    cookie_popup.style.display = "block";
+}
 
-        if (theme_cookie == null) {
-            theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"; 
-        } else {
-            theme = theme_cookie
-        }
+if (theme_cookie == null) {
+    theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+} else {
+    theme = theme_cookie
+}
 
-        theme_button_icon.innerHTML = THEME_ICONS[theme]; 
-        update_theme();
-    }, 200
-);
+try {
+    update_theme();
+} catch (Exception) {
+    window.setTimeout(
+        function() {
+            update_element_references();
+            update_theme();
+        },
+        200
+    )
+}
+
 
 //-----------//
 //   THEME   //
@@ -81,7 +85,6 @@ window.setTimeout(
  */
 function change_theme() {
     theme = theme == "light" ? "dark" : "light";
-    theme_button_icon.innerHTML = THEME_ICONS[theme]; 
     update_theme();
     create_cookie("theme", theme);
 }
@@ -92,6 +95,7 @@ function change_theme() {
 function update_theme() {
     HTML.setAttribute('data-theme', theme);
     theme_button.setAttribute('data-desc', "Switch to " + (theme == "dark" ? "light" : "dark") + " mode.");
+    theme_button_icon.innerHTML = THEME_ICONS[theme];
 }
 
 
@@ -195,4 +199,13 @@ function fade(element) {
         element.style.filter = 'alpha(opacity=' + opacity * 100 + ")";
         opacity -= opacity * 0.1;
     }, 10);
+}
+
+/**
+ * Update global references to HTML elements in the document.
+ */
+function update_element_references() {
+    cookie_popup = document.getElementById("cookie-banner");
+    theme_button = document.getElementById("theme-button");
+    theme_button_icon = document.getElementById("theme-button-icon");
 }
