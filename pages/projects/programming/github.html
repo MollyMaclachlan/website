@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Meta elements -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Murdo B. Maclachlan">
+        <meta name="prefix" content="../../">
+        <meta
+          name="description"
+          content="The home page of Murdo Maclachlan."
+        >
+        <title>GitHub Projects | Murdo Maclachlan</title>
+
+        <!-- Styling -->
+        <link rel="stylesheet" type="text/css" href="../../../styles/main.css">
+        <link id="favicon" rel="shortcut icon" type="image/webp" href="../../../media/img/favicons/default.webp">
+    </head>
+    <body>
+        <section id="container-header" class="outer-container">
+            <!-- Header will be inserted here -->
+        </section>
+        <section id="body-container" class="section">
+            <h1 class="title text-centred is-subtitle" tabindex="0">GitHub Projects</h1>
+            <div class="subpage-subtitle">
+                <button id="back-button" class="button" onclick="history.back()">⬅</button>
+                <h1 class="text-centred is-size-5" tabindex="0">Back to Programming</h1>
+            </div>
+            <section class="custom-centred kilo-width">
+                <div class="block">
+                    This page lists some of my better GitHub projects, with links to their repositories. All of my public projects are <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open source</a>.
+                </div>
+                <div id="pipupdater">
+                    <section class="has-top-gap-large">
+                        <h1 class="is-size-5 text-centred">pipupdater</h1>
+                        <div class="columns is-multiline">
+                            <div class="column">
+                                <div class="card card-link">
+                                    <div class="card-above-footer">
+                                        <div class="card-content">
+                                            <div class="block">
+                                                <strong>pipupdater</strong> is a small command-line tool for automatically updating outdated pip packages. The basic functionality uses the output of <code>pip list --outdated</code> to automatically update any out-of-date packages.
+                                            </div>
+                                            <div class="block">
+                                                Out of all my GitHub projects, this is currently the one with the most active development. I am currently in the process of adding configuration options.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <p class="card-footer-item">
+                                            <a href="https://github.com/MurdoMaclachlan/pipupdater/" target="_blank">Go to repository</a>
+                                        </p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="smooth_logger">
+                    <section class="has-top-gap-large">
+                        <h1 class="is-size-5 text-centred">Smooth Logger</h1>
+                        <div class="columns is-multiline">
+                            <div class="column">
+                                <div class="card card-link">
+                                    <div class="card-above-footer">
+                                        <div class="card-content">
+                                            <div class="block">
+                                                <strong>Smooth Logger</strong> is a simple logging library originally written for my personal use. One day I was so lazy that instead of searching for a library that suited my needs, I overflowed back around to being productive and wrote one myself. I've become rather fond of it.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <p class="card-footer-item">
+                                            <a href="https://github.com/MurdoMaclachlan/smooth_logger/" target="_blank">Go to repository</a>
+                                        </p>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="column low-width">
+                                <h1 class="title is-size-6 text-centred">Example usage</h1>
+                                <div class="block">
+                                    <pre><code>import smooth_logger
+
+Log = smooth_logger.Logger("Example")
+Log.new("This is a log message!", "INFO")</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="smooth_progress">
+                    <section class="has-top-gap-large">
+                        <h1 class="is-size-5 text-centred">Smooth Progress</h1>
+                        <div class="columns is-multiline">
+                            <div class="column">
+                                <div class="card card-link">
+                                    <div class="card-above-footer">
+                                        <div class="card-content">
+                                            <div class="block">
+                                                <strong>Smooth Progress</strong> is a simple progress bar made primarily for my own personal use.
+                                            </div>
+                                            <div class="block">
+                                                See the description of 'Smooth Logger', to the left, for the origins of this library. They have the same story.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <p class="card-footer-item">
+                                            <a href="https://github.com/MurdoMaclachlan/smooth_progress/" target="_blank">Go to repository</a>
+                                        </p>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="column low-width">
+                                <h1 class="title is-size-6 text-centred">Example usage</h1>
+                                <div class="block">
+                                    <pre><code>import smooth_progress
+
+bar = smooth_progress.ProgressBar(limit=100)
+bar.open()
+for i in range(0,100):
+    bar.increment()
+bar.close()</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="word_search">
+                    <section class="has-top-gap-large">
+                        <h1 class="is-size-5 text-centred">WordSearch</h1>
+                        <div class="columns is-multiline">
+                            <div class="column">
+                                <div class="card card-link">
+                                    <div class="card-above-footer">
+                                        <div class="card-content">
+                                            <div class="block">
+                                                <strong>WordSearch</strong> is, self-explanatorily, a very simple word search program I wrote in Java.
+                                            </div>
+                                            <div class="block">
+                                                While this project hasn't had much activity recently, I intend to add a proper GUI to it when I can find the time and motivation.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer class="card-footer">
+                                        <p class="card-footer-item">
+                                            <a href="https://github.com/MurdoMaclachlan/WordSearch" target="_blank">Go to repository</a>
+                                        </p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div id="archived">
+                    <section class="has-top-gap-large">
+                        <h1 class="is-size-5 text-centred">Archived Projects</h1>
+                        <div class="columns is-multiline">
+                            <div class="column">
+                                <div class="card card-link">
+                                    <div class="card-above-footer">
+                                        <div class="card-content">
+                                            <div class="block">
+                                                There are a number of <strong>archived projects</strong> on my GitHub. These primarily include programs written for <a href="transcribing.html">r/TranscribersOfReddit</a> users in order to streamline the transcribing process, aid moderation, and clean up profiles.
+                                            </div>
+                                            <div class="block">
+                                                These include <a href="https://github.com/MurdoMaclachlan/oscr">OSCR</a>, which removed listed comments from a user's Reddit profile after a period of time; <a href="https://github.com/MurdoMaclachlan/tadr">TADR</a>, which would automatically reply 'done' to the first 'cannot find transcription' message from the subreddit's moderation bot, and <a href="https://github.com/MurdoMaclachlan/torcf">TORCF</a>, a moderation tool to detect and remove cloned posts in the subreddit queue.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </section>
+        <section id="container-footer" class="outer-container">
+            <!-- Footer will be inserted here -->
+        </section>
+        <section id="scripts">
+            <!-- Scripts -->
+            <script id="builder" src="../../../scripts/page_builder.js"></script>
+        </section>
+    </body>
+</html>
