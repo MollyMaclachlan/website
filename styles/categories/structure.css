@@ -10,7 +10,7 @@
 
 /* CENTRING
 (the default 'is-centered' offered by Bulma doesn't seem to work in all contexts)*/
-.contents-centred {
+.contents-centred, .subpage-subtitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,8 +69,16 @@
 .has-top-gap {
     margin-top: 1em;
 }
+.has-top-gap-large {
+    margin-top: 2.5em;
+}
 .is-size-4 {
     margin-bottom: 0.3em !important;
+}
+.subpage-subtitle > .is-size-5 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: inline;
 }
 .is-subtitle {
     margin-top: 1.8em;
@@ -78,6 +86,19 @@
 }
 .nested-list {
     margin-left: 1em;
+}
+.subpage-subtitle {
+    margin-top: -0.6em;
+    margin-bottom: 1.2em;
+}
+#back-button {
+    display: inline;
+    font-size: 1.5em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-right: 0.5em;
 }
 
 /* WIDTHS */
