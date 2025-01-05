@@ -6,4 +6,4 @@ My personal website.
 
 ## Licensing
 
-See the [Terms of Service page](https://murdomaclachlan.github.io/website/pages/legal) on the website.
+See the [Terms of Service page](https://mollymaclachlan.github.io/website/pages/legal) on the website.
