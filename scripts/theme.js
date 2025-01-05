@@ -1,7 +1,7 @@
 /*
- * This file is part of Murdo Maclachlan's website
- * Copyright (C) 2021-2024 Murdo Maclachlan
- * Authors: Murdo Maclachlan, et al.
+ * This file is part of Molly Maclachlan's website
+ * Copyright (C) 2021-2025 Molly Maclachlan
+ * Authors: Molly Maclachlan, et al.
  *
  * This program is free software: you can redistribute it and/or modify it
  * under the terms of the GNU Affero General Public License as published by
