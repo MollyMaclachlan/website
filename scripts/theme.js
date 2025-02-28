@@ -36,7 +36,7 @@ const COOKIE_HTML =
             <button id="cookie-decline" class="button cookie-button" type="button" onclick="decline_cookie()">DECLINE</button>
         </div>
     </div>`;
-const DAY_SECONDS = 86400000;
+const DAY_SECONDS = 86400;
 const HTML = document.getElementsByTagName("html")[0];
 const THEME_ICONS = {"dark": "🔆", "light": "🌘"}
 
@@ -121,10 +121,7 @@ function accept_cookie() {
 function create_cookie(name, value) {
     // only create cookies if the user has accepted them
     if (acceptance_cookie != null) {
-        // set the cookie to expire in one day
-        let expiry_date = new Date();
-        expiry_date.setTime(expiry_date.getTime() + (DAY_SECONDS * 90));
-        set_cookie(name, value, expiry_date.toUTCString());
+        set_cookie(name, value, DAY_SECONDS * 90);
     }
 }
 
@@ -166,11 +163,11 @@ function fetch_cookie_value(name) {
  * 
  * @param {*} name the name of the cookie
  * @param {*} value the value of the cookie
- * @param {*} expiry_date the date on which the cookie will expire
+ * @param {*} max_age the date on which the cookie will expire
  */
-function set_cookie(name, value, expiry_date) {
+function set_cookie(name, value, max_age) {
     document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value) +
-        ";expires=" + expiry_date +
+        ";expires=" + max_age +
         ";path=/;" +
         "SameSite=Strict;";  // disallow cookie requests from third party sites
 }
