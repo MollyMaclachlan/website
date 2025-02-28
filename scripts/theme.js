@@ -25,7 +25,7 @@ try {
     prefix = "";
 }
 
-const BODY = document.getElementById("body-container");
+const HEADER = document.getElementById("container-header");
 const COOKIE_HTML =
     `<div id='cookie-banner' style='display: none;'>
         <div class='block'>
@@ -40,7 +40,7 @@ const DAY_SECONDS = 86400;
 const HTML = document.getElementsByTagName("html")[0];
 const THEME_ICONS = {"dark": "🔆", "light": "🌘"}
 
-BODY.insertAdjacentHTML("afterbegin", COOKIE_HTML);
+HEADER.insertAdjacentHTML("afterbegin", COOKIE_HTML);
 
 var acceptance_cookie;
 var cookie_popup;
