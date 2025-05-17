@@ -1,6 +1,7 @@
 :root {
     --border-basic: 1px solid lightgrey;
     --border-dull: 1px solid grey;
+    --bulma-hr-background-color: lightgrey;
     --button-colour-danger: #ff2222;
     --button-colour-danger-hover: #ff4343;
     --description-background: transparent;

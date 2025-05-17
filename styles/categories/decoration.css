@@ -49,10 +49,8 @@ a {
 a:hover {
     color: var(--link-colour-hover);
 }
-.poem {
-    white-space: pre;
-    font-style: italic;
-    text-align: center;
+.poem > p::first-line {
+    font-variant: small-caps;
 }
 .references {
     font-size: 80%;
@@ -78,4 +76,11 @@ a:hover {
 #header .dropdown-trigger {
     margin-right: -0.6em;
     margin-left: -0.6em;
+}
+
+/* TABLES */
+tr:has(+ tr th):not(:has(+ tr td)) {
+    & > th, & > td {
+        border-style: none !important;
+    }
 }
