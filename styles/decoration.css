@@ -1,4 +1,6 @@
-body, html { height: 100%; }
+body, html {
+    height: 100%;
+}
 body {
     display: flex;
     flex-flow: column;
@@ -7,9 +9,10 @@ body {
 /* BUTTONS */
 button.is-danger {
     background-color: var(--button-colour-danger) !important;
-}
-button.is-danger:hover {
-    background-color: var(--button-colour-danger-hover) !important;
+
+    &:hover {
+        background-color: var(--button-colour-danger-hover) !important;
+    }
 }
 
 /* COOKIE BANNER */
@@ -26,9 +29,10 @@ button.is-danger:hover {
 #home-button, .navbar-dropdown-link {
     border: none;
     color: var(--navbar-clickable-colour);
-}
-#home-button:focus, .navbar-dropdown-link:focus {
-    box-shadow: 0 0 0 2px var(--link-colour) !important;
+
+    &:focus {
+        box-shadow: 0 0 0 2px var(--link-colour) !important;
+    }
 }
 .navbar-brand a {
     cursor: default !important;
@@ -45,9 +49,10 @@ button.is-danger:hover {
 /* TEXT */
 a {
     color: var(--link-colour);
-}
-a:hover {
-    color: var(--link-colour-hover);
+
+    &:hover {
+        color: var(--link-colour-hover);
+    }
 }
 .poem > p::first-line {
     font-variant: small-caps;
@@ -66,16 +71,18 @@ a:hover {
 #footer {
     background-color: var(--footer-colour);
     border-top: var(--border-basic);
-}
-#footer .content {
-    margin-bottom: -2.5em;
+
+    & .content {
+        margin-bottom: -2.5em;
+    }
 }
 #header {
     border-bottom: var(--border-basic);
-}
-#header .dropdown-trigger {
-    margin-right: -0.6em;
-    margin-left: -0.6em;
+
+    & .dropdown-trigger {
+        margin-right: -0.6em;
+        margin-left: -0.6em;
+    }
 }
 
 /* TABLES */

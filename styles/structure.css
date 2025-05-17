@@ -2,11 +2,6 @@
     flex-grow: 1;
     margin-top: 3.5em;
 }
-@media screen and (max-width: 34em) {
-    #about-card div.column {
-        display: block;
-    }
-}
 
 /* CENTRING
 (the default 'is-centered' offered by Bulma doesn't seem to work in all contexts)*/
@@ -75,21 +70,12 @@
 .is-size-4 {
     margin-bottom: 0.3em !important;
 }
-.subpage-subtitle > .is-size-5 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    display: inline;
-}
 .is-subtitle {
     margin-top: 1.8em;
     margin-bottom: 0.8em !important;
 }
 .nested-list {
     margin-left: 1em;
-}
-.subpage-subtitle {
-    margin-top: -0.6em;
-    margin-bottom: 1.2em;
 }
 .poem {
     &, & > p:not(:last-child) {
@@ -98,15 +84,6 @@
     & > h1.subtitle {
         margin-top: 0 !important;
     }
-}
-#back-button {
-    display: inline;
-    font-size: 1.5em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    margin-right: 0.5em;
 }
 /* credit for subpage-list rules: https://stackoverflow.com/questions/15306108/how-to-style-a-horizontal-list-with-bullets-between-items-using-css/24706410#24706410 */
 #subpage-list, .inline-list {
