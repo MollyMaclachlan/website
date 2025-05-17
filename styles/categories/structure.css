@@ -91,6 +91,14 @@
     margin-top: -0.6em;
     margin-bottom: 1.2em;
 }
+.poem {
+    &, & > p:not(:last-child) {
+        margin-bottom: var(--bulma-block-spacing);
+    }
+    & > h1.subtitle {
+        margin-top: 0 !important;
+    }
+}
 #back-button {
     display: inline;
     font-size: 1.5em;
@@ -100,8 +108,38 @@
     padding-bottom: 0em;
     margin-right: 0.5em;
 }
+/* credit for subpage-list rules: https://stackoverflow.com/questions/15306108/how-to-style-a-horizontal-list-with-bullets-between-items-using-css/24706410#24706410 */
+#subpage-list, .inline-list {
+    text-align: center;
+
+    & li {
+        list-style: none;
+        display: inline !important;
+
+        &:after {
+            content: "\00A0\00A0\2022\00A0";
+        }
+        &:last-child:after {
+            content: none;
+        }
+    }
+
+    &.inline-list-left {
+        text-align: left !important;
+    }
+}
+#subpage-parent {
+    margin-top: 1.8em;
+
+    & + .title {
+        margin-top: 0.1em !important;
+    }
+}
 
 /* WIDTHS */
+.column-list-width {
+    max-width: 400px;
+}
 .low-width {
     max-width: 615px;
 }
