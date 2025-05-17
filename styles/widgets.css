@@ -15,25 +15,26 @@ https://stackoverflow.com/questions/11672946/styling-an-image-title-attribute-us
     font-weight: var(--bulma-weight-medium);
     font-size: 16px !important;
 }
-#navbar-brand[data-desc]:hover:after, #navbar-brand[data-desc]:focus:after,
-#theme-button[data-desc]:hover:after {
-    opacity: 1;
+#navbar-brand {
+    &:after {
+        left: -18em;
+        top: 3.8em;
+    }
+    &[data-desc]:hover:after, &[data-desc]:focus:after {
+        left: 0.1em;
+        opacity: 1;
+    }
 }
-#navbar-brand:after {
-    left: -18em;
-    top: 3.8em;
+#theme-button {
+    &:after {
+        right: -18em;
+        top: 3.25em;
+    }
+    &[data-desc]:hover:after {
+        right: -0.25em;
+        opacity: 1;
+    }
 }
-#navbar-brand[data-desc]:hover:after, #navbar-brand[data-desc]:focus:after {
-    left: 0.1em;
-}
-#theme-button:after {
-    right: -18em;
-    top: 3.25em;
-}
-#theme-button[data-desc]:hover:after {
-    right: -0.25em;
-}
-
 #skip-link {
     background-color: white;
     position: fixed;
@@ -41,33 +42,28 @@ https://stackoverflow.com/questions/11672946/styling-an-image-title-attribute-us
     margin-left: -11.5em;
     z-index: 1;
     transition: margin-left 0.5s linear;
-}
-#skip-link:focus {
-    margin-left: 0.5em;
+
+    &:focus {
+        margin-left: 0.5em;
+    }
 }
 
 /* Multiple pages */
 .card-link {
     height: 100%;
 }
-.card-above-footer {
-    height: calc(100% - 48px);
-}
 .card-link-header {
     height: 4.5em;
     border-bottom: var(--border-basic);
 }
-.card-link-multi {
+.card-link-multi { /* not used ATM, but keeping it for now, may use more cards again in future, unsure */
     padding-right: 0.5em;
     margin-right: 0.5em;
     border-right: var(--border-basic);
 }
+.card-above-footer {
+    height: calc(100% - 48px);
+}
 #tabset ul {
     margin: 0.2em;
-}
-
-/* Home page only */
-#about-card {
-    max-width: 1000px;
-    margin-top: -1.5em;
 }
